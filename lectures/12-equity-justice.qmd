@@ -175,13 +175,6 @@ where: $u(x_i)$, welfare of individual $i$; $u(\bar{x})$, average welfare of all
 Quantifying a "welfare function" is a notoriously messy problem [@debreu:1959;@arrow_values:1951]
 :::
 
-## Moral frameworks
-
-- Egalitarianism: Prioritizing equality in the distribution of resources or outcomes
-- Utilitarianism: Prioritizing overall well-being or the greatest good for the greatest number
-- Rawlsian principles: Prioritizing benefits for the least advantaged individuals
-- Prioritarianism: Giving greater weight to benefits for those who are worse off
-
 # Equity in what?
 
 ## Risk assessment outcomes
