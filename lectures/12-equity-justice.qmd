@@ -17,4 +17,221 @@ template-partials:
     - title-slide.html
 ---
 
-This is a placeholder.
+## Today: equity
+
+- Equity is a complex and multifaceted concept
+  - Different stakeholders may have varying definitions and understandings of equity
+  - Despite growing interest in equity, quantitative metrics to measure it are scarce
+- Most studies that attempt to quantify equity do not clearly explain how their metrics relate to equity
+
+You will learn how to interpret, evaluate, and contribute to quantitative metrics for equity in climate-risk research.
+Today's lecture draws heavily on @pollack_equity:2023.
+
+## Today: values
+
+Equity is not the only place where values come into play in climate risk management
+
+![@keller_management:2021](../_assets/img/keller_values.jpg)
+
+## Creating a supportive learning environment
+
+- As we discuss topics related to environmental disparities and equity, it's essential to be kind, respectful, and give each other the benefit of the doubt
+- We all have different valuable perspectives and experiences that can contribute to our understanding of these complex issues
+- Creating a supportive and inclusive learning environment will help us engage in meaningful and productive conversations
+
+## ASCE code of ethics
+
+[asce.org/career-growth/ethics/code-of-ethics](https://www.asce.org/career-growth/ethics/code-of-ethics)
+
+Engineers govern their professional careers on the following fundamental principles:
+
+- create safe, resilient, and sustainable infrastructure;
+- treat all persons with respect, dignity, and fairness in a manner that fosters equitable participation without regard to personal identity;
+- consider the current and anticipated needs of society; and
+- utilize their knowledge and skills to enhance the quality of life for humanity.
+
+## tl;dr: engineers apply normative values!
+
+- Honesty / truthfulness
+- Benefit society
+- Make the profession look good
+- Consider diverse societal needs
+- Safety
+- Confidentialty
+
+## Communities face uneven exposure to environmental harms
+
+@bullard_dismantling:1999:
+
+::: {.incremental}
+- Many economically impoverished communities and their inhabitants are exposed to greater health hazards in their homes, in their jobs and in their neighbourhoods when compared to their more affluent counterparts
+  - *What examples are you aware of?*
+- In the real world, all communities are not created equal. All communities do not receive equal protection. Economics, political clout and race play an important part in sorting out residential amenities and disamenities.
+- Environmental racism refers to any environmental policy, practice or directive that differentially affects or disadvantages (whether intended or unintended) individuals, groups or communities based on race or colour.
+  - *Why might it be helpful for a framework to focus on proving effect rather than intent?*
+:::
+
+# Equity overview
+
+## Equity vs equality vs justice
+
+- Equity: Fairness and impartiality in the distribution of resources, opportunities, and outcomes
+- Equality: Treating everyone the same way, regardless of their individual needs or circumstances
+- Justice: The principle of fairness and righteousness, often encompassing equity and equality
+
+## Distributive Justice
+
+Access to resources and outcomes are fair and equitable across social groups and classes (e.g., gender, sexuality, class, race/ethnicity, indigeneity)
+
+- Example: No disparities in flood protection measures between low-income and high-income neighborhoods
+
+## Interpersonal justice
+
+Individuals are treated fairly and equitably, no matter who they are
+
+- Example: Low-income and high-income residents are given equal consideration when applying for post-flood assistance
+
+## Procedural justice
+
+Rules, norms, and decision-making processes are fair and equitable
+
+- Example: All community members have equal opportunities to participate in decision-making processes related to flood risk management
+
+## Recognition justice
+
+Different worldviews and values are fairly and equitably represented
+
+- Example: Indigenous knowledge and perspectives are considered when developing flood risk management strategies
+
+## Transformative (or restorative) justice
+
+Root causes of oppression in systems are collaboratively addressed and communities are peacefully reconstructed
+
+- Example: Historical inequities in flood risk exposure are addressed through targeted investments in disadvantaged communities
+
+## Social welfare
+
+- If everyone has a utility function, we can aggregate across people to create a social welfare function
+- However, there's not a single "right" way to do this [@debreu:1959;@arrow_values:1951]
+- The field of social welfare theory tries to figure out good ways to come up with a social welfare function
+
+## Moral frameworks
+
+- Egalitarianism: Prioritizing equality in the distribution of resources or outcomes
+- Utilitarianism: Prioritizing overall well-being or the greatest good for the greatest number
+- Rawlsian principles: Prioritizing benefits for the least advantaged individuals
+- Prioritarianism: Giving greater weight to benefits for those who are worse off
+
+# Equity in what?
+
+## Risk assessment outcomes
+
+In the context of flood risk management, several key outcomes are often distinguished:
+
+- Flood hazard: The physical peril or threat of flooding
+- Exposure: The people, property, or other assets in the path of potential flooding
+- Vulnerability: The susceptibility of exposed elements to damage or harm
+- Risk: The potential for consequences, determined by the interactions between hazards, exposures, and vulnerabilities
+
+## Environmental justice and outcome measures
+
+Environmental justice theories suggest that a wider range of outcome measures should be considered when assessing equity, including:
+
+- Risk: The distribution of potential consequences across different groups
+- Funding: The allocation of resources for flood risk management and recovery
+- Recovery: The ability of different groups to recover from flood events
+- Benefits: The distribution of positive outcomes, such as reduced flood risk or improved quality of life
+
+These theories emphasize the importance of examining the distribution of both positive outcomes (benefits, recovery, funding) and burdens (risk) when evaluating equity.
+
+## Key question
+
+We can measure "equity" in different ways:
+
+::: {.incremental}
+- How much investment is given to different individuals / groups?
+- How much residual risk remains for different individuals / groups after interventions?
+- How much hazard reduction is achieved for different individuals / groups?
+- How do these outcomes compare across individuals / groups?
+:::
+
+# Equity at what scale?
+
+## Why aggregation matters
+
+- The scale and definition of spatial boundaries at which the distribution of an outcome is measured can significantly impact the assessment of equity.
+- Aggregating data at different scales can reveal or obscure disparities.
+- The choice of aggregation unit should be informed by the specific context and the theories or frameworks being applied.
+- It's important to consider the scale at which inequities are most likely to be produced and experienced.
+
+## Common aggregation choices in the literature
+
+@pollack_equity:2023:
+
+::: {.incremental}
+- Individual level: Outcomes measured at the individual, household, or building level.
+- Neighborhood level: Outcomes measured using community-defined neighborhood boundaries, which are important in many theories of environmental justice.
+- Small areas: Outcomes measured using population-based administrative boundaries that approximate neighborhoods, such as census block groups or tracts.
+- Large areas: Outcomes measured over relatively large areas like cities or regions.
+:::
+
+# Equity with respect to what?
+
+## Other characteristics
+
+The "other characteristics" component includes demographics, measures of environmental burden, and procedural disparities. These are used to assess if inequities exist along particular dimensions.
+
+## Demographics
+
+- Individual variables, such as income, race, ethnicity, or age
+- Aggregated indices that combine multiple demographic characteristics to proxy attributes such as vulnerability or disadvantage
+
+## Environmental burden
+
+- Measures of environmental quality, such as access to nature, protection by green infrastructure, or exposure to pollution or other environmental hazards
+- Some environmental burdens or goods could also be conceived of as relevant outcomes
+
+## Procedural disparities
+
+- Discriminatory practices, such as those that produced historically redlined neighborhoods
+- Policies that produce distinct groups subject to different procedural factors and experiences
+- Example: Insurance claims filed by houses with different sewage systems being treated under different review processes
+
+## Causal factors
+
+Theories call for analysts to uncover the causal factors that produce inequities and create injustice, rather than simply describing disparities.
+
+# Procedural equity
+
+## Power dynamics in participatory processes
+
+@fletcher_waterresourcesequity:2022:
+
+- Simply including marginalized communities is not enough; equitable participation is key
+- Power imbalances can shape whose knowledge is prioritized and who benefits from the process
+- Explicitly identifying power dynamics and finding ways for participants to share power is important
+- Skilled facilitation and collaboration with boundary organizations can help address power imbalances
+
+##
+
+![@fletcher_waterresourcesequity:2022](../_assets/img/fletcher_deliberation.png)
+
+# Wrapup
+
+## Taxonomy
+
+![@pollack_equity:2023](../_assets/img/pollack-taxonomy.png)
+
+## Key points
+
+- There isn't a single "right" way to quantify equity.
+- However, being clear about how you're conceptualizing and defining equity can help readers determine whether that's consistent with their values and understanding.
+- Grounding equity assessments in theories of justice and local historical context is important.
+
+## Wednesday assignment
+
+Rather than reading a paper, please research an environmental injustice in Houston.
+
+- Prepare a two-minute presentation covering the injustice, relying on the key ideas from today's lecture (e.g., equity in what? across what scale? with respect to what?).
+- Upload your presentation to Canvas.
+- You may work in mixed undergrad/grad groups of up to three students.
