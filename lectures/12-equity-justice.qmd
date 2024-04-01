@@ -145,7 +145,7 @@ Borrowing heavily from @wutich_madwater:2023:
     - Example: Historical inequities in flood risk exposure are addressed through targeted investments in disadvantaged communities
 :::
 
-## Operationalizing equity {.smaller}
+## Moral frameworks {.smaller}
 
 Table 1 of @jafino_distributional:2022
 where: $u(x_i)$, welfare of individual $i$; $u(\bar{x})$, average welfare of all individuals; $\gamma$, inequality aversion factor; $u(s)$, minimum welfare threshold deemed sufficient; $w$, preference factor for utilitarianism compared to egalitarianism; $f(\cdot)$, min-max linear normalization
