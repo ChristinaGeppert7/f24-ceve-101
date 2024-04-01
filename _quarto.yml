@@ -49,6 +49,8 @@ website:
         href: schedule.qmd
       - text: Resources
         href: resources.qmd
+      - text: Fixing bugs
+        href: bugfix.qmd
 
 echo: true
 
