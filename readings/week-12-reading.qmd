@@ -7,11 +7,5 @@ categories: [Reading]
 format: html
 ---
 
-::: {.callout-tip}
-Discussion questions will be posted here.
-:::
-
-Assigned reading will be drawn from:
-
-- @pollack_equity:2023
-- @fletcher_waterresourcesequity:2022
+No journal articles for this week.
+Instead, see Canvas for a short assignment.
