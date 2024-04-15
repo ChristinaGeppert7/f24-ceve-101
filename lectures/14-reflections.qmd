@@ -7,14 +7,7 @@ week: 14
 categories: 
   - Lecture
 
-# do not edit anything below this line
-format: revealjs
-
-author: "{{< var instructor.name >}}!"
-course: "{{< var course.number >}}, {{< var course.title >}}"
-institution: "{{< var course.institution >}}}"
-template-partials:
-    - title-slide.html
+format: html
 ---
 
-This is a placeholder.
+We will review material from the class today.
