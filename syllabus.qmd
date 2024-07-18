@@ -18,15 +18,11 @@ format:
 
 ## Course Description
 
-Climate variability and change pose threats to lives and livelihoods.
-These climate risks can be managed through the design and operation of infrastructure systems, as well as through disaster response and recovery.
-Decisions about how to develop and choose risk management strategies are often based on pure vibes, but occasionally rigorous quantitative analyses that make use of scientific information can inform them (we will focus on these cases).
-These analyses involve integrating knowledge from multiple disciplines to balance competing goals (objectives) under uncertainty.
 
-In this course, you will learn climate science, uncertainty quantification, and decision analysis methods to support climate risk management.
-You will be assigned readings for every class that cover both methods and applications, and will work collaboratively to implement key concepts through programming problem sets.
-Active class participation is required.
-Methods covered include scenario analysis, exploratory modeling, cost-benefit analysis, single- and multi-objective policy search, reinforcement learning, deep uncertainty, robust decision making, and equitable decision making.
+Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies.
+CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management.
+In this course, students will explore how data science, environmental science, economic analysis,  structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity.
+Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop an understanding of the broad field of civil and environmental engineering and its applications.
 
 ## Course Information
 :::: {.columns .course-details}
@@ -40,7 +36,7 @@ Methods covered include scenario analysis, exploratory modeling, cost-benefit an
 :::
 
 ::: {.column width="30%"}
-### TA
+### Grader
 
 TBD
 ::::
@@ -57,47 +53,41 @@ TBD
 
 ### Prerequisites & Preparation
 
-The following prerequisites are required:
-
-- An introductory course in probability and statistics, such as CEVE 313, is strictly required.
-
-In addition, the following prerequisites are encouraged.
-
-- Some exposure to Python, Julia, Matlab, R, or another programming language
-- Additional coursework in applied statistics
-- Linear algebra (you should be comfortable with matrix notation and basic operations)
-- Optimization (you should be comfortable writing down optimization problems)
-
-If you are unsure whether your background gives you an adequate preparation for this course, *please contact the instructor!*
-
-::: {.callout-tip}
-### What If My Skills Are Rusty?
-
-If your programming, mathematics, or statistics skills are a little rusty, don't worry!
-We will review concepts and build skills over the course of the semester.
-:::
+None
 
 ### Course Objectives 
 
-After completing this course, you will be able to:
+This course is intended to introduce you to the discipline of civil and environmental engineering through examination of topics in energy systems, water systems, urban mobility, and coastal resilience.
+This course emphasizes analytical skills, systems thinking, communication, and teamwork.
 
-1. Evaluate and describe the strengths and weaknesses of different approaches to modeling the impact of weather and climate hazards on critical systems.
-2. Apply and critique methods for cost-benefit analysis, optimization, policy search, and stochastic control to climate adaptation problems.
-3. Describe multiple frameworks for decision making under deep uncertainty.
-4. Decision analytical frameworks well suited to a particular problem and justify the choice.
+The course aims to provide:  
+
+1. an understanding of the scope of civil and environmental engineering;
+1. an understanding of the academic activities of the Rice CEVE department;
+1. exposure to fundamental principles, concepts, and approaches that apply across CEVE disciplines, including quantitative reasoning and creative problem solving;
+1. a context for applying information from other first-year courses, especially calculus and physics;
+1. a background for higher level classes in civil and environmental engineering;
+1. an appreciation for the many links between the practice of civil and environmental engineering and social goals including sustainability, resilience, and equity;
+1. a sampling of possible career paths within the field of civil and environmental engineering, and their requirements;
+1. and some experience with the fun of being an engineer.
+
+On completing this course, students should be able to:
+
+1. Identify civil and environmental engineering subfields
+1. Successfully perform engineering problem solving in several civil and environmental subfields
+1. Generate report-quality engineering calculations
+1. Create and present an oral report on a design project
+1. Collaborate with peers in project teams and in composing project reports
 
 ### Required Materials
 
 No textbook is required for this course.
 All materials will be posted as open source on [the course website]({{< var course.url >}}) or on [Canvas](https://canvas.rice.edu/courses/{{< var course.canvas_id >}}).
 
-You will regularly be assigned scientific papers to read.
+You will occasionally be assigned scientific papers to read.
 Where those are available through the Rice library, you will be expected to access them yourself.
 You are encouraged, though not required, to use Zotero (Rice students have free storage).
 See [Fondren Library's Resources](http://fondrenlearning.blogs.rice.edu/zotero/) for resources.
-
-You will need a working laptop for this class.
-If you do not have access to a working laptop, or if you lose access during the semester, please email the instructor.
 
 ## A Community of Learning
 
@@ -163,14 +153,6 @@ If you have a documented disability or other condition that may affect academic 
 
 If any of our class meetings conflict with your religious events, student athletics, or other non-negotiable scheduling conflict, please let me know ASAP so that we can make arrangements for you.
 
-### Mask Policies
-
-Masks are welcome but not required in the classroom.
-However, if a colleague (student, faculty, or staff) requests that others wear a mask, you are *strongly encouraged* to make them feel safe.
-Please do not ask someone making such a request to disclose their underlying medical condition.
-If for some reason you need your instructor or classmates to wear a mask, please let me know and I will communicate this to the class without disclosing your identity.
-
-These policies may change over the course of the semester as the situation evolves.
 
 ### Getting Help
 
@@ -206,8 +188,6 @@ In particular:
 - One of the best applications of LLMs is to write code. This can help accelerate your workflow, especially when you are learning new syntax. However, LLMs can make bad decisions about how to structure your code, can introduce bugs, and can mislead you about what your code is doing. You are responsible for understanding and debugging your code, and for ensuring that it does what you intend it to do.
 - LLMs should not be used to generate text that you submit as your own work. If you are assigned a writing assignment, the point is to stimulate your thought process, and you short-cut this if you ask a LLM to generate the response for you. This leads to shallow thinking! However, you *may* use tools including LLMs (but also Grammarly, spell-check, etc.) to help you edit your writing. This can sometimes be a fine line; it's always better to ask if you're not sure, and to disclose your use of these tools in your submission
 
-The [resources page](resources.qmd) has links to helpful ideas about LLMs and how to use them.
-
 ### Policy on Web Posting of Course Materials
 
 Uploading course materials to web sites is not an authorized use of the course material.
@@ -215,123 +195,62 @@ Both the poster and the user are in violation of the university policy, which is
 
 ## Grading
 
-Your final grade will be calculated as follow:
+| Assignment | Format | Weight |
+|------------|--------|--------|
+| Project 1   | Oral presentation | 25% |
+| Project 2   | Policy brief | 25% |
+| Project 3   | Digital presentation | 25%  |
+| Project 4   | Final Report | 25% |
 
-| Category | Points (421) | Points (521) |
-| :------- | :---------- | :---------- |
-| Reading quizzes | 10 | 10 |
-| Labs | 10 | 10 |
-| Tests | 40 | 30 |
-| Project | 30 | 30 |
-| Reading Discussion | 0 | 10 |
-| Reading Notes | 10 | 10 |
+: {.striped .hover}
 
-
-### Reading Quizzes
-
-The purpose of assigning readings is to enhance class discussions.
-Students who are prepared for class enhance the learning experience for everyone and enable a collaborative group discussion.
-At the start of classes for which reading was assigned, expect a very short (5 minute) quiz covering basic concepts from the reading.
-You should be able to get all points on these readings if you have done the reading, even if you found key concepts challenging or confusing.
-
-Your lowest two reading quizzes will be dropped.
-
-### Labs
-
-On Fridays we will use class time for hands-on programming exercises ("labs") to give you guided practice applying the concepts and methods from class.
-These labs will be announced on [the course website]({{<var course.url >}}) ahead of time so anyone who is able can bring a laptop to class.
-These labs can be done in groups; if you cannot bring a laptop to class for whatever reason, you will be able to (and are encouraged to) work with other students, though you must turn in your own assignment for grading.
-All labs will cover either a set of programming tools or a case study.
-
-Your lowest two labs will be dropped.
-
-### Tests
-
-In-class written exams will be given for each module of the course.
-Tests are designed to be straightforward and will cover key ideas from reading, as well as key terms and concepts from lecture and code interpretation related to labs.
-
-### Project
-
-We will build a case study related to house elevation over the course of the semester through weekly labs.
-Answers will be posted for each lab, so mistakes made in one lab do not pass to the next.
-
-For a final project, you will be asked to incorporate additional concept(s) from the course into the case study.
-For example, you might improve the representation of additional sources of uncertainty, use a more sophisticated optimization algorithm, or change the objectives of the optimization problem.
-
-Students enrolled in the 421 section (i.e., undergraduates) may work in small groups.
-Students enrolled in the 521 section (i.e., graduate students) must work individually.
-
-### Reading Discussion
-
-All students enrolled in the 521 section (i.e., graduate students) will present one of the papers assigned to the class and lead a discussion.
-
-- This discussion should take 30-50 minutes.
-- You should sign up for a time by the second week of class.
-- You should meet with your instructor at least one week before your presentation to discuss the reading and your discussion plan.
-
-You will be graded on the quality of your presentation, the depth of your understanding of the reading, and your ability to lead a discussion.
-
-Students enrolled in the 421 section may choose to present a paper alone or in a group.
-If you choose to present a paper, you will be graded on the same scale as the 521 students.
-
-### Reading Notes
-
-All students will act as "note-taker" for an in-class reading discussion.
-The note-taker will be responsible for taking notes on the discussion (following up from the recording as necessary), then adding them to the course website (through a Pull Request; guidance will be provided).
-These notes should summarize, rather than transcribe, the discussion, and identify key insights, questions, disagreements, and points of confusion.
-
-You should sign up for a time by the second week of class.
-Groups may be permitted depending on enrollment.
+I reserve the right to curve the scale dependent on overall class scores at the end of the semester.
 
 ### Late Work Policy
 
 Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied $0.9^d$ where $d$ is the number of days late.
-Late labs will not be accepted so that solutions can be posted promptly.
-
-As described above, your lowest two labs and reading quizzes will be dropped.
-This is intended to accommodate events like minor illnesses, travel to a conference, and other circumstances that may cause you to miss a lab or quiz.
-If a major circumstance arises (e.g., a death in the family, a serious illness, etc.) that causes you to miss an extended period of time, please contact the instructor to discuss accommodations.
 
 ## Preliminary Schedule
 
 The following schedule outlines our planned topics and readings for the semester.
-In general, we will use Mondays for lecture, Wednesdays for group discussion centered on readings, and Fridays for computational labs.
-
-This schedule is subject to change.
-Updated versions will be posted on [the Schedule page](./schedule.qmd) of the course website.
 
 ::: {.callout-note}
-Not all readings listed here will be assigned in full.
-Some may be assigned as optional reading and others may be assigned as excerpts.
+This schedule is subject to change.
+Updated versions will be posted on [the Schedule page](./schedule.qmd) of the course website.
 :::
 
 
-| Week    | Course Dates                    | Topic | Reading | Exam / Project |
-| -------- | --------------- | ---------------------- | ---------------------- | ---------------------- |
-| | **Module 1:** | **Introduction** | | |
-|  1  | 1/8, 1/10, 1/12 | Introduction to climate risk management | @frank_newjersey:2022, @loucks_planning:2017 Ch. 1 | |
-|  2  | 1/17, 1/19 | Science of climate hazard | @seneviratne_wg1ch11:2021, @lall_ncawater:2018 |  |
-|  3  | 1/22, 1/24, 1/26 | Vulnerability, exposure, and impacts | @wing_vulnerability:2020, @bonnafous_waterrisk:2017 | |
-|  4  | 1/29, 1/31, 2/2  | Systems | @reed_multisectordynamics:2022,  | Exam 1 | 
-| | **Module 2:** | **Decision Analysis** | | |
-|  5  | 2/5, 2/7, 2/8 | Cost-benefit analysis | @arrow_discount:2013 | |
-|  6  | 2/12, 2/14, 2/16 | Scenario analysis | @bankes_exploratory:1993 | Final Project: Proposal |
-|  7  | 2/19, 2/21, 2/23 | Policy search and optimization | @vanberchum_coastal:2019, @schwetschenau_optimizing:2023 | |
-|  8  | 2/26, 2/28, 3/1 | Multiobjective policy search | @zarekarizi_suboptimal:2020 | | 
-|  9  | 3/4, 3/6, 3/8 | Sequential decision problems | @herman_control:2020, @quinn_dps:2017, @fletcher_mombasa:2019, @sutton_reinforcement:2018 | |
-|  10 | 3/18, 3/20, 3/22 | Robustness | @herman_robustness:2015, @mcphail_robustness:2019 | Revised Project Proposal; Exam 2 |
-| | **Module 3:** | **Thinking Critically** | | |
-|  11 | 3/25, 3/27, 3/29 | Deep uncertainty | @schneider_scenarios:2002, @lempert_robust:2000, @oreskes_verification:1994 | |
-|  12 | 4/1, 4/3, 4/5 | Equity and justice | @pollack_equity:2023, @fletcher_waterresourcesequity:2022 | |
-|  13 | 4/10, 4/12 | Financial and systemic risks | @thomson_systemic:2023, @condon_myopia:2021 | |
-|  14 | 4/15, 4/17, 4/19 | Reflections | @keller_management:2021, @gilligan_beyondwickedness:2020 | Draft Project Writeup; Exam 3 |
-| | | **Final Projects** | | |
-|  | TBD | *during final exam slot* | | Project presentations |
-|  | 4/30 | | | Final write-up |
+| Week | Date | Topic | Reading | Exam/Project |
+|------|------|-------|---------|--------------|
+| 1 | Tues, Aug 27 | | | |
+|  | Thurs, Aug 29 | | | |
+| 2 | Tues, Sep 3 | | | |
+|  | Thurs, Sep 5 | | | |
+| 3 | Tues, Sep 10 | | | |
+|  | Thurs, Sep 12 | | | |
+| 4 | Tues, Sep 17 | | | |
+|  | Thurs, Sep 19 | | | |
+| 5 | Tues, Sep 24 | | | |
+|  | Thurs, Sep 26 | | | |
+| 6 | Tues, Oct 1 | | | |
+|  | Thurs, Oct 3 | | | |
+| 7 | Tues, Oct 8 | | | |
+|  | Thurs, Oct 10 | | | |
+| 8 | Tues, Oct 15 | NO CLASS -- MIDTERM RECESS | | |
+|  | Thurs, Oct 17 | | | |
+| 9 | Tues, Oct 22 | | | |
+|  | Thurs, Oct 24 | | | |
+| 10 | Tues, Oct 29 | | | |
+|  | Thurs, Oct 31 | | | |
+| 11 | Tues, Nov 5 | NO CLASS -- ELECTION DAY | | |
+|  | Thurs, Nov 7 | | | |
+| 12 | Tues, Nov 12 | | | |
+|  | Thurs, Nov 14 | | | |
+| 13 | Tues, Nov 19 | | | |
+|  | Thurs, Nov 21 | | | |
+| 14 | Tues, Nov 26 | | | |
+|  | Thurs, Nov 28 | NO CLASS -- THANKSGIVING RECESS | | |
+| 15 | Tues, Dec 3 | | | |
+|  | Thurs, Dec 5 | | | |
 
 : {.striped .hover}
-
-## References
-
-:::{#refs}
-:::

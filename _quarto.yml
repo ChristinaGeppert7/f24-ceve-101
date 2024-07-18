@@ -5,10 +5,10 @@ project:
 
 website:
   page-navigation: true
-  title: "CEVE 421/521 -- Spring 2024"
+  title: "CEVE 101 -- Spring 2024"
   description: "Homepage for {{< var course.number >}}, {{< var course.title >}}, at Rice University, {{< var course.semester >}}."
-  site-url: https://ceve-421-521.github.io/
-  repo-url: https://www.github.com/ceve-421-521/ceve-421-521.github.io
+  site-url: https://jdossgollin.github.io/f24-ceve-101
+  repo-url: https://www.github.com/jdossgollin/f24-ceve-101
   repo-actions: [edit, issue]
   open-graph: true
 
@@ -24,13 +24,13 @@ website:
       [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
     center: |
-      **Page still under construction.**
+      **Page under construction.**
 
   sidebar:
     style: docked
     align: center
     logo: _assets/logos/Rice_Logo_280_Blue.svg
-    title: "CEVE 421/521"
+    title: "CEVE 101"
     search: true
     tools: 
       - icon: github
@@ -47,10 +47,6 @@ website:
         text: Syllabus
       - text: Schedule
         href: schedule.qmd
-      - text: Resources
-        href: resources.qmd
-      - text: Fixing bugs
-        href: bugfix.qmd
 
 echo: true
 

@@ -11,17 +11,17 @@ instructor:
     Email for appointment.
 
 course:
-  number: "CEVE 421/521"
-  title: "Climate Risk Management"
-  semester: "Spring 2024"
-  days: "MWF"
-  time: "11-11:50am"
+  number: "CEVE 101"
+  title: "Fundamentals of Civil and Environmental Engineering "
+  semester: "Fall 2024"
+  days: "T/Th"
+  time: "10:50AM -- 12:05PM TR"
   location: "TBD"
-  github: "https://www.github.com/ceve543/ceve543.github.io"
-  url: "https://ceve-421-521.github.io/"
+  github: "https://www.github.com/jdossgollin/f24-ceve-101"
+  url: "https://jdossgollin.github.io/f24-ceve-101"
   copyright_year: "2024"
   institution: "Rice University"
-  canvas_id: 65985
+  canvas_id: 71565
 
 university:
   name: Rice University
