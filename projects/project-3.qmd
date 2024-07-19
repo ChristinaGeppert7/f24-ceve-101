@@ -1,0 +1,16 @@
+---
+title: "Project 3: Rainwater Harvesting in Semi-Arid Brazil"
+date: 2024-10-15
+module: 3
+
+categories: [Project]
+format: html
+---
+
+In this project, your group will use climate data to size a rainwater harvesting system for a small community in semi-arid Brazil.
+You will also evaluate the system's performance.
+
+::: {.callout-tip}
+Further details will be provided.
+You will create and submit an oral group presentation.
+:::

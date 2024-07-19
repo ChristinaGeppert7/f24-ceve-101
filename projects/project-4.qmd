@@ -1,0 +1,17 @@
+---
+title: "Project 4: Building Codes to Protect Against Tropical Storms"
+date: 2024-11-12
+module: 4
+
+categories: [Project]
+format: html
+---
+
+Building codes are essential for ensuring that the built environment is safe during natural disasters such as tropical storms.
+In this project, you will choose a building type, identify a relevant guideline, and assess whether these codes should be updated, and if so, how.
+You will consider impact on safety, cost, relevant infrastructure, and reliability.
+
+::: {.callout-tip}
+Further details will be provided.
+You will create and submit a written report.
+:::

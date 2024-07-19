@@ -2,7 +2,7 @@
 title: "NO CLASS"
 subtitle: "Lecture"
 date: 2024-11-05
-week: 11
+module: 3
 
 categories: 
   - Lecture

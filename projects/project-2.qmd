@@ -1,0 +1,15 @@
+---
+title: "Project 2: Design a Bike Lane"
+date: 2024-09-24
+module: 2
+
+categories: [Project]
+format: html
+---
+
+In this project, your group will visit existing and programmed bike lanes in Houston, leverage spatial data, and design an innovative bike lane.
+
+::: {.callout-tip}
+Further details will be provided.
+You will create and submit a video.
+:::

@@ -5,18 +5,16 @@ listing:
   type: table
   contents:
     - "lectures/*.qmd"
-    - "labs/*/index.qmd"
-    - "readings/*.qmd"
-    - "assignments/*.qmd"
+    - "projects/*.qmd"
   sort:
     - "date"
     - "title"
   table-striped: true
   table-hover: true
   categories: numbered
-  fields: [week, title, date, categories]
+  fields: [module, title, date, categories]
   field-display-names: 
-    week: "Week"
+    module: "Module"
     title: "Topic"
     date: "Date"
     categories: "Category"

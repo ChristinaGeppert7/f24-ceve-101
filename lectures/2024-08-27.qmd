@@ -2,7 +2,7 @@
 title: "Welcome to CEVE 101!"
 subtitle: "Lecture"
 date: 2024-08-27
-week: 1
+module: "0"
 
 categories: 
   - Lecture

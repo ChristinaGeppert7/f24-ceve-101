@@ -2,7 +2,7 @@
 title: "TBD"
 subtitle: "Lecture"
 date: 2024-09-19
-week: 4
+module: 1
 
 categories: 
   - Lecture

@@ -195,18 +195,18 @@ Both the poster and the user are in violation of the university policy, which is
 
 ## Grading
 
-| Assignment | Format | Weight |
-|------------|--------|--------|
-| Project 1   | Oral presentation | 25% |
-| Project 2   | Policy brief | 25% |
-| Project 3   | Digital presentation | 25%  |
-| Project 4   | Final Report | 25% |
+There are two components to your grade in this course: participation and projects.
+Participation forms 40% of your grade and projects form 60% of your grade.
+The course will be split into four modules, each weighted equally (10 points for participation and 15 for a project).
 
-: {.striped .hover}
+Participation is essential to this course.
+To earn full points for participation, you should do assigned readings, attend class, share your thoughts in class, and participate in group work.
+You will be provided with multiple ways to share your thoughts in class beyond raising your hand and speaking.
+All readings will be posted in advance and announced in class.
+I reserve the right to give pop quizzes on the readings, so be prepared!
 
-I reserve the right to curve the scale dependent on overall class scores at the end of the semester.
-
-### Late Work Policy
+Each module of the course will culminate in a group design project.
+Specific instructions and a rubric will be provided for each project.
 
 Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied $0.9^d$ where $d$ is the number of days late.
 
@@ -220,37 +220,45 @@ Updated versions will be posted on [the Schedule page](./schedule.qmd) of the co
 :::
 
 
-| Week | Date | Topic | Reading | Exam/Project |
-|------|------|-------|---------|--------------|
-| 1 | Tues, Aug 27 | | | |
-|  | Thurs, Aug 29 | | | |
-| 2 | Tues, Sep 3 | | | |
-|  | Thurs, Sep 5 | | | |
-| 3 | Tues, Sep 10 | | | |
-|  | Thurs, Sep 12 | | | |
-| 4 | Tues, Sep 17 | | | |
-|  | Thurs, Sep 19 | | | |
-| 5 | Tues, Sep 24 | | | |
-|  | Thurs, Sep 26 | | | |
-| 6 | Tues, Oct 1 | | | |
-|  | Thurs, Oct 3 | | | |
-| 7 | Tues, Oct 8 | | | |
-|  | Thurs, Oct 10 | | | |
-| 8 | Tues, Oct 15 | NO CLASS -- MIDTERM RECESS | | |
-|  | Thurs, Oct 17 | | | |
-| 9 | Tues, Oct 22 | | | |
-|  | Thurs, Oct 24 | | | |
-| 10 | Tues, Oct 29 | | | |
-|  | Thurs, Oct 31 | | | |
-| 11 | Tues, Nov 5 | NO CLASS -- ELECTION DAY | | |
-|  | Thurs, Nov 7 | | | |
-| 12 | Tues, Nov 12 | | | |
-|  | Thurs, Nov 14 | | | |
-| 13 | Tues, Nov 19 | | | |
-|  | Thurs, Nov 21 | | | |
-| 14 | Tues, Nov 26 | | | |
-|  | Thurs, Nov 28 | NO CLASS -- THANKSGIVING RECESS | | |
-| 15 | Tues, Dec 3 | | | |
-|  | Thurs, Dec 5 | | | |
+| Week | Date | Topic | Reading |
+|------|------|-------|---------|
+| 1 | Tues, Aug 27 | Welcome to CEVE 101 | |
+|  | Thurs, Aug 29 | Infrastructure, Resilence, Sustainability, and Equity | |
+| | | **Module 1: Energy Systems** | |
+| | | *Project 1: Alternatives Analysis for Renewable Energy* | |
+| 2 | Tues, Sep 3 | Climate Science and Climate Change | |
+|  | Thurs, Sep 5 | Overview of the Energy System | |
+| 3 | Tues, Sep 10 | Solar and Wind Generation | |
+|  | Thurs, Sep 12 | | |
+| 4 | Tues, Sep 17 | | |
+|  | Thurs, Sep 19 | | |
+| | | **Module 2: Transportation and Mobility** | |
+| | | *Project 2: Design a Bike Lane* | |
+| 5 | Tues, Sep 24 | | |
+|  | Thurs, Sep 26 | | |
+| 6 | Tues, Oct 1 | | |
+|  | Thurs, Oct 3 | | |
+| 7 | Tues, Oct 8 | | |
+|  | Thurs, Oct 10 | | |
+| | | **Module 3: Water Security** | |
+| | | *Project 3: Rainwater Harvesting in Semi-Arid Brazil* | |
+| 8 | Tues, Oct 15 | NO CLASS -- MIDTERM RECESS | |
+|  | Thurs, Oct 17 | | |
+| 9 | Tues, Oct 22 | | |
+|  | Thurs, Oct 24 | | |
+| 10 | Tues, Oct 29 | | |
+|  | Thurs, Oct 31 | | |
+| 11 | Tues, Nov 5 | NO CLASS -- ELECTION DAY | |
+|  | Thurs, Nov 7 | | |
+| | | **Module 4: Coastal Resilience** | |
+| | | *Project 4: Building Codes to Protect Against Tropical Storms* | |
+| 12 | Tues, Nov 12 | | |
+|  | Thurs, Nov 14 | | |
+| 13 | Tues, Nov 19 | | |
+|  | Thurs, Nov 21 | | |
+| 14 | Tues, Nov 26 | | |
+|  | Thurs, Nov 28 | NO CLASS -- THANKSGIVING RECESS | |
+| 15 | Tues, Dec 3 | | |
+|  | Thurs, Dec 5 | | |
 
 : {.striped .hover}

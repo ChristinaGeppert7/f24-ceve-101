@@ -1,0 +1,23 @@
+---
+title: "Project 1: Alternatives Analysis for Renewable Energy"
+date: 2024-09-03
+module: 1
+
+categories: [Project]
+format: html
+---
+
+A large agricultural processing operation, CEVE101 Inc., located near Houston, TX, is considering installing an on-site power generator.
+Their goal is to be self-reliant on locally produced energy, but to still be connected to the regional power grid.
+They can sell surplus power to the grid at 75% of the current wholesale price.
+
+They use electricity in their factory operations that run from 9 AM to 5 PM during weekdays (they don’t take holidays), and also for powering offices and other buildings associated with their operation.
+Their electric demand is approximately 50 MW during the 9-5 weekday peak, and only 5 MW during off-peak.
+They can purchase electricity from the grid at wholesale prices, which are currently at 5 c/kWh during the off-peak period, and at 15 c/kWh during the peak period.
+
+Your task is to conduct an alternatives analysis to determine the best option for CEVE101 Inc. to meet their electricity needs.
+
+::: {.callout-tip}
+Further details will be provided.
+You will submit a written report.
+:::
