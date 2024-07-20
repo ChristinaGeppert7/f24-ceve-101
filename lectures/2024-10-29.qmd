@@ -1,11 +1,11 @@
 ---
-title: "TBD"
+title: "Unconventional Water Sources"
 subtitle: "Lecture"
 date: 2024-10-29
 module: 3
 
 categories: 
-  - Lecture
+  - Planned Lecture
 
 # do not edit anything below this line
 format: revealjs

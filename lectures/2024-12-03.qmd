@@ -1,11 +1,10 @@
 ---
-title: "TBD"
-subtitle: "Lecture"
+title: "Career Tracks for CEVEs"
 date: 2024-12-03
-module: 4
+module: 5
 
 categories: 
-  - Lecture
+  - Guest Lecture
 
 # do not edit anything below this line
 format: revealjs

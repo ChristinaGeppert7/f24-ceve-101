@@ -14,15 +14,40 @@ format:
         \renewcommand\bottomrule[2]\relax
     title: "{{< var course.number >}} ({{< var course.title >}}) Syllabus"
     subtitle: "{{< var course.semester >}}"
+
+listing:
+  type: table
+  contents:
+    - "lectures/*.qmd"
+  sort:
+    - "date"
+    - "title"
+  table-striped: true
+  table-hover: true
+  categories: numbered
+  fields: [module, title, date]
+  field-display-names: 
+    module: "Module"
+    title: "Topic"
+    date: "Date"
+  page-size: 100
+  id: listing-lectures
 ---
 
-## Course Description
+:::: {.content-visible unless-format="html"}
 
+::: {.callout-important}
+An interactive, updated divital version of this syllabus is posted online at [{{< var course.url >}}]({{< var course.url >}}/syllabus).
+:::
+
+## Course Description
 
 Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies.
 CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management.
 In this course, students will explore how data science, environmental science, economic analysis,  structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity.
 Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop skills in data analysis, system modeling, and engineering design and develop an understanding of the broad field of civil and environmental engineering and its applications.
+
+::::
 
 ## Course Information
 :::: {.columns .course-details}
@@ -207,50 +232,10 @@ Late projects will be subjected to a 10% penalty per day.
 The following schedule outlines our planned topics and readings for the semester.
 
 ::: {.callout-note}
-This schedule is subject to change during the semester and **will absolutely change before the start of the semester.**
+This **preliminary schedule** is subject to change during the semester and **will change before the start of the semester.**
 Updated versions will be posted on [the Schedule page](./schedule.qmd) of the course website.
 :::
 
 
-| Week | Date | Topic | Reading |
-|:--|:---|:----------|:-----|
-| 1 | Tues, Aug 27 | Welcome to CEVE 101 | |
-|  | Thurs, Aug 29 | Infrastructure, Resilence, Sustainability, and Equity | |
-| | <td colspan="2"> **Module 1: Energy Systems** </td> |
-| | | *Project 1: Alternatives Analysis for Renewable Energy* | |
-| 2 | Tues, Sep 3 | Climate Science and Climate Change | |
-|  | Thurs, Sep 5 | Overview of the Energy System | |
-| 3 | Tues, Sep 10 | Solar and Wind Generation | |
-|  | Thurs, Sep 12 | Energy Storage | |
-| 4 | Tues, Sep 17 | Toolkit: Mass / Energy Balance | |
-|  | Thurs, Sep 19 | Toolkit: Reproducible Documents with Quarto | |
-| | | **Module 2: Transportation and Mobility** | |
-| | | *Project 2: Design a Bike Lane* | |
-| 5 | Tues, Sep 24 | Sustainable Mobility | |
-|  | Thurs, Sep 26 | Resilient Transportation | |
-| 6 | Tues, Oct 1 | Mobility of the Future | |
-|  | Thurs, Oct 3 | Urban Planning and Transportation | |
-| 7 | Tues, Oct 8 | Toolkit: StreetMix | |
-|  | Thurs, Oct 10 | Professional Licensing (Date TBD) | |
-| | | **Module 3: Water Security** | |
-| | | *Project 3: Rainwater Harvesting in Semi-Arid Brazil* | |
-| 8 | Tues, Oct 15 | NO CLASS -- MIDTERM RECESS | |
-|  | Thurs, Oct 17 | The Hydrologic Cycle | |
-| 9 | Tues, Oct 22 | Water Treatment Overview | |
-|  | Thurs, Oct 24 | Project 2 In-Class Presentations | |
-| 10 | Tues, Oct 29 | Unconventional Water Sources | |
-|  | Thurs, Oct 31 | Toolkit TBD | |
-| 11 | Tues, Nov 5 | NO CLASS -- ELECTION DAY | |
-| | | **Module 4: Coastal Resilience** | |
-| | | *Project 4: Building Codes to Protect Against Tropical Storms* | |
-|  | Thurs, Nov 7 | Coastal Hazards | |
-| 12 | Tues, Nov 12 | Building Codes | |
-|  | Thurs, Nov 14 | The Galveston Bay Park Plan | |
-| 13 | Tues, Nov 19 | Engineering Ethics: Balancing Competing Objectives | |
-|  | Thurs, Nov 21 | Project 3 In-Class Presentations | |
-| 14 | Tues, Nov 26 | Field Trip | |
-|  | Thurs, Nov 28 | NO CLASS -- THANKSGIVING RECESS | |
-| 15 | Tues, Dec 3 | Career Tracks for CEVEs | |
-|  | Thurs, Dec 5 | About the Major |  |
-
-: {.striped .hover}
+::: {#listing-lectures}
+:::

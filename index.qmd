@@ -5,12 +5,12 @@ format: html
 
 This is the course website for the {{< var course.semester >}} edition of {{< var course.number >}}, {{< var course.title >}}, taught at [{{< var university.name >}}]({{< var university.url >}}) by [{{< var instructor.name_no_title >}}]({{< var instructor.url >}}).
 
-## Course Information
+## Course Description
 
 Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies.
 CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management.
 In this course, students will explore how data science, environmental science, economic analysis,  structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity.
-Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop an understanding of the broad field of civil and environmental engineering and its applications.
+Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop skills in data analysis, system modeling, and engineering design and develop an understanding of the broad field of civil and environmental engineering and its applications.
 
 For additional information, see the [syllabus](syllabus.html).
 
@@ -20,7 +20,9 @@ For additional information, see the [syllabus](syllabus.html).
 His research integrates Earth science, data science, and decision science to address challenges in climate risk management, water resources, and energy system resilience.
 He also teaches CEVE 543 (Data Science for Climate Hazards).
 
+::: {.callout-tip}
 ## Acknowledgements
 
 The layout for this site was inspired by and draws from Vivek Srikrishnan's [Environmental Systems Analysis](https://github.com/vsrikrish/environmental-systems-analysis/) course at Cornell, [STA 210](https://sta210-s22.github.io/website/) at Duke University, and [Andrew Heiss's](https://www.andrewheiss.com/teaching/) course materials at Georgia State.
-It builds heavily from my data science for climate hazard assessment course, [CEVE 543](https://ceve543.github.io/).
+It builds heavily from previous courses, [CEVE 543](https://ceve543.github.io/) and [CEVE 421/521](https://ceve-421-521.github.io/).
+:::

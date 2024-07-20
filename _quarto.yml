@@ -45,8 +45,6 @@ website:
         text: Home
       - href: syllabus.qmd
         text: Syllabus
-      - text: Full Schedule
-        href: schedule.qmd
       - text: Lectures
         href: lectures.qmd
       - text: Projects

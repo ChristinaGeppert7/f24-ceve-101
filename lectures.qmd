@@ -19,6 +19,3 @@ listing:
     categories: "Category"
   page-size: 100
 ---
-
-This page shows only the lectures.
-To see the combined page of projects and lectures, see [the full schedule](./schedule.qmd).

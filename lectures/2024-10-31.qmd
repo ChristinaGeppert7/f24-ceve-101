@@ -1,22 +1,13 @@
 ---
-title: "TBD"
+title: "Field Trip"
 subtitle: "Lecture"
 date: 2024-10-31
 module: 3
 
 categories: 
-  - Lecture
+  - Field Trip
 
 # do not edit anything below this line
-format: revealjs
-
-author: "{{< var instructor.name >}}!"
-course: "{{< var course.number >}}, {{< var course.title >}}"
-institution: "{{< var course.institution >}}}"
-template-partials:
-    - title-slide.html
+format: html
 ---
 
-
-::: {#refs}
-:::

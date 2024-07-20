@@ -1,11 +1,11 @@
 ---
-title: "TBD"
-subtitle: "Lecture"
+title: "The Hydrologic Cycle"
+subtitle: "Planned Lecture"
 date: 2024-10-17
 module: 3
 
 categories: 
-  - Lecture
+  - Planned Lecture
 
 # do not edit anything below this line
 format: revealjs
