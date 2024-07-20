@@ -45,8 +45,14 @@ website:
         text: Home
       - href: syllabus.qmd
         text: Syllabus
-      - text: Schedule
+      - text: Full Schedule
         href: schedule.qmd
+      - text: Lectures
+        href: lectures.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Useful Links
+        href: links.qmd
 
 echo: true
 

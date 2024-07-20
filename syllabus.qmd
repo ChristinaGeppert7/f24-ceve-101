@@ -22,7 +22,7 @@ format:
 Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies.
 CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management.
 In this course, students will explore how data science, environmental science, economic analysis,  structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity.
-Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop an understanding of the broad field of civil and environmental engineering and its applications.
+Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop skills in data analysis, system modeling, and engineering design and develop an understanding of the broad field of civil and environmental engineering and its applications.
 
 ## Course Information
 :::: {.columns .course-details}
@@ -51,33 +51,25 @@ TBD
 
 ::::
 
-### Prerequisites & Preparation
+### Prerequisites
 
-None
+None.
+All interested students are warmly invited to participate!
 
 ### Course Objectives 
 
 This course is intended to introduce you to the discipline of civil and environmental engineering through examination of topics in energy systems, water systems, urban mobility, and coastal resilience.
 This course emphasizes analytical skills, systems thinking, communication, and teamwork.
 
-The course aims to provide:  
-
-1. an understanding of the scope of civil and environmental engineering;
-1. an understanding of the academic activities of the Rice CEVE department;
-1. exposure to fundamental principles, concepts, and approaches that apply across CEVE disciplines, including quantitative reasoning and creative problem solving;
-1. a context for applying information from other first-year courses, especially calculus and physics;
-1. a background for higher level classes in civil and environmental engineering;
-1. an appreciation for the many links between the practice of civil and environmental engineering and social goals including sustainability, resilience, and equity;
-1. a sampling of possible career paths within the field of civil and environmental engineering, and their requirements;
-1. and some experience with the fun of being an engineer.
 
 On completing this course, students should be able to:
 
-1. Identify civil and environmental engineering subfields
-1. Successfully perform engineering problem solving in several civil and environmental subfields
-1. Generate report-quality engineering calculations
-1. Create and present an oral report on a design project
-1. Collaborate with peers in project teams and in composing project reports
+1. Identify and understand the interconnections between various civil and environmental engineering subfields, and explore potential career paths within these areas, including their requirements and societal impacts.
+1. Apply fundamental principles and approaches in CEVE disciplines to solve engineering problems, utilizing knowledge from other first-year courses such as calculus and physics.
+1. Generate high-quality engineering calculations, analyses, and reports, demonstrating proficiency in technical communication through both written work and oral presentations.
+1. Collaborate effectively in project teams, including peer evaluation, constructive feedback, and collective problem-solving. Develop skills in managing group dynamics, delegating tasks, and integrating diverse perspectives to achieve project goals.
+1. Understand the scope and impact of civil and environmental engineering in addressing global challenges, particularly in relation to sustainability, resilience, and equity. Recognize the interdisciplinary nature of the field and its connections to other areas of study and societal issues.
+1. Critically evaluate the ethical implications of engineering decisions, considering their impact on society, the environment, and future generations.
 
 ### Required Materials
 
@@ -125,15 +117,6 @@ Students are responsible for their own learning in the course and should commit 
 * attending office hours as needed. 
 :::
 ::::
-
-::: {.callout-important}
-## What If I'm Sick?
-
-Please stay home if you're feeling sick!
-This is beneficial for both for your own recovery and the health and safety of your classmates.
-We will also make any necessary arrangements for you to stay on top of the class material and if whatever is going on will negatively impact your grade, for example by causing you to be unable to submit an assignment on time.
-:::
-
 
 ### Diversity, Equity, and Inclusion
 
@@ -195,9 +178,9 @@ Both the poster and the user are in violation of the university policy, which is
 
 ## Grading
 
-There are two components to your grade in this course: participation and projects.
-Participation forms 40% of your grade and projects form 60% of your grade.
-The course will be split into four modules, each weighted equally (10 points for participation and 15 for a project).
+There are two components to your grade in this course: participation and projects. Participation forms 40% of your grade and projects form 60% of your grade. The course will be split into four modules, each weighted equally (10 points for participation and 15 for a project).
+
+### Participation
 
 Participation is essential to this course.
 To earn full points for participation, you should do assigned readings, attend class, share your thoughts in class, and participate in group work.
@@ -205,60 +188,69 @@ You will be provided with multiple ways to share your thoughts in class beyond r
 All readings will be posted in advance and announced in class.
 I reserve the right to give pop quizzes on the readings, so be prepared!
 
-Each module of the course will culminate in a group design project.
-Specific instructions and a rubric will be provided for each project.
+Participation will be assessed for each module, and both students and I will provide feedback.
+Your lowest module participation grade will be dropped.
 
-Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied $0.9^d$ where $d$ is the number of days late.
+### Projects
+
+Each module of the course will culminate in a group design project.
+Specific instructions and a detailed rubric will be provided for each project at the time of assignment.
+These rubrics will outline the expectations for the project and how it will be evaluated.
+
+Group work will be assessed through a combination of the final product and peer evaluations.
+Each team member will confidentially evaluate their peers' contributions, which will factor into individual grades for group projects.
+
+Late projects will be subjected to a 10% penalty per day.
 
 ## Preliminary Schedule
 
 The following schedule outlines our planned topics and readings for the semester.
 
 ::: {.callout-note}
-This schedule is subject to change.
+This schedule is subject to change during the semester and **will absolutely change before the start of the semester.**
 Updated versions will be posted on [the Schedule page](./schedule.qmd) of the course website.
 :::
 
 
 | Week | Date | Topic | Reading |
-|------|------|-------|---------|
+|:--|:---|:----------|:-----|
 | 1 | Tues, Aug 27 | Welcome to CEVE 101 | |
 |  | Thurs, Aug 29 | Infrastructure, Resilence, Sustainability, and Equity | |
-| | | **Module 1: Energy Systems** | |
+| | <td colspan="2"> **Module 1: Energy Systems** </td> |
 | | | *Project 1: Alternatives Analysis for Renewable Energy* | |
 | 2 | Tues, Sep 3 | Climate Science and Climate Change | |
 |  | Thurs, Sep 5 | Overview of the Energy System | |
 | 3 | Tues, Sep 10 | Solar and Wind Generation | |
-|  | Thurs, Sep 12 | | |
-| 4 | Tues, Sep 17 | | |
-|  | Thurs, Sep 19 | | |
+|  | Thurs, Sep 12 | Energy Storage | |
+| 4 | Tues, Sep 17 | Toolkit: Mass / Energy Balance | |
+|  | Thurs, Sep 19 | Toolkit: Reproducible Documents with Quarto | |
 | | | **Module 2: Transportation and Mobility** | |
 | | | *Project 2: Design a Bike Lane* | |
-| 5 | Tues, Sep 24 | | |
-|  | Thurs, Sep 26 | | |
-| 6 | Tues, Oct 1 | | |
-|  | Thurs, Oct 3 | | |
-| 7 | Tues, Oct 8 | | |
-|  | Thurs, Oct 10 | | |
+| 5 | Tues, Sep 24 | Sustainable Mobility | |
+|  | Thurs, Sep 26 | Resilient Transportation | |
+| 6 | Tues, Oct 1 | Mobility of the Future | |
+|  | Thurs, Oct 3 | Urban Planning and Transportation | |
+| 7 | Tues, Oct 8 | Toolkit: StreetMix | |
+|  | Thurs, Oct 10 | Professional Licensing (Date TBD) | |
 | | | **Module 3: Water Security** | |
 | | | *Project 3: Rainwater Harvesting in Semi-Arid Brazil* | |
 | 8 | Tues, Oct 15 | NO CLASS -- MIDTERM RECESS | |
-|  | Thurs, Oct 17 | | |
-| 9 | Tues, Oct 22 | | |
-|  | Thurs, Oct 24 | | |
-| 10 | Tues, Oct 29 | | |
-|  | Thurs, Oct 31 | | |
+|  | Thurs, Oct 17 | The Hydrologic Cycle | |
+| 9 | Tues, Oct 22 | Water Treatment Overview | |
+|  | Thurs, Oct 24 | Project 2 In-Class Presentations | |
+| 10 | Tues, Oct 29 | Unconventional Water Sources | |
+|  | Thurs, Oct 31 | Toolkit TBD | |
 | 11 | Tues, Nov 5 | NO CLASS -- ELECTION DAY | |
-|  | Thurs, Nov 7 | | |
 | | | **Module 4: Coastal Resilience** | |
 | | | *Project 4: Building Codes to Protect Against Tropical Storms* | |
-| 12 | Tues, Nov 12 | | |
-|  | Thurs, Nov 14 | | |
-| 13 | Tues, Nov 19 | | |
-|  | Thurs, Nov 21 | | |
-| 14 | Tues, Nov 26 | | |
+|  | Thurs, Nov 7 | Coastal Hazards | |
+| 12 | Tues, Nov 12 | Building Codes | |
+|  | Thurs, Nov 14 | The Galveston Bay Park Plan | |
+| 13 | Tues, Nov 19 | Engineering Ethics: Balancing Competing Objectives | |
+|  | Thurs, Nov 21 | Project 3 In-Class Presentations | |
+| 14 | Tues, Nov 26 | Field Trip | |
 |  | Thurs, Nov 28 | NO CLASS -- THANKSGIVING RECESS | |
-| 15 | Tues, Dec 3 | | |
-|  | Thurs, Dec 5 | | |
+| 15 | Tues, Dec 3 | Career Tracks for CEVEs | |
+|  | Thurs, Dec 5 | About the Major |  |
 
 : {.striped .hover}

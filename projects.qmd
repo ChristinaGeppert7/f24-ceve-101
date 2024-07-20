@@ -1,0 +1,24 @@
+---
+title: "{{< var course.number >}} Projects"
+format: html
+listing:
+  type: table
+  contents:
+    - "projects/*.qmd"
+  sort:
+    - "date"
+    - "title"
+  table-striped: true
+  table-hover: true
+  categories: numbered
+  fields: [module, title, date, categories]
+  field-display-names: 
+    module: "Module"
+    title: "Topic"
+    date: "Date"
+    categories: "Category"
+  page-size: 100
+---
+
+This page shows only the projects.
+To see the combined page of projects and lectures, see [the full schedule](./schedule.qmd).
