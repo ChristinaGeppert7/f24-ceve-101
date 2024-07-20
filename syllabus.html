@@ -30,8 +30,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./schedule.html" rel="next">
+<link href="./lectures.html" rel="next">
 <link href="./index.html" rel="prev">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-lectures .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-module','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-lectures'] = new List('listing-listing-lectures', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- MathJax 3 -->
 <script>
 window.MathJax = {
@@ -79,6 +110,35 @@ window.MathJax = {
   };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="CEVE 101 – Spring 2024 - Syllabus">
 <meta property="og:description" content="Homepage for CEVE 101, Fundamentals of Civil and Environmental Engineering, at Rice University, Fall 2024.">
@@ -140,12 +200,6 @@ window.MathJax = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Full Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./lectures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lectures</span></a>
   </div>
@@ -172,8 +226,7 @@ window.MathJax = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
-  <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a>
+  <li><a href="#course-information" id="toc-course-information" class="nav-link active" data-scroll-target="#course-information">Course Information</a>
   <ul class="collapse">
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
@@ -201,7 +254,7 @@ window.MathJax = {
   <li><a href="#preliminary-schedule" id="toc-preliminary-schedule" class="nav-link" data-scroll-target="#preliminary-schedule">Preliminary Schedule</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/edit/main/syllabus.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(30)</span></div><div class="category" data-category="Field Trip">Field Trip <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Guest Lecture">Guest Lecture <span class="quarto-category-count">(4)</span></div><div class="category" data-category="In-Class Presentation">In-Class Presentation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="No Class">No Class <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Planned Lecture">Planned Lecture <span class="quarto-category-count">(19)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -224,10 +277,6 @@ window.MathJax = {
 </header>
 
 
-<section id="course-description" class="level2">
-<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
-<p>Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies. CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management. In this course, students will explore how data science, environmental science, economic analysis, structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity. Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop skills in data analysis, system modeling, and engineering design and develop an understanding of the broad field of civil and environmental engineering and its applications.</p>
-</section>
 <section id="course-information" class="level2">
 <h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
 <div class="columns course-details">
@@ -374,256 +423,415 @@ window.MathJax = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>This schedule is subject to change during the semester and <strong>will absolutely change before the start of the semester.</strong> Updated versions will be posted on <a href="./schedule.html">the Schedule page</a> of the course website.</p>
+<p>This <strong>preliminary schedule</strong> is subject to change during the semester and <strong>will change before the start of the semester.</strong> Updated versions will be posted on <a href="./schedule.qmd">the Schedule page</a> of the course website.</p>
 </div>
 </div>
 </div>
-<table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 16%">
-<col style="width: 45%">
-<col style="width: 25%">
-</colgroup>
+<div id="listing-listing-lectures" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-lectures-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing-lectures'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Topic
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table table-striped table-hover">
 <thead>
-<tr class="header">
-<th style="text-align: left;">Week</th>
-<th style="text-align: left;">Date</th>
-<th style="text-align: left;">Topic</th>
-<th style="text-align: left;">Reading</th>
+<tr>
+<th>
+Module
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Topic</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">Tues, Aug 27</td>
-<td style="text-align: left;">Welcome to CEVE 101</td>
-<td style="text-align: left;"></td>
+<tbody class="list">
+<tr data-index="0" data-categories="Planned Lecture" data-listing-date-sort="1724734800000" data-listing-file-modified-sort="1721484952982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48" data-listing-title-sort="Welcome to CEVE 101" data-listing-filename-sort="2024-08-27.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">0</span>
+</td>
+<td>
+<a href="./lectures/2024-08-27.html" class="title listing-title">Welcome to CEVE 101</a>
+</td>
+<td>
+<span class="listing-date">Tue., Aug.&nbsp;27</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Aug 29</td>
-<td style="text-align: left;">Infrastructure, Resilence, Sustainability, and Equity</td>
-<td style="text-align: left;"></td>
+<tr data-index="1" data-categories="Planned Lecture" data-listing-date-sort="1724907600000" data-listing-file-modified-sort="1721484961303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Infrastructure, Resilence, Sustainability, and Equity (Planned)" data-listing-filename-sort="2024-08-29.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">0</span>
+</td>
+<td>
+<a href="./lectures/2024-08-29.html" class="title listing-title">Infrastructure, Resilence, Sustainability, and Equity (Planned)</a>
+</td>
+<td>
+<span class="listing-date">Thu., Aug.&nbsp;29</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<tr data-index="2" data-categories="Planned Lecture" data-listing-date-sort="1725339600000" data-listing-file-modified-sort="1721484969145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Climate Science and Climate Change (Planned)" data-listing-filename-sort="2024-09-03.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">1</span>
+</td>
+<td>
+<a href="./lectures/2024-09-03.html" class="title listing-title">Climate Science and Climate Change (Planned)</a>
+</td>
+<td>
+<span class="listing-date">Tue., Sep.&nbsp;3</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><em>Project 1: Alternatives Analysis for Renewable Energy</em></td>
-<td style="text-align: left;"></td>
+<tr data-index="3" data-categories="Planned Lecture" data-listing-date-sort="1725512400000" data-listing-file-modified-sort="1721484976818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Overview of the Energy System" data-listing-filename-sort="2024-09-05.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">1</span>
+</td>
+<td>
+<a href="./lectures/2024-09-05.html" class="title listing-title">Overview of the Energy System</a>
+</td>
+<td>
+<span class="listing-date">Thu., Sep.&nbsp;5</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">Tues, Sep 3</td>
-<td style="text-align: left;">Climate Science and Climate Change</td>
-<td style="text-align: left;"></td>
+<tr data-index="4" data-categories="Planned Lecture" data-listing-date-sort="1725944400000" data-listing-file-modified-sort="1721485107810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Solar and Wind Generation" data-listing-filename-sort="2024-09-10.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">1</span>
+</td>
+<td>
+<a href="./lectures/2024-09-10.html" class="title listing-title">Solar and Wind Generation</a>
+</td>
+<td>
+<span class="listing-date">Tue., Sep.&nbsp;10</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Sep 5</td>
-<td style="text-align: left;">Overview of the Energy System</td>
-<td style="text-align: left;"></td>
+<tr data-index="5" data-categories="Planned Lecture" data-listing-date-sort="1726117200000" data-listing-file-modified-sort="1721485105471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Energy Storage" data-listing-filename-sort="2024-09-12.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">1</span>
+</td>
+<td>
+<a href="./lectures/2024-09-12.html" class="title listing-title">Energy Storage</a>
+</td>
+<td>
+<span class="listing-date">Thu., Sep.&nbsp;12</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">Tues, Sep 10</td>
-<td style="text-align: left;">Solar and Wind Generation</td>
-<td style="text-align: left;"></td>
+<tr data-index="6" data-categories="Planned Lecture" data-listing-date-sort="1726549200000" data-listing-file-modified-sort="1721485103366" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Toolkit: Mass / Energy Balance" data-listing-filename-sort="2024-09-17.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">1</span>
+</td>
+<td>
+<a href="./lectures/2024-09-17.html" class="title listing-title">Toolkit: Mass / Energy Balance</a>
+</td>
+<td>
+<span class="listing-date">Tue., Sep.&nbsp;17</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Sep 12</td>
-<td style="text-align: left;">Energy Storage</td>
-<td style="text-align: left;"></td>
+<tr data-index="7" data-categories="Planned Lecture" data-listing-date-sort="1726722000000" data-listing-file-modified-sort="1721485100781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Toolkit: Reproducible Documents with Quarto" data-listing-filename-sort="2024-09-19.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">1</span>
+</td>
+<td>
+<a href="./lectures/2024-09-19.html" class="title listing-title">Toolkit: Reproducible Documents with Quarto</a>
+</td>
+<td>
+<span class="listing-date">Thu., Sep.&nbsp;19</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Tues, Sep 17</td>
-<td style="text-align: left;">Toolkit: Mass / Energy Balance</td>
-<td style="text-align: left;"></td>
+<tr data-index="8" data-categories="Planned Lecture" data-listing-date-sort="1727154000000" data-listing-file-modified-sort="1721485098704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Sustainable Mobility" data-listing-filename-sort="2024-09-24.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">2</span>
+</td>
+<td>
+<a href="./lectures/2024-09-24.html" class="title listing-title">Sustainable Mobility</a>
+</td>
+<td>
+<span class="listing-date">Tue., Sep.&nbsp;24</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Sep 19</td>
-<td style="text-align: left;">Toolkit: Reproducible Documents with Quarto</td>
-<td style="text-align: left;"></td>
+<tr data-index="9" data-categories="Planned Lecture" data-listing-date-sort="1727326800000" data-listing-file-modified-sort="1721485095574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Resilient Transportation" data-listing-filename-sort="2024-09-26.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">2</span>
+</td>
+<td>
+<a href="./lectures/2024-09-26.html" class="title listing-title">Resilient Transportation</a>
+</td>
+<td>
+<span class="listing-date">Thu., Sep.&nbsp;26</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><strong>Module 2: Transportation and Mobility</strong></td>
-<td style="text-align: left;"></td>
+<tr data-index="10" data-categories="Planned Lecture" data-listing-date-sort="1727758800000" data-listing-file-modified-sort="1721485092789" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Mobility of the Future" data-listing-filename-sort="2024-10-01.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">2</span>
+</td>
+<td>
+<a href="./lectures/2024-10-01.html" class="title listing-title">Mobility of the Future</a>
+</td>
+<td>
+<span class="listing-date">Tue., Oct.&nbsp;1</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><em>Project 2: Design a Bike Lane</em></td>
-<td style="text-align: left;"></td>
+<tr data-index="11" data-categories="Planned Lecture" data-listing-date-sort="1727931600000" data-listing-file-modified-sort="1721485089472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Urban Planning and Design" data-listing-filename-sort="2024-10-03.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">2</span>
+</td>
+<td>
+<a href="./lectures/2024-10-03.html" class="title listing-title">Urban Planning and Design</a>
+</td>
+<td>
+<span class="listing-date">Thu., Oct.&nbsp;3</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">Tues, Sep 24</td>
-<td style="text-align: left;">Sustainable Mobility</td>
-<td style="text-align: left;"></td>
+<tr data-index="12" data-categories="Planned Lecture" data-listing-date-sort="1728363600000" data-listing-file-modified-sort="1721485085478" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Toolkit: StreetMix" data-listing-filename-sort="2024-10-08.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">2</span>
+</td>
+<td>
+<a href="./lectures/2024-10-08.html" class="title listing-title">Toolkit: StreetMix</a>
+</td>
+<td>
+<span class="listing-date">Tue., Oct.&nbsp;8</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Sep 26</td>
-<td style="text-align: left;">Resilient Transportation</td>
-<td style="text-align: left;"></td>
+<tr data-index="13" data-categories="Guest Lecture" data-listing-date-sort="1728536400000" data-listing-file-modified-sort="1721485083514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Professional Licensing (Date TBC)" data-listing-filename-sort="2024-10-10.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">2</span>
+</td>
+<td>
+<a href="./lectures/2024-10-10.html" class="title listing-title">Professional Licensing (Date TBC)</a>
+</td>
+<td>
+<span class="listing-date">Thu., Oct.&nbsp;10</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">6</td>
-<td style="text-align: left;">Tues, Oct 1</td>
-<td style="text-align: left;">Mobility of the Future</td>
-<td style="text-align: left;"></td>
+<tr data-index="14" data-categories="No Class" data-listing-date-sort="1728968400000" data-listing-file-modified-sort="1721485079950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="NO CLASS -- MIDTERM RECESS" data-listing-filename-sort="2024-10-15.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-10-15.html" class="title listing-title">NO CLASS – MIDTERM RECESS</a>
+</td>
+<td>
+<span class="listing-date">Tue., Oct.&nbsp;15</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Oct 3</td>
-<td style="text-align: left;">Urban Planning and Transportation</td>
-<td style="text-align: left;"></td>
+<tr data-index="15" data-categories="Planned Lecture" data-listing-date-sort="1729141200000" data-listing-file-modified-sort="1721485075902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="The Hydrologic Cycle" data-listing-filename-sort="2024-10-17.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-10-17.html" class="title listing-title">The Hydrologic Cycle</a>
+</td>
+<td>
+<span class="listing-date">Thu., Oct.&nbsp;17</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">7</td>
-<td style="text-align: left;">Tues, Oct 8</td>
-<td style="text-align: left;">Toolkit: StreetMix</td>
-<td style="text-align: left;"></td>
+<tr data-index="16" data-categories="Planned Lecture" data-listing-date-sort="1729573200000" data-listing-file-modified-sort="1721485073046" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Water Treatment Overview" data-listing-filename-sort="2024-10-22.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-10-22.html" class="title listing-title">Water Treatment Overview</a>
+</td>
+<td>
+<span class="listing-date">Tue., Oct.&nbsp;22</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Oct 10</td>
-<td style="text-align: left;">Professional Licensing (Date TBD)</td>
-<td style="text-align: left;"></td>
+<tr data-index="17" data-categories="In-Class Presentation" data-listing-date-sort="1729746000000" data-listing-file-modified-sort="1721485070534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Project 2 In-Class Presentations" data-listing-filename-sort="2024-10-24.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-10-24.html" class="title listing-title">Project 2 In-Class Presentations</a>
+</td>
+<td>
+<span class="listing-date">Thu., Oct.&nbsp;24</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><strong>Module 3: Water Security</strong></td>
-<td style="text-align: left;"></td>
+<tr data-index="18" data-categories="Planned Lecture" data-listing-date-sort="1730178000000" data-listing-file-modified-sort="1721485065576" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Unconventional Water Sources" data-listing-filename-sort="2024-10-29.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-10-29.html" class="title listing-title">Unconventional Water Sources</a>
+</td>
+<td>
+<span class="listing-date">Tue., Oct.&nbsp;29</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><em>Project 3: Rainwater Harvesting in Semi-Arid Brazil</em></td>
-<td style="text-align: left;"></td>
+<tr data-index="19" data-categories="Field Trip" data-listing-date-sort="1730350800000" data-listing-file-modified-sort="1721485375430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Field Trip" data-listing-filename-sort="2024-10-31.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-10-31.html" class="title listing-title">Field Trip</a>
+</td>
+<td>
+<span class="listing-date">Thu., Oct.&nbsp;31</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">8</td>
-<td style="text-align: left;">Tues, Oct 15</td>
-<td style="text-align: left;">NO CLASS – MIDTERM RECESS</td>
-<td style="text-align: left;"></td>
+<tr data-index="20" data-categories="No Class" data-listing-date-sort="1730786400000" data-listing-file-modified-sort="1721485396417" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="NO CLASS -- ELECTION DAY" data-listing-filename-sort="2024-11-05.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">3</span>
+</td>
+<td>
+<a href="./lectures/2024-11-05.html" class="title listing-title">NO CLASS – ELECTION DAY</a>
+</td>
+<td>
+<span class="listing-date">Tue., Nov.&nbsp;5</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Oct 17</td>
-<td style="text-align: left;">The Hydrologic Cycle</td>
-<td style="text-align: left;"></td>
+<tr data-index="21" data-categories="Planned Lecture" data-listing-date-sort="1730959200000" data-listing-file-modified-sort="1721485347679" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Coastal Hazards" data-listing-filename-sort="2024-11-07.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-07.html" class="title listing-title">Coastal Hazards</a>
+</td>
+<td>
+<span class="listing-date">Thu., Nov.&nbsp;7</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">9</td>
-<td style="text-align: left;">Tues, Oct 22</td>
-<td style="text-align: left;">Water Treatment Overview</td>
-<td style="text-align: left;"></td>
+<tr data-index="22" data-categories="Planned Lecture" data-listing-date-sort="1731391200000" data-listing-file-modified-sort="1721485056656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Building Codes" data-listing-filename-sort="2024-11-12.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-12.html" class="title listing-title">Building Codes</a>
+</td>
+<td>
+<span class="listing-date">Tue., Nov.&nbsp;12</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Oct 24</td>
-<td style="text-align: left;">Project 2 In-Class Presentations</td>
-<td style="text-align: left;"></td>
+<tr data-index="23" data-categories="Guest Lecture" data-listing-date-sort="1731564000000" data-listing-file-modified-sort="1721485042634" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Guest Lecture: The Galveston Bay Park Plan" data-listing-filename-sort="2024-11-14.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-14.html" class="title listing-title">Guest Lecture: The Galveston Bay Park Plan</a>
+</td>
+<td>
+<span class="listing-date">Thu., Nov.&nbsp;14</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">Tues, Oct 29</td>
-<td style="text-align: left;">Unconventional Water Sources</td>
-<td style="text-align: left;"></td>
+<tr data-index="24" data-categories="Planned Lecture" data-listing-date-sort="1731996000000" data-listing-file-modified-sort="1721485037431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Toolkit: Cost-Benefit Analysis" data-listing-filename-sort="2024-11-19.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-19.html" class="title listing-title">Toolkit: Cost-Benefit Analysis</a>
+</td>
+<td>
+<span class="listing-date">Tue., Nov.&nbsp;19</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Oct 31</td>
-<td style="text-align: left;">Toolkit TBD</td>
-<td style="text-align: left;"></td>
+<tr data-index="25" data-categories="In-Class Presentation" data-listing-date-sort="1732168800000" data-listing-file-modified-sort="1721485027654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Project 3 In-Class Presentations" data-listing-filename-sort="2024-11-21.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-21.html" class="title listing-title">Project 3 In-Class Presentations</a>
+</td>
+<td>
+<span class="listing-date">Thu., Nov.&nbsp;21</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">11</td>
-<td style="text-align: left;">Tues, Nov 5</td>
-<td style="text-align: left;">NO CLASS – ELECTION DAY</td>
-<td style="text-align: left;"></td>
+<tr data-index="26" data-categories="Field Trip" data-listing-date-sort="1732600800000" data-listing-file-modified-sort="1721485437707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Field Trip (Date TBC)" data-listing-filename-sort="2024-11-26.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-26.html" class="title listing-title">Field Trip (Date TBC)</a>
+</td>
+<td>
+<span class="listing-date">Tue., Nov.&nbsp;26</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><strong>Module 4: Coastal Resilience</strong></td>
-<td style="text-align: left;"></td>
+<tr data-index="27" data-categories="No Class" data-listing-date-sort="1732773600000" data-listing-file-modified-sort="1721485405815" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="NO CLASS -- THANKSGIVING RECESS" data-listing-filename-sort="2024-11-28.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">4</span>
+</td>
+<td>
+<a href="./lectures/2024-11-28.html" class="title listing-title">NO CLASS – THANKSGIVING RECESS</a>
+</td>
+<td>
+<span class="listing-date">Thu., Nov.&nbsp;28</span>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><em>Project 4: Building Codes to Protect Against Tropical Storms</em></td>
-<td style="text-align: left;"></td>
+<tr data-index="28" data-categories="Guest Lecture" data-listing-date-sort="1733205600000" data-listing-file-modified-sort="1721485050802" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Career Tracks for CEVEs" data-listing-filename-sort="2024-12-03.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">5</span>
+</td>
+<td>
+<a href="./lectures/2024-12-03.html" class="title listing-title">Career Tracks for CEVEs</a>
+</td>
+<td>
+<span class="listing-date">Tue., Dec.&nbsp;3</span>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Nov 7</td>
-<td style="text-align: left;">Coastal Hazards</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">12</td>
-<td style="text-align: left;">Tues, Nov 12</td>
-<td style="text-align: left;">Building Codes</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Nov 14</td>
-<td style="text-align: left;">The Galveston Bay Park Plan</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">13</td>
-<td style="text-align: left;">Tues, Nov 19</td>
-<td style="text-align: left;">Engineering Ethics: Balancing Competing Objectives</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Nov 21</td>
-<td style="text-align: left;">Project 3 In-Class Presentations</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">14</td>
-<td style="text-align: left;">Tues, Nov 26</td>
-<td style="text-align: left;">Field Trip</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Nov 28</td>
-<td style="text-align: left;">NO CLASS – THANKSGIVING RECESS</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">15</td>
-<td style="text-align: left;">Tues, Dec 3</td>
-<td style="text-align: left;">Career Tracks for CEVEs</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Thurs, Dec 5</td>
-<td style="text-align: left;">About the Major</td>
-<td style="text-align: left;"></td>
+<tr data-index="29" data-categories="Guest Lecture" data-listing-date-sort="1733378400000" data-listing-file-modified-sort="1721485262650" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="About the Major" data-listing-filename-sort="2024-12-05.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-module">5</span>
+</td>
+<td>
+<a href="./lectures/2024-12-05.html" class="title listing-title">About the Major</a>
+</td>
+<td>
+<span class="listing-date">Thu., Dec.&nbsp;5</span>
+</td>
 </tr>
 </tbody>
 </table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 </section>
@@ -1095,8 +1303,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./schedule.html" class="pagination-link" aria-label="Full Schedule">
-        <span class="nav-page-text">Full Schedule</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./lectures.html" class="pagination-link" aria-label="Lectures">
+        <span class="nav-page-text">Lectures</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
