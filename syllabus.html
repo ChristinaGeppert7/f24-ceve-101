@@ -79,35 +79,6 @@ window.MathJax = {
   };
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="CEVE 101 – Spring 2024 - Syllabus">
 <meta property="og:description" content="Homepage for CEVE 101, Fundamentals of Civil and Environmental Engineering, at Rice University, Fall 2024.">
@@ -170,7 +141,25 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+ <span class="menu-text">Full Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lectures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful Links</span></a>
   </div>
 </li>
     </ul>
@@ -186,7 +175,7 @@ window.Quarto = {
   <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
   <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a>
   <ul class="collapse">
-  <li><a href="#prerequisites-preparation" id="toc-prerequisites-preparation" class="nav-link" data-scroll-target="#prerequisites-preparation">Prerequisites &amp; Preparation</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
   <li><a href="#required-materials" id="toc-required-materials" class="nav-link" data-scroll-target="#required-materials">Required Materials</a></li>
   </ul></li>
@@ -206,7 +195,8 @@ window.Quarto = {
   </ul></li>
   <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a>
   <ul class="collapse">
-  <li><a href="#late-work-policy" id="toc-late-work-policy" class="nav-link" data-scroll-target="#late-work-policy">Late Work Policy</a></li>
+  <li><a href="#participation" id="toc-participation" class="nav-link" data-scroll-target="#participation">Participation</a></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
   </ul></li>
   <li><a href="#preliminary-schedule" id="toc-preliminary-schedule" class="nav-link" data-scroll-target="#preliminary-schedule">Preliminary Schedule</a></li>
   </ul>
@@ -236,7 +226,7 @@ window.Quarto = {
 
 <section id="course-description" class="level2">
 <h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
-<p>Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies. CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management. In this course, students will explore how data science, environmental science, economic analysis, structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity. Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop an understanding of the broad field of civil and environmental engineering and its applications.</p>
+<p>Civil and Environmental Engineers (CEVEs) engage in the planning, design, construction, operation, retrofit, demolition, and reuse of infrastructure systems that form the backbone of societies and economies. CEVEs work at the dynamic interface of the built environment, information environment, and natural environment on topics like smart cities and construction, sustainable energy and buildings, connected and automated transportation systems, resilient infrastructure, climate change mitigation and adaptation, and water management. In this course, students will explore how data science, environmental science, economic analysis, structural design, and systems thinking can be integrated to promote sustainability, resilience, and equity. Through a mix of technical lectures, topical seminars on applications and ideas of interest, and team-based projects, students will develop skills in data analysis, system modeling, and engineering design and develop an understanding of the broad field of civil and environmental engineering and its applications.</p>
 </section>
 <section id="course-information" class="level2">
 <h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
@@ -266,31 +256,21 @@ window.Quarto = {
 </section>
 </div>
 </div>
-<section id="prerequisites-preparation" class="level3">
-<h3 class="anchored" data-anchor-id="prerequisites-preparation">Prerequisites &amp; Preparation</h3>
-<p>None</p>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<p>None. All interested students are warmly invited to participate!</p>
 </section>
 <section id="course-objectives" class="level3">
 <h3 class="anchored" data-anchor-id="course-objectives">Course Objectives</h3>
 <p>This course is intended to introduce you to the discipline of civil and environmental engineering through examination of topics in energy systems, water systems, urban mobility, and coastal resilience. This course emphasizes analytical skills, systems thinking, communication, and teamwork.</p>
-<p>The course aims to provide:</p>
-<ol type="1">
-<li>an understanding of the scope of civil and environmental engineering;</li>
-<li>an understanding of the academic activities of the Rice CEVE department;</li>
-<li>exposure to fundamental principles, concepts, and approaches that apply across CEVE disciplines, including quantitative reasoning and creative problem solving;</li>
-<li>a context for applying information from other first-year courses, especially calculus and physics;</li>
-<li>a background for higher level classes in civil and environmental engineering;</li>
-<li>an appreciation for the many links between the practice of civil and environmental engineering and social goals including sustainability, resilience, and equity;</li>
-<li>a sampling of possible career paths within the field of civil and environmental engineering, and their requirements;</li>
-<li>and some experience with the fun of being an engineer.</li>
-</ol>
 <p>On completing this course, students should be able to:</p>
 <ol type="1">
-<li>Identify civil and environmental engineering subfields</li>
-<li>Successfully perform engineering problem solving in several civil and environmental subfields</li>
-<li>Generate report-quality engineering calculations</li>
-<li>Create and present an oral report on a design project</li>
-<li>Collaborate with peers in project teams and in composing project reports</li>
+<li>Identify and understand the interconnections between various civil and environmental engineering subfields, and explore potential career paths within these areas, including their requirements and societal impacts.</li>
+<li>Apply fundamental principles and approaches in CEVE disciplines to solve engineering problems, utilizing knowledge from other first-year courses such as calculus and physics.</li>
+<li>Generate high-quality engineering calculations, analyses, and reports, demonstrating proficiency in technical communication through both written work and oral presentations.</li>
+<li>Collaborate effectively in project teams, including peer evaluation, constructive feedback, and collective problem-solving. Develop skills in managing group dynamics, delegating tasks, and integrating diverse perspectives to achieve project goals.</li>
+<li>Understand the scope and impact of civil and environmental engineering in addressing global challenges, particularly in relation to sustainability, resilience, and equity. Recognize the interdisciplinary nature of the field and its connections to other areas of study and societal issues.</li>
+<li>Critically evaluate the ethical implications of engineering decisions, considering their impact on society, the environment, and future generations.</li>
 </ol>
 </section>
 <section id="required-materials" class="level3">
@@ -327,19 +307,6 @@ window.Quarto = {
 <li>beginning assignments and other work early; and</li>
 <li>attending office hours as needed.</li>
 </ul>
-</div>
-</div>
-<div class="callout callout-style-simple callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-What If I’m Sick?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Please stay home if you’re feeling sick! This is beneficial for both for your own recovery and the health and safety of your classmates. We will also make any necessary arrangements for you to stay on top of the class material and if whatever is going on will negatively impact your grade, for example by causing you to be unable to submit an assignment on time.</p>
 </div>
 </div>
 </section>
@@ -385,41 +352,17 @@ What If I’m Sick?
 </section>
 <section id="grading" class="level2">
 <h2 class="anchored" data-anchor-id="grading">Grading</h2>
-<table class="table-striped table-hover caption-top table">
-<thead>
-<tr class="header">
-<th>Assignment</th>
-<th>Format</th>
-<th>Weight</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Project 1</td>
-<td>Oral presentation</td>
-<td>25%</td>
-</tr>
-<tr class="even">
-<td>Project 2</td>
-<td>Policy brief</td>
-<td>25%</td>
-</tr>
-<tr class="odd">
-<td>Project 3</td>
-<td>Digital presentation</td>
-<td>25%</td>
-</tr>
-<tr class="even">
-<td>Project 4</td>
-<td>Final Report</td>
-<td>25%</td>
-</tr>
-</tbody>
-</table>
-<p>I reserve the right to curve the scale dependent on overall class scores at the end of the semester.</p>
-<section id="late-work-policy" class="level3">
-<h3 class="anchored" data-anchor-id="late-work-policy">Late Work Policy</h3>
-<p>Late projects will be subjected to a 10% penalty per day. Specifically, your grade will be multiplied <span class="math inline">\(0.9^d\)</span> where <span class="math inline">\(d\)</span> is the number of days late.</p>
+<p>There are two components to your grade in this course: participation and projects. Participation forms 40% of your grade and projects form 60% of your grade. The course will be split into four modules, each weighted equally (10 points for participation and 15 for a project).</p>
+<section id="participation" class="level3">
+<h3 class="anchored" data-anchor-id="participation">Participation</h3>
+<p>Participation is essential to this course. To earn full points for participation, you should do assigned readings, attend class, share your thoughts in class, and participate in group work. You will be provided with multiple ways to share your thoughts in class beyond raising your hand and speaking. All readings will be posted in advance and announced in class. I reserve the right to give pop quizzes on the readings, so be prepared!</p>
+<p>Participation will be assessed for each module, and both students and I will provide feedback. Your lowest module participation grade will be dropped.</p>
+</section>
+<section id="projects" class="level3">
+<h3 class="anchored" data-anchor-id="projects">Projects</h3>
+<p>Each module of the course will culminate in a group design project. Specific instructions and a detailed rubric will be provided for each project at the time of assignment. These rubrics will outline the expectations for the project and how it will be evaluated.</p>
+<p>Group work will be assessed through a combination of the final product and peer evaluations. Each team member will confidentially evaluate their peers’ contributions, which will factor into individual grades for group projects.</p>
+<p>Late projects will be subjected to a 10% penalty per day.</p>
 </section>
 </section>
 <section id="preliminary-schedule" class="level2">
@@ -431,230 +374,253 @@ What If I’m Sick?
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>This schedule is subject to change. Updated versions will be posted on <a href="./schedule.html">the Schedule page</a> of the course website.</p>
+<p>This schedule is subject to change during the semester and <strong>will absolutely change before the start of the semester.</strong> Updated versions will be posted on <a href="./schedule.html">the Schedule page</a> of the course website.</p>
 </div>
 </div>
 </div>
 <table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 45%">
+<col style="width: 25%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Reading</th>
-<th>Exam/Project</th>
+<th style="text-align: left;">Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Topic</th>
+<th style="text-align: left;">Reading</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>Tues, Aug 27</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Tues, Aug 27</td>
+<td style="text-align: left;">Welcome to CEVE 101</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Aug 29</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Aug 29</td>
+<td style="text-align: left;">Infrastructure, Resilence, Sustainability, and Equity</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>2</td>
-<td>Tues, Sep 3</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Sep 5</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Project 1: Alternatives Analysis for Renewable Energy</em></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>Tues, Sep 10</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Tues, Sep 3</td>
+<td style="text-align: left;">Climate Science and Climate Change</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Sep 12</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Sep 5</td>
+<td style="text-align: left;">Overview of the Energy System</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>4</td>
-<td>Tues, Sep 17</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Tues, Sep 10</td>
+<td style="text-align: left;">Solar and Wind Generation</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Sep 19</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Sep 12</td>
+<td style="text-align: left;">Energy Storage</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>Tues, Sep 24</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Tues, Sep 17</td>
+<td style="text-align: left;">Toolkit: Mass / Energy Balance</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Sep 26</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Sep 19</td>
+<td style="text-align: left;">Toolkit: Reproducible Documents with Quarto</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>6</td>
-<td>Tues, Oct 1</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>Module 2: Transportation and Mobility</strong></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Oct 3</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Project 2: Design a Bike Lane</em></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>7</td>
-<td>Tues, Oct 8</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Tues, Sep 24</td>
+<td style="text-align: left;">Sustainable Mobility</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Oct 10</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Sep 26</td>
+<td style="text-align: left;">Resilient Transportation</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>8</td>
-<td>Tues, Oct 15</td>
-<td>NO CLASS – MIDTERM RECESS</td>
-<td></td>
-<td></td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Tues, Oct 1</td>
+<td style="text-align: left;">Mobility of the Future</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Oct 17</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Oct 3</td>
+<td style="text-align: left;">Urban Planning and Transportation</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>9</td>
-<td>Tues, Oct 22</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Tues, Oct 8</td>
+<td style="text-align: left;">Toolkit: StreetMix</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Oct 24</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Oct 10</td>
+<td style="text-align: left;">Professional Licensing (Date TBD)</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>10</td>
-<td>Tues, Oct 29</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>Module 3: Water Security</strong></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Oct 31</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Project 3: Rainwater Harvesting in Semi-Arid Brazil</em></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>11</td>
-<td>Tues, Nov 5</td>
-<td>NO CLASS – ELECTION DAY</td>
-<td></td>
-<td></td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Tues, Oct 15</td>
+<td style="text-align: left;">NO CLASS – MIDTERM RECESS</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Nov 7</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Oct 17</td>
+<td style="text-align: left;">The Hydrologic Cycle</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>12</td>
-<td>Tues, Nov 12</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">Tues, Oct 22</td>
+<td style="text-align: left;">Water Treatment Overview</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Nov 14</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Oct 24</td>
+<td style="text-align: left;">Project 2 In-Class Presentations</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>13</td>
-<td>Tues, Nov 19</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">Tues, Oct 29</td>
+<td style="text-align: left;">Unconventional Water Sources</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Nov 21</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Oct 31</td>
+<td style="text-align: left;">Toolkit TBD</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>14</td>
-<td>Tues, Nov 26</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">Tues, Nov 5</td>
+<td style="text-align: left;">NO CLASS – ELECTION DAY</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Nov 28</td>
-<td>NO CLASS – THANKSGIVING RECESS</td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>Module 4: Coastal Resilience</strong></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td>15</td>
-<td>Tues, Dec 3</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Project 4: Building Codes to Protect Against Tropical Storms</em></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Thurs, Dec 5</td>
-<td></td>
-<td></td>
-<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Nov 7</td>
+<td style="text-align: left;">Coastal Hazards</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Tues, Nov 12</td>
+<td style="text-align: left;">Building Codes</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Nov 14</td>
+<td style="text-align: left;">The Galveston Bay Park Plan</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">Tues, Nov 19</td>
+<td style="text-align: left;">Engineering Ethics: Balancing Competing Objectives</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Nov 21</td>
+<td style="text-align: left;">Project 3 In-Class Presentations</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Tues, Nov 26</td>
+<td style="text-align: left;">Field Trip</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Nov 28</td>
+<td style="text-align: left;">NO CLASS – THANKSGIVING RECESS</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Tues, Dec 3</td>
+<td style="text-align: left;">Career Tracks for CEVEs</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Thurs, Dec 5</td>
+<td style="text-align: left;">About the Major</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1129,8 +1095,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./schedule.html" class="pagination-link" aria-label="Schedule">
-        <span class="nav-page-text">Schedule</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./schedule.html" class="pagination-link" aria-label="Full Schedule">
+        <span class="nav-page-text">Full Schedule</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
