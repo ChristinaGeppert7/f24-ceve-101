@@ -5,7 +5,7 @@ date: 2024-09-24
 module: 2
 
 categories: 
-  - Planned Lecture
+  - Guest Lecture
 
 # do not edit anything below this line
 format: html
