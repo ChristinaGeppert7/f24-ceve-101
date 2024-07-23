@@ -1,5 +1,5 @@
 ---
-title: "Career Tracks for CEVEs"
+title: "Guest Panel: CEVE Careers"
 date: 2024-12-03
 module: 5
 
@@ -7,15 +7,5 @@ categories:
   - Guest Lecture
 
 # do not edit anything below this line
-format: revealjs
-
-author: "{{< var instructor.name >}}!"
-course: "{{< var course.number >}}, {{< var course.title >}}"
-institution: "{{< var course.institution >}}}"
-template-partials:
-    - title-slide.html
+format: html
 ---
-
-
-::: {#refs}
-:::
