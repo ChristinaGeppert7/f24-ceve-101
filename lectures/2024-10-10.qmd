@@ -1,6 +1,5 @@
 ---
 title: "Professional Licensing (Date TBC)"
-subtitle: "Planned Lecture"
 date: 2024-10-10
 module: 2
 

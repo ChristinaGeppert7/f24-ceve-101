@@ -1,6 +1,5 @@
 ---
 title: "Toolkit: Mass / Energy Balance"
-subtitle: "Planned Lecture"
 date: 2024-09-17
 module: 1
 

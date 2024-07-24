@@ -1,11 +1,10 @@
 ---
-title: "Mobility of the Future"
-subtitle: "Planned Lecture"
+title: "Guest Lecture: Mobility of the Future"
 date: 2024-10-01
 module: 2
 
 categories: 
-  - Planned Lecture
+  - Guest Lecture
 
 # do not edit anything below this line
 format: revealjs

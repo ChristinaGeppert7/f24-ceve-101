@@ -1,6 +1,5 @@
 ---
 title: "Unconventional Water Sources"
-subtitle: "Lecture"
 date: 2024-10-29
 module: 3
 

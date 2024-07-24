@@ -1,6 +1,5 @@
 ---
 title: "Project 3 In-Class Presentations"
-subtitle: "Lecture"
 date: 2024-11-21
 module: 4
 

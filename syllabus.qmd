@@ -118,28 +118,27 @@ Course success involves a dual responsibility on the part of the instructor and 
 :::: {.columns}
 
 ::: {.column width="48%"}
-As the instructor, my responsibility is to provide you with a structure and opportunity to learn.
-To this end, I commit to:
+**As the instructor, I am responsible** for providing you with a structure and opportunity to learn, including:
 
-* provide organized and focused lectures, in-class activities, and assignments;
-* encourage students to regularly evaluate and provide feedback on the course;
-* manage the classroom atmosphere to promote learning;
-* schedule sufficient out-of-class contact opportunities, such as office hours;
-* allow adequate time for assignment completion;
-* make lecture materials, class policies, activities, and assignments accessible to students. 
+1. provide organized and focused lectures, in-class activities, and assignments;
+1. encourage students to regularly evaluate and provide feedback on the course;
+1. manage the classroom atmosphere to promote learning;
+1. schedule sufficient out-of-class contact opportunities, such as office hours;
+1. allow adequate time for assignment completion;
+1. make lecture materials, class policies, activities, and assignments accessible to students. 
 :::
 
 ::: {.column width="4%"}
 :::
 
 ::: {.column width="48%"}
-Students are responsible for their own learning in the course and should commit to:
+**Students are responsible** for their own learning in the course and should commit to:
 
-* attending all lectures;
-* doing all required preparatory work before class; 
-* actively participating in online and in-class discussions;
-* beginning assignments and other work early; and
-* attending office hours as needed. 
+1. attending all lectures;
+1. doing all required preparatory work before class; 
+1. actively participating in online and in-class discussions;
+1. beginning assignments and other work early; and
+1. attending office hours as needed. 
 :::
 ::::
 
@@ -149,15 +148,15 @@ Rice is committed to building and maintaining an equitable and inclusive campus 
 Diversity can refer to multiple ways that we identify ourselves, including but not limited to race, color, national origin, language, sex, disability, age, sexual orientation, gender identity, religion, creed, ancestry, belief, veteran status, or genetic information.
 Each of these diverse identities, along with many others not mentioned here, shape the perspectives our students, faculty, and staff bring to our campus.
 We, at Rice, will work to promote diversity, equity and inclusion not only because diversity fuels excellence and innovation, but because we want to pursue justice.
-We acknowledge our imperfections while we also fully commit to the work, inside and outside of our classrooms, of building and sustaining a campus community that increasingly embraces these core values.
-
 Each of us is responsible for creating a safer, more inclusive environment.
 
-### Accommodation for Students with Disabilities
+### Accommodations
+
+#### Students with Disabilities
 
 If you have a documented disability or other condition that may affect academic performance you should: 1) make sure this documentation is on file with the Disability Resource Center (Allen Center, Room 111 / [adarice@rice.edu](mailto:adarice@rice.edu) / x5841) to determine the accommodations you need; and 2) talk with me to discuss your accommodation needs.
 
-### Accommodation for Scheduling Conflicts
+#### Scheduling Conflicts
 
 If any of our class meetings conflict with your religious events, student athletics, or other non-negotiable scheduling conflict, please let me know ASAP so that we can make arrangements for you.
 
@@ -196,11 +195,6 @@ In particular:
 - One of the best applications of LLMs is to write code. This can help accelerate your workflow, especially when you are learning new syntax. However, LLMs can make bad decisions about how to structure your code, can introduce bugs, and can mislead you about what your code is doing. You are responsible for understanding and debugging your code, and for ensuring that it does what you intend it to do.
 - LLMs should not be used to generate text that you submit as your own work. If you are assigned a writing assignment, the point is to stimulate your thought process, and you short-cut this if you ask a LLM to generate the response for you. This leads to shallow thinking! However, you *may* use tools including LLMs (but also Grammarly, spell-check, etc.) to help you edit your writing. This can sometimes be a fine line; it's always better to ask if you're not sure, and to disclose your use of these tools in your submission
 
-### Policy on Web Posting of Course Materials
-
-Uploading course materials to web sites is not an authorized use of the course material.
-Both the poster and the user are in violation of the university policy, which is actionable.
-
 ## Grading
 
 There are two components to your grade in this course: participation and projects. Participation forms 40% of your grade and projects form 60% of your grade. The course will be split into four modules, each weighted equally (10 points for participation and 15 for a project).
@@ -208,10 +202,9 @@ There are two components to your grade in this course: participation and project
 ### Participation
 
 Participation is essential to this course.
-To earn full points for participation, you should do assigned readings, attend class, share your thoughts in class, and participate in group work.
-You will be provided with multiple ways to share your thoughts in class beyond raising your hand and speaking.
-All readings will be posted in advance and announced in class.
-I reserve the right to give pop quizzes on the readings, so be prepared!
+To earn full points for participation, you should attend class in-person, do assigned readings, and participate in class (you will be provided with multiple ways to share your thoughts in class beyond raising your hand and speaking).
+All readings will be posted on the course website and announced in class.
+Occasional pop quizzes on reading will factor into your participation grade.
 
 Participation will be assessed for each module, and both students and I will provide feedback.
 Your lowest module participation grade will be dropped.
@@ -233,7 +226,6 @@ The following schedule outlines our planned topics and readings for the semester
 
 ::: {.callout-note}
 This **preliminary schedule** is subject to change during the semester and **will change before the start of the semester.**
-Updated versions will be posted on [the Schedule page](./schedule.qmd) of the course website.
 :::
 
 

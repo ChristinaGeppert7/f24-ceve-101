@@ -1,6 +1,5 @@
 ---
 title: "The Hydrologic Cycle"
-subtitle: "Planned Lecture"
 date: 2024-10-17
 module: 3
 

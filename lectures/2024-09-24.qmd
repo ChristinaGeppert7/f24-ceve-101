@@ -1,6 +1,5 @@
 ---
 title: "Guest Lecture: Resilient Mobility"
-subtitle: "Planned Lecture"
 date: 2024-09-24
 module: 2
 

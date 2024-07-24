@@ -1,6 +1,5 @@
 ---
 title: "Guest Lecture: The Galveston Bay Park Plan"
-subtitle: "Lecture"
 date: 2024-11-14
 module: 4
 

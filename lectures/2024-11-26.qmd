@@ -1,6 +1,5 @@
 ---
 title: "Field Trip (Date TBC)"
-subtitle: "Lecture"
 date: 2024-11-26
 module: 4
 

@@ -1,6 +1,5 @@
 ---
 title: "Solar and Wind Generation"
-subtitle: "Planned Lecture"
 date: 2024-09-10
 module: 1
 

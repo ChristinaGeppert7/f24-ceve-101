@@ -1,6 +1,5 @@
 ---
 title: "Field Trip"
-subtitle: "Lecture"
 date: 2024-10-31
 module: 3
 

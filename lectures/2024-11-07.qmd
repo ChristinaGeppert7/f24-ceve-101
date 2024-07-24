@@ -1,6 +1,5 @@
 ---
 title: "Coastal Hazards"
-subtitle: "Lecture"
 date: 2024-11-07
 module: 4
 

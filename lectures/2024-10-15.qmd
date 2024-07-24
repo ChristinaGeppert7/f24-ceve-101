@@ -1,6 +1,5 @@
 ---
 title: "NO CLASS -- MIDTERM RECESS"
-subtitle: "Lecture"
 date: 2024-10-15
 module: 3
 
