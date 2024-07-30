@@ -1,5 +1,5 @@
 ---
-title: "Project 1: Alternatives Analysis for Renewable Energy"
+title: "Project 1: Accelerating the Energy Transition"
 date: 2024-09-03
 module: 1
 

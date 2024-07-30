@@ -6,14 +6,17 @@ format:
   pdf:
     documentclass: article
     fontsize: 11pt
+    mainfont: Inter
     geometry:
       - margin=1in  
     include-in-header:
       text: |
         \renewcommand\toprule[2]\relax
         \renewcommand\bottomrule[2]\relax
-    title: "{{< var course.number >}} ({{< var course.title >}}) Syllabus"
-    subtitle: "{{< var course.semester >}}"
+    title: "Syllabus"
+    subtitle: |
+      | {{< var course.title >}} ({{< var course.number >}})
+      | {{< var course.semester >}}
 
 listing:
   type: table
@@ -37,7 +40,7 @@ listing:
 :::: {.content-visible unless-format="html"}
 
 ::: {.callout-important}
-An interactive, updated digital version of this syllabus is posted online at [{{< var course.url >}}]({{< var course.url >}}/syllabus).
+A digital version of this syllabus is posted online at [{{< var course.url >}}]({{< var course.url >}}/syllabus).
 :::
 
 ## Course Description
@@ -222,6 +225,11 @@ Late projects will be subjected to a 10% penalty per day.
 
 ## Preliminary Schedule
 
+:::: {.content-visible unless-format="html"}
+Please see the online syllabus at [{{< var course.url >}}]({{< var course.url >}}/syllabus) to access the most up-to-date schedule.
+::::
+
+:::: {.content-visible unless-format="pdf"}
 The following schedule outlines our planned topics and readings for the semester.
 
 ::: {.callout-note}
@@ -231,3 +239,4 @@ This **preliminary schedule** is subject to change during the semester and **wil
 
 ::: {#listing-lectures}
 :::
+::::
