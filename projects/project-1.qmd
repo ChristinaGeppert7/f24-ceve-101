@@ -7,17 +7,22 @@ categories: [Project]
 format: html
 ---
 
-A large agricultural processing operation, CEVE101 Inc., located near Houston, TX, is considering installing an on-site power generator.
-Their goal is to be self-reliant on locally produced energy, but to still be connected to the regional power grid.
-They can sell surplus power to the grid at 75% of the current wholesale price.
+The Energy Transition is a rapidly accelerating global trend that promises tremendous social, economic, and environmental benefits but that also poses significant challenges.
+A plethora of technological, policy, and business model innovations are being developed to facilitate the transition to a more sustainable energy system.
+A key challenge for observers and decision-makers is to separate the hype from the reality and to identify the most promising pathways to a sustainable energy future.
 
-They use electricity in their factory operations that run from 9 AM to 5 PM during weekdays (they don’t take holidays), and also for powering offices and other buildings associated with their operation.
-Their electric demand is approximately 50 MW during the 9-5 weekday peak, and only 5 MW during off-peak.
-They can purchase electricity from the grid at wholesale prices, which are currently at 5 c/kWh during the off-peak period, and at 15 c/kWh during the peak period.
+In this project, you will sign research a specific proposed solution to the energy transition and evaluate its potential to contribute to a sustainable energy future.
+You will first find a promising solution to research -- good places to start are interviews with founders from podcasts such as [Volts](https://www.volts.wtf/) or [Catalyst](https://www.canarymedia.com/podcasts/catalyst-with-shayle-kann).
+You will then provide a critical assessment of the solution, relying on more balanced and nuanced sources.
+Critical questions to answer are the following:
 
-Your task is to conduct an alternatives analysis to determine the best option for CEVE101 Inc. to meet their electricity needs.
+- What is the specific problem for which the proposed solution is intended? How does it relate to broader (and harder to pin down) goals?
+- What external factors (e.g., abundant clean electricity?) are necessary for the solution to succeed?
+- In a best-case scenario, how much impact could the solution have on global climate?
+- What are the main technical, economic, and policy impediments to the solution's success?
+
+You will work in small groups and submit a written report.
 
 ::: {.callout-tip}
-Further details will be provided.
-You will submit a written report.
+Details and a rubric will be provided when the project is assigned.
 :::

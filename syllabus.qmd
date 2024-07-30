@@ -37,7 +37,7 @@ listing:
 :::: {.content-visible unless-format="html"}
 
 ::: {.callout-important}
-An interactive, updated divital version of this syllabus is posted online at [{{< var course.url >}}]({{< var course.url >}}/syllabus).
+An interactive, updated digital version of this syllabus is posted online at [{{< var course.url >}}]({{< var course.url >}}/syllabus).
 :::
 
 ## Course Description

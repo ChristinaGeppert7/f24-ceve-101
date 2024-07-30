@@ -7,10 +7,17 @@ categories: [Project]
 format: html
 ---
 
-In this project, your group will use climate data to size a rainwater harvesting system for a small community in semi-arid Brazil.
-You will also evaluate the system's performance.
+Rural commmunities around the world struggle to access clean water, especially in arid and semi-arid regions where water is scarce.
+In Northeastern Brazil, many communities rely on a combination of deep wells (which are expensive to access and often yield saline water) and shallow surface reservoirs (which often dry up during dry years).
+In response, the federal government of Brazil launched a program (Projeto 1 Milhão de Cisternas -- One Million Cisterns Project) to promote rainwater to capture water during the rainy season and store it for use during the dry season.
+The project also aimed to build local economies through use of local materials and construction techniques.
+
+While the project has been successful in many ways, it has also faced challenges.
+A particular challenge is that during droughts the cisterns may not be fully rechared, leading to inadequate water supply during the dry season.
+
+In this project, your group will use climate data, mass-balance techniques, and computer programming to size a rainwater harvesting system for a single house in Northeastern Brazil.
 
 ::: {.callout-tip}
 Further details will be provided.
-You will create and submit an oral group presentation.
+You will produce a Quarto document that includes your analysis and recommendations.
 :::
