@@ -17,6 +17,7 @@ format:
     subtitle: |
       | {{< var course.title >}} ({{< var course.number >}})
       | {{< var course.semester >}}
+    number-sections: true
 
 listing:
   type: table

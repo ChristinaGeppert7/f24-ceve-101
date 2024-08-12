@@ -1,21 +1,11 @@
 ---
-title: "Project 3 In-Class Presentations"
+title: "Guest Lecture: Origami Engineering"
 date: 2024-11-21
 module: 4
 
 categories: 
-  - In-Class Presentation
+  - Guest Lecture
 
 # do not edit anything below this line
-format: revealjs
-
-author: "{{< var instructor.name >}}!"
-course: "{{< var course.number >}}, {{< var course.title >}}"
-institution: "{{< var course.institution >}}}"
-template-partials:
-    - title-slide.html
+format: html
 ---
-
-
-::: {#refs}
-:::
