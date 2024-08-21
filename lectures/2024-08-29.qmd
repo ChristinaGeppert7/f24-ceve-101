@@ -1,5 +1,5 @@
 ---
-title: "Infrastructure, Resilence, Sustainability, and Equity (Planned)"
+title: "Infrastructure, Resilence, Sustainability, and Equity"
 date: 2024-08-29
 module: "0"
 

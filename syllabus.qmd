@@ -62,6 +62,7 @@ Through a mix of technical lectures, topical seminars on applications and ideas 
 * {{< fa user title="Name" >}} [[{{< var instructor.name_no_title >}}]({{< var instructor.url >}})]{.ms-1}
 * {{< fa envelope title="Email" >}} [[{{< var instructor.email >}}](mailto:{{< var instructor.email >}})]{.ms-1}
 * {{< fa building title="Office" >}} [{{< var instructor.office >}}]{.ms-2}
+* {{< fa calendar title="Office Hours" >}} {{< var instructor.office_hours >}}
 :::
 
 ::: {.column width="30%"}
@@ -83,13 +84,12 @@ TBD
 ### Prerequisites
 
 None.
-All interested students are warmly invited to participate!
+All students who are intested in Civil and Environmental Engineering are warmly invited to participate!
 
 ### Course Objectives 
 
 This course is intended to introduce you to the discipline of civil and environmental engineering through examination of topics in energy systems, water systems, urban mobility, and coastal resilience.
 This course emphasizes analytical skills, systems thinking, communication, and teamwork.
-
 
 On completing this course, students should be able to:
 

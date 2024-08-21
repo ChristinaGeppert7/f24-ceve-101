@@ -7,15 +7,15 @@ instructor:
   url: "https://jamesdossgollin.me"
   github: jdossgollin
   office: "Ryon 215"
-  contact_policy: >-
-    Sign up for office hours [on Calendly](https://calendly.com/jdossgollin/15min).
+  office_hours: >-
+    Book office hours [on Calendly](https://calendly.com/jdossgollin/15min).
 
 course:
   number: "CEVE 101"
   title: "Fundamentals of Civil and Environmental Engineering "
   semester: "Fall 2024"
-  days: "T/Th"
-  time: "10:50AM -- 12:05PM TR"
+  days: "Tues/Thurs"
+  time: "10:50AM -- 12:05PM"
   location: "Ryon 201"
   github: "https://www.github.com/jdossgollin/f24-ceve-101"
   url: "https://jdossgollin.github.io/f24-ceve-101"
