@@ -1,0 +1,21 @@
+---
+title: "Project 2 In-Class Presentations"
+date: 2024-10-24
+module: 3
+
+categories: 
+  - In-Class Presentation
+
+# do not edit anything below this line
+format: revealjs
+
+author: "{{< var instructor.name >}}!"
+course: "{{< var course.number >}}, {{< var course.title >}}"
+institution: "{{< var course.institution >}}}"
+template-partials:
+    - ../title-slide.html
+---
+
+
+::: {#refs}
+:::

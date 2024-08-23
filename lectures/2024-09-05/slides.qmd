@@ -1,0 +1,21 @@
+---
+title: "Overview of the Energy System"
+date: 2024-09-05
+module: 1
+
+categories: 
+  - Planned Lecture
+
+# do not edit anything below this line
+format: revealjs
+
+author: "{{< var instructor.name >}}!"
+course: "{{< var course.number >}}, {{< var course.title >}}"
+institution: "{{< var course.institution >}}}"
+template-partials:
+    - ../title-slide.html
+---
+
+
+::: {#refs}
+:::

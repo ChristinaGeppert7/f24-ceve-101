@@ -1,0 +1,11 @@
+---
+title: "Guest Panel: CEVE Careers"
+date: 2024-12-03
+module: 5
+
+categories: 
+  - Guest Lecture
+
+# do not edit anything below this line
+format: html
+---

@@ -1,0 +1,11 @@
+---
+title: "NO CLASS -- MIDTERM RECESS"
+date: 2024-10-15
+module: 3
+
+categories: 
+  - No Class
+
+# do not edit anything below this line
+format: html
+---

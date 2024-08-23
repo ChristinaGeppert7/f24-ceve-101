@@ -1,0 +1,11 @@
+---
+title: "Guest Lecture: About the Major"
+date: 2024-12-05
+module: 5
+
+categories: 
+  - Guest Lecture
+
+# do not edit anything below this line
+format: html
+---

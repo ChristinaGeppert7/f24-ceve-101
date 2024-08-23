@@ -1,0 +1,238 @@
+---
+title: "Welcome to CEVE 101"
+date: 2024-08-27
+module: "0"
+
+categories: 
+  - Planned Lecture
+
+# do not edit anything below this line
+format: 
+  revealjs: default
+
+author: "{{< var instructor.name >}}!"
+course: "{{< var course.number >}}, {{< var course.title >}}"
+institution: "{{< var course.institution >}}}"
+template-partials:
+    - ../title-slide.html
+---
+
+## Meet the Professor
+
+::: {.columns}
+::: {.column width="40%"}
+
+![](../../_assets/img/jdossgollin.jpeg)
+
+:::
+::: {.column width="60%"}
+- Assistant Professor of Civil and Environmental Engineering
+- [dossgollin-lab.github.io](https://dossgollin-lab.github.io)
+- [jdossgollin@rice.edu](mailto:jdossgollin@rice.edu)
+- Office hours: book [on Calendly](https://calendly.com/jdossgollin/15min)
+:::
+:::
+
+::: {.notes}
+- Call me Dr. Doss-Gollin or Professor
+- Outside the classroom, I often go by James
+- This doesn't bother me but in general, it's good to address professors by their title
+- I will do my best to teach the "hidden curriculum"
+:::
+
+## About me
+
+::: {.r-stack}
+![](water-caaguazu.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-4deg);"}
+
+![](ewb-roh.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(2deg);"}
+
+![](cisterna-ceara.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-2deg);"}
+
+![](cwc-agu.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(4deg);"}
+
+![](riopy.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-1deg);"}
+
+![](selinsgrove.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(3deg);"}
+
+![](harvey.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-3deg);"}
+:::
+
+## Some things I've learned about you
+
+::: {.incremental}
+1. You come from ...
+1. You're taking this class because...
+1. You're interested in learning about CEVE or already planning to major
+1. Interesting and interested!
+:::
+
+# About CEVE
+
+---
+
+::: {.columns}
+::: {.column width="50%"}
+### What problems have Civil and Environmental Engineers Solved?
+:::
+::: {.column width="50%"}
+In small groups:
+
+1. Discuss this question
+2. Have one person fill in group answers at TODO
+:::
+:::
+
+## {background-image=segovia.jpg}
+
+::: {.caption .absolute bottom=0;"}
+<https://commons.wikimedia.org/wiki/File:Roman_aqueduct,_Segovia,_1st_century_CE_(16)_(29363671152).jpg>
+:::
+
+## {background-image=cholera.jpg}
+
+::: {.caption .absolute bottom=0;"}
+<https://education.nationalgeographic.org/resource/mapping-a-london-epidemic/>
+:::
+
+## {background-image=chase-center.jpg}
+
+::: {.caption .absolute bottom=0;"}
+<https://en.wikipedia.org/wiki/Chase_Center#/media/File:Chase_Center_-_Warriors.jpg>
+:::
+
+## {background-image=q-bridge.jpg}
+
+::: {.caption .absolute bottom=0;"}
+<https://en.wikipedia.org/wiki/Pearl_Harbor_Memorial_Bridge_(Connecticut)#/media/File:Q_Bridge_in_New_Haven_Illuminated_Red,_White,_and_Blue_(27460771747).jpg>
+:::
+
+---
+
+::: {.columns}
+::: {.column width="50%"}
+### Why aren't we "done"?
+:::
+::: {.column width="50%"}
+In small groups:
+
+1. Discuss this question
+2. Have one person fill in group answers at TODO
+:::
+:::
+
+---
+
+![](https://www.ncei.noaa.gov/monitoring-content/billions/images/2024-billion-dollar-disaster-map.png){height=650px}
+
+---
+
+![](https://i.redd.it/dby0crkfspr31.jpg){height=650px}
+
+---
+
+![](https://infrastructurereportcard.org/wp-content/uploads/2020/12/2021-Grades-Chart.jpg){height=650px}
+
+---
+
+![](https://api.understandinghouston.org/wp-content/uploads/2021/02/6-Temperature.jpg){height=650px}
+
+---
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Toxic_Algae_Bloom_in_Lake_Erie.jpg/2560px-Toxic_Algae_Bloom_in_Lake_Erie.jpg){height=650px}
+
+---
+
+![](https://www.aljazeera.com/wp-content/uploads/2021/08/2021-08-15T020705Z_1173683348_RC2E5P9KWO4T_RTRMADP_3_HAITI-QUAKE.jpg?resize=770%2C513&quality=80){height=650px}
+
+---
+
+![](outside-they-built.png){height=650px}
+
+# About CEVE 101
+
+## Course Overview
+
+1. Explore the intersection of built, information, and natural environments
+1. Develop quantitative toolkit to understand **and improve** sustainability, resilience, and equity in infrastructure systems
+1. Develop skills in data analysis, system modeling, and engineering design
+
+## Course Structure
+
+1. Technical lectures
+1. Topical seminars on applications
+1. Team-based projects
+
+## Modules
+
+Four modules, each culminating in a group design project
+
+1. Climate and energy
+1. Mobility and networks
+1. Water and health
+1. Coastal resilience
+
+
+## Learning Objectives
+
+By the end of this course, you will be able to:
+
+1. Understand interconnections between CEVE subfields
+2. Apply fundamental principles to solve engineering problems
+3. Generate high-quality engineering calculations and reports
+4. Collaborate effectively in project teams
+5. Recognize the impact of CEVE in addressing global challenges
+6. Evaluate ethical implications of engineering decisions
+
+## Course Materials
+
+1. No required textbook
+1. All materials posted on course website or Canvas
+1. Scientific papers accessible through Rice library
+1. Recommended: Use Zotero for reference management
+
+## Grading
+
+::: {.columns}
+::: {.column width="50%"}
+**Participation (40%)**
+
+1. In-class attendance
+1. Assigned readings
+1. Class discussions
+1. Reading quizzes
+:::
+::: {.column width="50%"}
+**Projects (60%)**
+
+1. Four group design projects
+1. One per module
+1. Peer evaluations included
+:::
+:::
+
+## Academic Integrity
+
+1. Rice Honor Code applies
+1. Collaboration encouraged, but work must represent your own understanding
+1. Proper citation of sources required
+1. Ask if you're unsure!
+
+## AI/ML Resource Policy
+
+1. LLMs (e.g., GPT) permitted with restrictions
+1. Can be used for coding assistance
+1. Not allowed for generating text submissions
+1. You are responsible for understanding and verifying all output
+
+## Getting Help
+
+1. Canvas Discussions for content questions
+1. Office hours (sign up online!)
+1. Email for personal matters
+
+## Course website
+
+#### ![{{< var course.url >}}]({{< var course.url >}})
+
+## See you Thursday!
