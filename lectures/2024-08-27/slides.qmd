@@ -8,13 +8,13 @@ categories:
 
 # do not edit anything below this line
 format: 
-  revealjs: default
+  revealjs:
+    template-partials:
+    - ../title-slide.html
 
 author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"
 institution: "{{< var course.institution >}}}"
-template-partials:
-    - ../title-slide.html
 ---
 
 ## Meet the Professor
@@ -22,7 +22,7 @@ template-partials:
 ::: {.columns}
 ::: {.column width="40%"}
 
-![](../../_assets/img/jdossgollin.jpeg)
+![](https://dossgollin-lab.github.io/_assets/img/logos/james.jpg)
 
 :::
 ::: {.column width="60%"}
@@ -40,22 +40,24 @@ template-partials:
 - I will do my best to teach the "hidden curriculum"
 :::
 
-## About me
+## My background
 
 ::: {.r-stack}
-![](water-caaguazu.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-4deg);"}
+![](water-caaguazu.JPG){.fragment style="height: 600px; transform: rotate(-4deg);"}
 
-![](ewb-roh.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(2deg);"}
+![](ewb-roh.JPG){.fragment style="height: 600px; transform: rotate(2deg);"}
 
-![](cisterna-ceara.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-2deg);"}
+![](cisterna-ceara.jpg){.fragment style="height: 600px; transform: rotate(-2deg);"}
 
-![](cwc-agu.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(4deg);"}
+![](cwc-agu.JPG){.fragment style="height: 600px; transform: rotate(3deg);"}
 
-![](riopy.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-1deg);"}
+![](https://eoimages.gsfc.nasa.gov/images/imagerecords/87000/87334/rioparaguay_ali_2016012.jpg){.fragment style="height: 600px; transform: rotate(-1deg);"}
 
-![](selinsgrove.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(3deg);"}
+![](selinsgrove.jpg){.fragment style="height: 600px; transform: rotate(3deg);"}
 
-![](harvey.jpg){.fragment style="height: 600px; width: auto; object-fit: contain; transform: rotate(-3deg);"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Harvey_2017-08-25_2231Z.png/1280px-Harvey_2017-08-25_2231Z.png){.fragment style="height: 600px; transform: rotate(-3deg);"}
+
+![](https://dossgollin-lab.github.io/_assets/img/group/2023-12-02.jpeg){.fragment style="height: 600px; transform: rotate(1.5deg);"}
 :::
 
 ## Some things I've learned about you
@@ -64,90 +66,71 @@ template-partials:
 1. You come from ...
 1. You're taking this class because...
 1. You're interested in learning about CEVE or already planning to major
-1. Interesting and interested!
+1. Interested in sustainable business
 :::
 
 # About CEVE
 
----
+## What problems have Civil and Environmental Engineers Solved?
 
-::: {.columns}
-::: {.column width="50%"}
-### What problems have Civil and Environmental Engineers Solved?
-:::
-::: {.column width="50%"}
 In small groups:
 
 1. Discuss this question
 2. Have one person fill in group answers at TODO
-:::
-:::
 
-## {background-image=segovia.jpg}
+##
 
-::: {.caption .absolute bottom=0;"}
-<https://commons.wikimedia.org/wiki/File:Roman_aqueduct,_Segovia,_1st_century_CE_(16)_(29363671152).jpg>
-:::
+![](https://upload.wikimedia.org/wikipedia/commons/4/4e/Roman_aqueduct%2C_Segovia%2C_1st_century_CE_%2816%29_%2829363671152%29.jpg){height=700px}
 
-## {background-image=cholera.jpg}
+##
 
-::: {.caption .absolute bottom=0;"}
-<https://education.nationalgeographic.org/resource/mapping-a-london-epidemic/>
-:::
+![](cholera.jpg){height=700px}
 
-## {background-image=chase-center.jpg}
+[National Geographic](https://education.nationalgeographic.org/resource/mapping-a-london-epidemic/)
 
-::: {.caption .absolute bottom=0;"}
-<https://en.wikipedia.org/wiki/Chase_Center#/media/File:Chase_Center_-_Warriors.jpg>
-:::
+##
 
-## {background-image=q-bridge.jpg}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Chase_Center_-_Warriors.jpg/2560px-Chase_Center_-_Warriors.jpg){height=700px}
 
-::: {.caption .absolute bottom=0;"}
-<https://en.wikipedia.org/wiki/Pearl_Harbor_Memorial_Bridge_(Connecticut)#/media/File:Q_Bridge_in_New_Haven_Illuminated_Red,_White,_and_Blue_(27460771747).jpg>
-:::
+##
 
----
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg/2880px-Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg){height=700px}
 
-::: {.columns}
-::: {.column width="50%"}
-### Why aren't we "done"?
-:::
-::: {.column width="50%"}
+## Why aren't we "done"?
+
 In small groups:
 
 1. Discuss this question
 2. Have one person fill in group answers at TODO
-:::
-:::
+
 
 ---
 
-![](https://www.ncei.noaa.gov/monitoring-content/billions/images/2024-billion-dollar-disaster-map.png){height=650px}
+![](https://www.ncei.noaa.gov/monitoring-content/billions/images/2024-billion-dollar-disaster-map.png){height=700px}
 
 ---
 
-![](https://i.redd.it/dby0crkfspr31.jpg){height=650px}
+![](https://i.redd.it/dby0crkfspr31.jpg){height=700px}
 
 ---
 
-![](https://infrastructurereportcard.org/wp-content/uploads/2020/12/2021-Grades-Chart.jpg){height=650px}
+![](https://infrastructurereportcard.org/wp-content/uploads/2020/12/2021-Grades-Chart.jpg){height=700px}
 
 ---
 
-![](https://api.understandinghouston.org/wp-content/uploads/2021/02/6-Temperature.jpg){height=650px}
+![](https://api.understandinghouston.org/wp-content/uploads/2021/02/6-Temperature.jpg){height=700px}
 
 ---
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Toxic_Algae_Bloom_in_Lake_Erie.jpg/2560px-Toxic_Algae_Bloom_in_Lake_Erie.jpg){height=650px}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Toxic_Algae_Bloom_in_Lake_Erie.jpg/2560px-Toxic_Algae_Bloom_in_Lake_Erie.jpg){height=700px}
 
 ---
 
-![](https://www.aljazeera.com/wp-content/uploads/2021/08/2021-08-15T020705Z_1173683348_RC2E5P9KWO4T_RTRMADP_3_HAITI-QUAKE.jpg?resize=770%2C513&quality=80){height=650px}
+![](https://www.aljazeera.com/wp-content/uploads/2021/08/2021-08-15T020705Z_1173683348_RC2E5P9KWO4T_RTRMADP_3_HAITI-QUAKE.jpg?resize=770%2C513&quality=80){height=700px}
 
 ---
 
-![](outside-they-built.png){height=650px}
+![](outside-they-built.png){height=700px}
 
 # About CEVE 101
 
@@ -233,6 +216,22 @@ By the end of this course, you will be able to:
 
 ## Course website
 
-#### ![{{< var course.url >}}]({{< var course.url >}})
+Lectures, syllabus, and project descriptions are on the [course website]({{< var course.url >}})
+
+- [Syllabus]({{< var course.url >}}/syllabus.html)
+- [Lectures]({{< var course.url >}}/lectures.html)
+
+Assignments will be posted on Canvas.
+
+## These slides
+
+These slides use RevealJS and are made with Quarto.
+To print slides:
+
+1. Open in Chrome / Brave
+2. Press `e` to open print mode
+3. Print using browser
+
+For more, see [RevealJS docs](https://revealjs.com/pdf-export/)
 
 ## See you Thursday!

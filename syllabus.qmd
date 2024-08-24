@@ -22,7 +22,7 @@ format:
 listing:
   type: table
   contents:
-    - "lectures/*.qmd"
+    - "lectures/*/*.qmd"
   sort:
     - "date"
     - "title"

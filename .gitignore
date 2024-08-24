@@ -1,5 +1,6 @@
 *.html
 site_libs/*
+lectures/*/slides_files/
 */.jupyter_cache/*
 schedule.tex
 syllabus/_cache
