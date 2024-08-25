@@ -4,7 +4,7 @@ date: 2024-08-27
 module: "0"
 
 categories: 
-  - Planned Lecture
+  - Lecture
 
 # do not edit anything below this line
 format: 
@@ -16,6 +16,17 @@ author: "{{< var instructor.name >}}!"
 course: "{{< var course.number >}}, {{< var course.title >}}"
 institution: "{{< var course.institution >}}}"
 ---
+
+```{julia}
+#| echo: false
+#| output: false
+using GeoMakie
+using CairoMakie
+using HTTP
+using JSON
+using GeoJSON
+using Downloads
+```
 
 ## Meet the Professor
 
@@ -60,16 +71,82 @@ institution: "{{< var course.institution >}}}"
 ![](https://dossgollin-lab.github.io/_assets/img/group/2023-12-02.jpeg){.fragment style="height: 600px; transform: rotate(1.5deg);"}
 :::
 
-## Some things I've learned about you
+## Why you're taking this class
 
-::: {.incremental}
-1. You come from ...
-1. You're taking this class because...
-1. You're interested in learning about CEVE or already planning to major
-1. Interested in sustainable business
-:::
+1. Understand what civil and environmental engineers do in practice
+2. Explore potential engineering majors (CEVE, MECH, MSNE, Materials Science)
+3. Learn about sustainability, climate solutions, and environmental remediation
+4. Gain insights into real-world CEVE projects and career paths
+5. Discover how CEVE connects to other fields (business, psychology, oil & gas)
+6. Better plan a trajectory thorugh a CEVE major
 
-# About CEVE
+## Your Hometowns
+
+```{julia}
+#| code-fold: true
+
+# Get coordinates for a location
+function get_coordinates(location)
+    url = "https://nominatim.openstreetmap.org/search?q=$(HTTP.escapeuri(location))&format=json"
+    try
+        response = HTTP.get(url)
+        if response.status == 200
+            data = JSON.parse(String(response.body))
+            if !isempty(data)
+                return parse(Float64, data[1]["lon"]), parse(Float64, data[1]["lat"])
+            else
+                @warn "No results found for $location"
+            end
+        else
+            @warn "HTTP request failed for $location with status $(response.status)"
+        end
+    catch e
+        @error "Error processing $location: $e"
+    end
+    return nothing
+end
+
+# List of locations
+locations = [
+    "Shreveport, Louisiana",
+    "Spring, TX",
+    "Glasgow, KY",
+    "Dallas, TX",
+    "Abernathy, TX",
+    "Redwood City, CA",
+    "North Liberty, Iowa",
+    "Victoria, Texas",
+    "Iowa City, Iowa",
+    "Houston, TX",
+    "Bronx, New York",
+    "Pittsburgh, PA",
+    "Houston, TX",
+    "Mountain View, CA",
+    "La Crescenta, CA",
+    "Houston, TX",
+    "Richmond, TX",
+    "Philadelphia",
+    "Houston"
+]
+
+# Get coordinates for each location
+coordinates = filter(!isnothing, map(get_coordinates, locations))
+
+# Create the plot
+fig = Figure()
+ga = GeoAxis(
+    fig[1, 1]; # any cell of the figure's layout
+    dest="+proj=moll", # the CRS in which you want to plot
+)
+lines!(ga, GeoMakie.coastlines(), color=:gray, linewidth=0.5) # plot coastlines from Natural Earth as a reference
+
+scatter!(ga, [c[1] for c in coordinates], [c[2] for c in coordinates], color=:blue, alpha=0.5)
+hidedecorations!(ga)
+
+fig
+```
+
+# About Civil and Environmental Engineering
 
 ## What problems have Civil and Environmental Engineers Solved?
 
@@ -78,59 +155,64 @@ In small groups:
 1. Discuss this question
 2. Have one person fill in group answers at TODO
 
-##
+## Origins of Environmental Engineering
 
-![](https://upload.wikimedia.org/wikipedia/commons/4/4e/Roman_aqueduct%2C_Segovia%2C_1st_century_CE_%2816%29_%2829363671152%29.jpg){height=700px}
+::: {layout="[1,2]"}
+![](cholera.jpg){height=500px}
 
-##
+![](https://continentalhospitals.com/uploads/mceu_39750514811701430691821.png){height=500px}
+:::
 
-![](cholera.jpg){height=700px}
-
+::: {.caption}
 [National Geographic](https://education.nationalgeographic.org/resource/mapping-a-london-epidemic/)
+:::
 
-##
+## Clean Drinking Water
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Chase_Center_-_Warriors.jpg/2560px-Chase_Center_-_Warriors.jpg){height=700px}
+![](https://upload.wikimedia.org/wikipedia/commons/4/4e/Roman_aqueduct%2C_Segovia%2C_1st_century_CE_%2816%29_%2829363671152%29.jpg){height=580px}
 
-##
+## Mega-Projects
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg/2880px-Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg){height=700px}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Chase_Center_-_Warriors.jpg/2560px-Chase_Center_-_Warriors.jpg){height=580px}
+
+## Transportation
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg/2880px-Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg){height=580px}
 
 ## Why aren't we "done"?
 
 In small groups:
 
 1. Discuss this question
-2. Have one person fill in group answers at TODO
+2. Have one person fill in group answers at <https://forms.gle/9jJe9uU8czHduroVA>
 
+## Natural Disasters
 
----
+![](https://www.ncei.noaa.gov/monitoring-content/billions/images/2024-billion-dollar-disaster-map.png){height=580px}
 
-![](https://www.ncei.noaa.gov/monitoring-content/billions/images/2024-billion-dollar-disaster-map.png){height=700px}
+## Decaying Infrastructure
 
----
+![](https://i.redd.it/dby0crkfspr31.jpg){height=580px}
 
-![](https://i.redd.it/dby0crkfspr31.jpg){height=700px}
+## Inadequate Infrastructure
 
----
+![](https://infrastructurereportcard.org/wp-content/uploads/2020/12/2021-Grades-Chart.jpg){height=580px}
 
-![](https://infrastructurereportcard.org/wp-content/uploads/2020/12/2021-Grades-Chart.jpg){height=700px}
+## Unequal Burdens
 
----
+![](https://api.understandinghouston.org/wp-content/uploads/2021/02/6-Temperature.jpg){height=580px}
 
-![](https://api.understandinghouston.org/wp-content/uploads/2021/02/6-Temperature.jpg){height=700px}
+## Water Pollution
 
----
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Toxic_Algae_Bloom_in_Lake_Erie.jpg/2560px-Toxic_Algae_Bloom_in_Lake_Erie.jpg){height=580px}
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Toxic_Algae_Bloom_in_Lake_Erie.jpg/2560px-Toxic_Algae_Bloom_in_Lake_Erie.jpg){height=700px}
+## Residual Risk
 
----
+![](https://www.aljazeera.com/wp-content/uploads/2021/08/2021-08-15T020705Z_1173683348_RC2E5P9KWO4T_RTRMADP_3_HAITI-QUAKE.jpg?resize=770%2C513&quality=80){height=580px}
 
-![](https://www.aljazeera.com/wp-content/uploads/2021/08/2021-08-15T020705Z_1173683348_RC2E5P9KWO4T_RTRMADP_3_HAITI-QUAKE.jpg?resize=770%2C513&quality=80){height=700px}
+## Impacts on Community, Health, and Economy
 
----
-
-![](outside-they-built.png){height=700px}
+![](outside-they-built.png){height=580px}
 
 # About CEVE 101
 
@@ -223,15 +305,15 @@ Lectures, syllabus, and project descriptions are on the [course website]({{< var
 
 Assignments will be posted on Canvas.
 
-## These slides
+## About course slides
 
-These slides use RevealJS and are made with Quarto.
+These slides are web-native, but you may want to save them as PDF for offline viewing or note taking.
 To print slides:
 
 1. Open in Chrome / Brave
 2. Press `e` to open print mode
-3. Print using browser
+3. Print using browser (suggest saving as PDF)
 
-For more, see [RevealJS docs](https://revealjs.com/pdf-export/)
+For recommended settings, see [RevealJS docs](https://revealjs.com/pdf-export/)
 
 ## See you Thursday!
