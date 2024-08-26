@@ -195,12 +195,12 @@ See source code [on GitHub]({{<var course.github>}})
 
 # About Civil and Environmental Engineering
 
-## What problems have Civil and Environmental Engineers Solved?
+## What problems have Civil and Environmental Engineers solved?
 
 In small groups:
 
 1. Discuss this question
-2. Have one person fill in group answers at TODO
+2. Have one person fill in group answers
 
 ## Origins of Environmental Engineering
 
@@ -253,12 +253,12 @@ In small groups:
 - Discuss emerging technologies in transportation engineering
 :::
 
-## Why aren't we "done"?
+## What are ongoing challenges in Civil and Environmental Engineering?
 
 In small groups:
 
 1. Discuss this question
-2. Have one person fill in group answers at <https://forms.gle/9jJe9uU8czHduroVA>
+2. Have one person fill in group answers
 
 ## Natural Disasters
 
