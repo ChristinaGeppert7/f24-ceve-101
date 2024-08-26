@@ -20,12 +20,14 @@ institution: "{{< var course.institution >}}}"
 ```{julia}
 #| echo: false
 #| output: false
-using GeoMakie
 using CairoMakie
+using DataFrames
+using Downloads
+using GeoJSON
+using GeoMakie
 using HTTP
 using JSON
-using GeoJSON
-using Downloads
+using NaturalEarth
 ```
 
 ## Meet the Professor
@@ -73,17 +75,17 @@ using Downloads
 
 ## Why you're taking this class
 
-1. Understand what civil and environmental engineers do in practice
-2. Explore potential engineering majors (CEVE, MECH, MSNE, Materials Science)
-3. Learn about sustainability, climate solutions, and environmental remediation
-4. Gain insights into real-world CEVE projects and career paths
-5. Discover how CEVE connects to other fields (business, psychology, oil & gas)
-6. Better plan a trajectory thorugh a CEVE major
+1. Learn about sustainability, climate solutions, and environmental remediation
+1. Explore potential engineering majors (CEVE, MECH, MSNE, Materials Science)
+1. Gain insights into real-world CEVE projects and career paths
+1. Make an informed decision about pursuing a CEVE major
+1. Discover how CEVE connects to other fields and global challenges
 
 ## Your Hometowns
 
 ```{julia}
-#| code-fold: true
+#| echo: false
+#| output: false
 
 # Get coordinates for a location
 function get_coordinates(location)
@@ -108,43 +110,88 @@ end
 
 # List of locations
 locations = [
-    "Shreveport, Louisiana",
-    "Spring, TX",
-    "Glasgow, KY",
-    "Dallas, TX",
-    "Abernathy, TX",
-    "Redwood City, CA",
-    "North Liberty, Iowa",
-    "Victoria, Texas",
-    "Iowa City, Iowa",
-    "Houston, TX",
-    "Bronx, New York",
-    "Pittsburgh, PA",
-    "Houston, TX",
-    "Mountain View, CA",
-    "La Crescenta, CA",
-    "Houston, TX",
-    "Richmond, TX",
-    "Philadelphia",
-    "Houston"
+    "Shreveport, LA, USA",
+    "Spring, TX, USA",
+    "Glasgow, KY, USA",
+    "Dallas, TX, USA",
+    "Abernathy, TX, USA",
+    "Redwood City, CA, USA",
+    "North Liberty, IA, USA",
+    "Victoria, TX, USA",
+    "Iowa City, IA, USA",
+    "Houston, TX, USA",
+    "Bronx, NY, USA",
+    "Pittsburgh, PA, USA",
+    "Mountain View, CA, USA",
+    "La Crescenta, CA, USA",
+    "Richmond, TX, USA",
+    "Philadelphia, PA, USA",
+    "Bethesda, MD, USA",
+    "Guam, USA",
+    "Beaumont, TX, USA",
+    "Brownsville, TX, USA",
+    "Lexington, KY, USA",
+    "Fort Worth, TX, USA",
+    "Laredo, TX, USA",
+    "Seattle, WA, USA",
+    "Auckland, New Zealand"
 ]
 
 # Get coordinates for each location
 coordinates = filter(!isnothing, map(get_coordinates, locations))
+```
+
+```{julia}
+#| echo: false
 
 # Create the plot
-fig = Figure()
-ga = GeoAxis(
-    fig[1, 1]; # any cell of the figure's layout
-    dest="+proj=moll", # the CRS in which you want to plot
-)
-lines!(ga, GeoMakie.coastlines(), color=:gray, linewidth=0.5) # plot coastlines from Natural Earth as a reference
+fig = Figure(; size=(1200, 500))
 
-scatter!(ga, [c[1] for c in coordinates], [c[2] for c in coordinates], color=:blue, alpha=0.5)
-hidedecorations!(ga)
+# US view
+ga_us = GeoAxis(
+    fig[1, 1],
+    dest="+proj=lcc +lat_1=33 +lat_2=45 +lat_0=39 +lon_0=-98 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs",
+    limits=((-125, -65), (25, 50))
+)
+hidedecorations!(ga_us)
+
+states = DataFrame(naturalearth("admin_1_states_provinces", 110))
+filter!(:gu_a3 => ==("USA"), states)
+filter!(:name_en => ∉(("Alaska", "Hawaii", "Puerto Rico")), states)
+states.geometry = GeoMakie.to_multipoly.(states.geometry)
+poly!(
+    ga_us, states.geometry;
+    strokecolor=:black, strokewidth=1,
+    color=:transparent
+)
+scatter!(ga_us, [c[1] for c in coordinates], [c[2] for c in coordinates], color=:blue, alpha=0.9)
+
+# Global view
+ga_global = GeoAxis(
+    fig[1, 2],
+    dest="+proj=merc", # Mercator projection
+    limits=((-180, 180), (-70, 70)) # Set limits from 80°S to 80°N
+)
+hidedecorations!(ga_global)
+
+countries = DataFrame(naturalearth("admin_0_countries", 110))
+countries.geometry = GeoMakie.to_multipoly.(countries.geometry)
+poly!(
+    ga_global,
+    countries.geometry;
+    strokecolor=:black,
+    strokewidth=1,
+    color=:transparent
+)
+scatter!(ga_global, [c[1] for c in coordinates], [c[2] for c in coordinates], color=:blue, alpha=0.9)
 
 fig
 ```
+
+::: {.caption}
+These maps were made with Julia code and Quarto.
+See source code [on GitHub]({{<var course.github>}})
+:::
 
 # About Civil and Environmental Engineering
 
@@ -167,17 +214,44 @@ In small groups:
 [National Geographic](https://education.nationalgeographic.org/resource/mapping-a-london-epidemic/)
 :::
 
+::: {.notes}
+- In 1854, a severe cholera outbreak hit Soho, London, killing 616 people
+- Dr. John Snow, a physician, suspected contaminated water was the cause, not "miasma" (bad air) as commonly believed
+- He created a map marking cholera cases and water pumps in the area
+- The map showed a cluster of cases around the Broad Street pump
+- Snow had the pump handle removed, and new cases declined dramatically
+- Epidemiology, clean water, sanitation, data visualization, spatial analysis
+:::
+
 ## Clean Drinking Water
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/4e/Roman_aqueduct%2C_Segovia%2C_1st_century_CE_%2816%29_%2829363671152%29.jpg){height=580px}
 
-## Mega-Projects
+::: {.notes}
+- Segovia aqueduct: Built 1st century CE, 813 meters long, 28.5 meters high, without mortar
+- Roman aqueducts transported clean water to cities, improving sanitation and public health
+- Demonstrates advanced Roman civil engineering, some still functional after 2000 years
+- Aqueducts like this laid the foundation for modern urban water supply systems
+:::
+
+## Megaprojects
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Chase_Center_-_Warriors.jpg/2560px-Chase_Center_-_Warriors.jpg){height=580px}
+
+::: {.notes}
+- Scale and complexity of modern CEVE projects
+- Interdisciplinary nature of large-scale engineering
+- Economic and social impacts of mega-projects
+:::
 
 ## Transportation
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg/2880px-Q_Bridge_in_New_Haven_Illuminated_Red%2C_White%2C_and_Blue_%2827460771747%29.jpg){height=580px}
+
+::: {.notes}
+- Discuss the evolution of transportation infrastructure
+- Discuss emerging technologies in transportation engineering
+:::
 
 ## Why aren't we "done"?
 
@@ -190,29 +264,79 @@ In small groups:
 
 ![](https://www.ncei.noaa.gov/monitoring-content/billions/images/2024-billion-dollar-disaster-map.png){height=580px}
 
+::: {.notes}
+- Diverse risks: hurricanes, floods, wildfires, droughts
+- Increasing frequency and severity due to climate change
+- Substantial economic losses and human impact
+- CEVE addresses through risk assessment, resilient design, and adaptation strategies
+:::
+
 ## Decaying Infrastructure
 
 ![](https://i.redd.it/dby0crkfspr31.jpg){height=580px}
+
+::: {.notes}
+- Aging infrastructure is a global and national problem
+- Maintenance and replacement costs are huge challenges
+- CEVE plays a crucial role through:
+  - Optimizing infrastructure upgrade prioritization
+  - Developing advanced materials for longer-lasting structures
+  - Designing more durable and efficient road systems
+  - Improving asset management and maintenance strategies
+  - Implementing smart sensing technologies for real-time monitoring
+  - Innovating sustainable and resilient infrastructure solutions
+:::
 
 ## Inadequate Infrastructure
 
 ![](https://infrastructurereportcard.org/wp-content/uploads/2020/12/2021-Grades-Chart.jpg){height=580px}
 
+::: {.notes}
+- Briefly explain the challenge presented
+- Discuss how CEVE is addressing these issues
+- Highlight the interdisciplinary approach needed for solutions
+:::
+
 ## Unequal Burdens
 
 ![](https://api.understandinghouston.org/wp-content/uploads/2021/02/6-Temperature.jpg){height=580px}
+
+::: {.notes}
+- Urban heat islands disproportionately affect low-income neighborhoods, leading to health risks and higher energy costs
+- CEVE addresses these issues through urban planning, green infrastructure, and equitable policy recommendations
+:::
 
 ## Water Pollution
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Toxic_Algae_Bloom_in_Lake_Erie.jpg/2560px-Toxic_Algae_Bloom_in_Lake_Erie.jpg){height=580px}
 
+::: {.notes}
+- Algal blooms in Lake Erie are caused by excess nutrients (phosphorus and nitrogen) from agricultural runoff and sewage
+- These blooms can produce toxins harmful to humans and animals, and deplete oxygen in the water, leading to fish die-offs
+- CEVE addresses this through improved wastewater treatment, sustainable agricultural practices, and ecosystem restoration techniques
+:::
+
 ## Residual Risk
 
 ![](https://www.aljazeera.com/wp-content/uploads/2021/08/2021-08-15T020705Z_1173683348_RC2E5P9KWO4T_RTRMADP_3_HAITI-QUAKE.jpg?resize=770%2C513&quality=80){height=580px}
 
+::: {.notes}
+- The image shows the aftermath of a devastating earthquake in Haiti, highlighting the vulnerability of infrastructure in developing countries
+- There are cost-reliability trade-offs in earthquake-resistant design, but similar or stronger earthquakes in more developed countries (e.g., Chile) have resulted in fewer casualties, emphasizing the importance of proper building codes and their implementation
+- CEVE addresses this challenge through developing cost-effective earthquake-resistant designs, collaborating on building code implementation, and integrating socioeconomic factors into resilience planning
+- This issue requires an interdisciplinary approach, combining structural engineering, urban planning, policy development, and economic considerations to create comprehensive solutions for earthquake resilience
+:::
+
 ## Impacts on Community, Health, and Economy
 
 ![](outside-they-built.png){height=580px}
+
+::: {.notes}
+- CEVEs design the built environment, which has far-reaching impacts on society
+- The design of infrastructure affects public health outcomes, such as air quality and access to green spaces
+- Built environments shape community interactions and economic activity, influencing quality of life
+- Infrastructure decisions have long-term implications for tax burdens and municipal budgets
+:::
 
 # About CEVE 101
 
