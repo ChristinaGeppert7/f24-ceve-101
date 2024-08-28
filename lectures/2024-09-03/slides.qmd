@@ -4,18 +4,10 @@ date: 2024-09-03
 module: 1
 
 categories: 
-  - Planned Lecture
+  - Guest Lecture
 
 # do not edit anything below this line
-format: revealjs
-
-author: "{{< var instructor.name >}}!"
-course: "{{< var course.number >}}, {{< var course.title >}}"
-institution: "{{< var course.institution >}}}"
-template-partials:
-    - ../title-slide.html
+format: html
 ---
 
-
-::: {#refs}
-:::
+We welcome Dr. [Michelle Frazer](https://profiles.rice.edu/staff/michelle-frazer) from the Rice [Climate & Water Lab](https://sylviadeeclimate.org/) to discuss climate science and climate change.

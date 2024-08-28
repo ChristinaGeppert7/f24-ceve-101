@@ -54,7 +54,7 @@ using NaturalEarth
 :::
 
 ## My background
-`
+
 ::: {.r-stack}
 ![](water-caaguazu.JPG){.fragment style="height: 600px; transform: rotate(-4deg);"}
 
@@ -134,7 +134,8 @@ locations = [
     "Fort Worth, TX, USA",
     "Laredo, TX, USA",
     "Seattle, WA, USA",
-    "Auckland, New Zealand"
+    "Auckland, New Zealand",
+    "Elgin, TX, USA",
 ]
 
 # Get coordinates for each location
@@ -440,4 +441,14 @@ To print slides:
 
 For recommended settings, see [RevealJS docs](https://revealjs.com/pdf-export/)
 
-## See you Thursday!
+## See you Tuesday, September 3rd
+
+- Guest lecture: Dr. Michelle Frazer, Rice University
+- Please listen to [this podcast episode](https://www.youtube.com/watch?v=UauBcLHB_mg&list=PLDV9DpMRYpURPs0NGevRnWL05zL3snDtx&index=7) or read [the article](https://nca2023.globalchange.gov/#overview)
+
+::: {.callout-tip}
+## Readings
+
+Readings will often be announced in class.
+Larger assignments will be posted on Canvas.
+:::

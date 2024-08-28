@@ -231,7 +231,7 @@ Please see the online syllabus at [{{< var course.url >}}]({{< var course.url >}
 ::::
 
 :::: {.content-visible unless-format="pdf"}
-The following schedule outlines our planned topics and readings for the semester.
+The following schedule outlines our planned topics for the semester.
 
 ::: {.callout-note}
 This **preliminary schedule** is subject to change during the semester and **will change before the start of the semester.**
