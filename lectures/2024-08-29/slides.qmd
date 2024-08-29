@@ -142,6 +142,9 @@ locations = [
     "Seattle, WA, USA",
     "Auckland, New Zealand",
     "Elgin, TX, USA",
+    "San Marcos, CA",
+    "La Habra, CA",
+    "New Orleans, LA, USA",
 ]
 
 # Get coordinates for each location
