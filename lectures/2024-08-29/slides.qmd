@@ -30,6 +30,12 @@ using JSON
 using NaturalEarth
 ```
 
+## Be well, support one another
+
+- We continue to mourn [Andrea](https://www.ricethresher.org/article/2024/08/remembering-andrea-rodriguez-avila) and violence
+- Please use college / university resources!
+- Let me know if I can support you
+
 ## Meet the Professor
 
 ::: {.columns}
