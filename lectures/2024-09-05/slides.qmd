@@ -16,6 +16,267 @@ template-partials:
     - ../title-slide.html
 ---
 
+```{julia}
+#| echo: false
+#| output: false
+using XLSX
+using DataFrames
+using Plots
+
+Plots.default(; margin=10Plots.mm, fontfamily="Arial")
+```
+
+---
+
+Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)")
+
+![](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## CO2 emissions over time
+
+<iframe src="https://ourworldindata.org/explorers/co2?facet=none&country=CHN~USA~OWID_WRL~OWID_EU27~CMR&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## Rates and stocks
+
+- Temperature depends on atmospheric concentration
+- Emissions are the *rate* at which greenhouse gases are added to the atmosphere
+- Concentrations are the *stock* of greenhouse gases in the atmosphere
+- CO2 and other greenhouse gases are long-lived in the atmosphere
+
+---
+
+<iframe src="https://ourworldindata.org/explorers/co2?tab=map&facet=none&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&country=CHN~USA~IND~GBR~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+# Global Energy Use and Trends
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/primary-energy-cons?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/per-capita-energy-use?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/change-energy-consumption?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+# Energy Sources and Electrification
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/global-energy-substitution?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## Origin of fossil fuels {.smaller}
+
+:::: {.columns}
+::: {.column width="40%"}
+![](https://www.eia.gov/energyexplained/natural-gas/images/OILGASFORMATION.gif)
+
+### Gas
+:::
+::: {.column width="60%"}
+
+### Oil
+
+1. Plants and animals die and sink to the bottom of the sea
+2. The plant and animal layer gets covered with mud
+3. Over time, more sediment exerts pressure, compressing the dead plants and animals into oil
+4. Oil moves up through porous rocks and eventually forms a reservoir
+
+:::
+::::
+1. Anaerobic decomposition of microorganisms (e.g., phytoplankton and zooplankton) under anoxic conditions
+2. Over geologically long duration, high levels of heat and pressure caused the organic matter to chemically alter into liquid and gaseous hydrocarbons
+
+## Origin of fossil fuels (cont.) {.smaller}
+
+:::: {.columns}
+::: {.column width="60%"}
+![](https://www.eia.gov/energyexplained/coal/images/coalformation.jpg)
+
+:::
+::: {.column width="40%"}
+
+### Coal
+
+1. Vegetation were gradually compressed as they get buried under soil, rising the temperature and pressure
+2. The plant matter was protected from biodegradation and oxidation, usually by mud or acidic water, and the dead vegetation was slowly converted, by carbonization, to coal
+:::
+::::
+
+## Global coal reserves
+
+<iframe src="https://ourworldindata.org/grapher/coal-proved-reserves?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## Global oil reserves
+
+<iframe src="https://ourworldindata.org/grapher/oil-proved-reserves?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+::: {.notes}
+Important to note that for oil, the idea of proven reserves is a bit misleading since technology improves access to and discovery of previously inaccessible reserves.
+:::
+
+## Nuclear
+
+## Hydro
+
+## Solar
+
+## Wind
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/electricity-prod-source-stacked?country=~USA&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+# Electricity Systems Focus
+
+## Electrification: Key to Mitigation
+
+::: {.columns}
+::: {.column width="50%"}
+- Electrification is crucial for climate change mitigation
+- Renewable electricity can replace fossil fuels in many sectors
+- Enables use of clean energy sources across the economy
+:::
+::: {.column width="50%"}
+- Transportation: Electric vehicles
+- Heating: Heat pumps
+- Industry: Electric furnaces and processes
+:::
+:::
+
+::: {.notes}
+- Discuss the concept of primary energy and its limitations
+- Explain how electrification can lead to overall energy efficiency improvements
+- Highlight the importance of clean electricity generation for effective electrification
+:::
+
+## Energy Efficiency and Primary Energy
+
+::: {.columns}
+::: {.column width="50%"}
+- Primary energy: Total energy content of fuel before conversion
+- Final energy: Energy delivered to end-users
+- Efficiency in conversion and use is crucial
+:::
+::: {.column width="50%"}
+- Renewables replace the *work* done by fossil fuels, not total primary energy
+- Higher efficiency of electric systems means less primary energy needed
+- Example: Electric vehicles vs. internal combustion engines
+:::
+:::
+
+::: {.notes}
+- Discuss how the concept of primary energy can be misleading when comparing fossil fuels to renewables
+- Explain how improved efficiency in electrified systems can lead to lower overall energy consumption
+- Provide examples of efficiency gains through electrification in various sectors
+:::
+
+## Carbon intensity of electricity
+
+<iframe src="https://ourworldindata.org/grapher/carbon-intensity-electricity?tab=chart&country=~USA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## Renewable energy price declines
+
+::: {.columns}
+::: {.column width="50%"}
+![](https://ourworldindata.org/images/published/solar-pv-prices-vs-cumulative-capacity_1998.png)
+:::
+::: {.column width="45%"}
+- Solar PV module prices declined exponentially
+- Learning rate for solar PV modules: 20.2%
+- Price declined from $106 to $0.38 per watt (99.6% decrease)
+:::
+:::
+
+## Learning curves in renewable energy
+
+::: {.columns}
+::: {.column width="40%"}
+- Solar electricity prices follow learning curves
+- Learning rate for solar electricity: 36%
+- Wind power also shows strong learning effects
+:::
+::: {.column width="55%"}
+![](https://ourworldindata.org/images/published/3-Learning-curves-for-electricity-prices_2879.png)
+:::
+:::
+
+## Which is which: NY, TX, and VT?
+
+```{julia}
+#| echo: false
+exp_per_cap_sheet = XLSX.readdata("./pr_ex_tot.xlsx", "Expenditures per capita", "A3:BB55")
+exp_per_cap = DataFrame(exp_per_cap_sheet[2:end, :], :auto)
+rename!(exp_per_cap, Symbol.(exp_per_cap_sheet[1, :]))
+
+years = parse.(Int, names(exp_per_cap)[2:end])
+exp_per_cap_plot = plot(;
+    xlabel="Year", ylabel="Expenditures [USD per capita]", legend=:topleft
+)
+for state in ["VT", "NY", "TX"]
+    state_exp_per_cap = Vector(exp_per_cap[exp_per_cap.State .== state, 2:end][1, :])
+    plot!(years, state_exp_per_cap; label=false, linewidth=3)
+end
+exp_per_cap_plot
+```
+
+::: {.notes}
+- Highest: TX
+- Middle: VT
+- Lowest: NY
+:::
+
+## Electricity demand variability
+
+:::: {.columns}
+::: {.column width="60%"}
+![](https://www.eia.gov/todayinenergy/images/2020.02.21/chart2.svg)
+:::
+::: {.column width="40%"}
+### Electricity demand is not constant
+:::
+::::
+
+## Extreme weather impacts on the grid
+
+:::: {.columns}
+::: {.column width="60%"}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">ERCOT expected 14GW of power plant outages in its &#39;extreme&#39; winter planning scenario. By late Monday morning, more than 30GW were offline. <a href="https://t.co/6HvkEaT1en">pic.twitter.com/6HvkEaT1en</a></p>&mdash; Brian Bartholomew (@BPBartholomew) <a href="https://twitter.com/BPBartholomew/status/1364446059028750337?ref_src=twsrc%5Etfw">February 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+:::
+::: {.column width="40%"}
+### Extreme temperatures drive rare peaks in electricity demand
+:::
+::::
+
+# Future Outlook and Project Introduction
+
+## Potential for renewable growth
+
+[Add content on renewable energy growth potential]
+
+## How is US coal demand changing?
+
+<iframe src="https://ourworldindata.org/grapher/coal-consumption-by-country-terawatt-hours-twh?tab=chart&country=~USA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## Project 1: Energy Solutions
+
+### Critical thinking
+
+### Group formation
+
+1. Groups of 3-4 students
+2. Randomly assigned
+3. In the future, you will sometimes have option to select group members
+
+### Report and In-class presentation
+
+See [here](/projects/project-1.qmd) for details
 
 ::: {#refs}
 :::

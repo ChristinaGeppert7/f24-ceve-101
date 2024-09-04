@@ -1,5 +1,5 @@
 ---
-title: "Climate Science and Climate Change"
+title: "Guest Lecture: Climate Science and Climate Change"
 date: 2024-09-03
 module: 1
 
