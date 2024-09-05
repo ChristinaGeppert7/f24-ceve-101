@@ -51,7 +51,7 @@ Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](htt
 
 <iframe src="https://ourworldindata.org/explorers/co2?tab=map&facet=none&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&country=CHN~USA~IND~GBR~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
-# Global Energy Use and Trends
+# Emissions and Energy Use
 
 ---
 
@@ -70,6 +70,10 @@ Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](htt
 ---
 
 <iframe src="https://ourworldindata.org/grapher/global-energy-substitution?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+---
+
+<iframe src="https://ourworldindata.org/grapher/electricity-prod-source-stacked?country=~USA&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
 ## Origin of fossil fuels {.smaller}
 
@@ -104,7 +108,7 @@ Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](htt
 
 ### Coal
 
-1. Vegetation were gradually compressed as they get buried under soil, rising the temperature and pressure
+1. Vegetation was gradually compressed as they get buried under soil, rising the temperature and pressure
 2. The plant matter was protected from biodegradation and oxidation, usually by mud or acidic water, and the dead vegetation was slowly converted, by carbonization, to coal
 :::
 ::::
@@ -123,15 +127,63 @@ Important to note that for oil, the idea of proven reserves is a bit misleading 
 
 ## Nuclear
 
+:::: {.columns}
+::: {.column width="50%"}
+![](https://www.iaea.org/sites/default/files/styles/full_page_width_landscape_16_9/public/nuclearfission2-1140x640.jpg?itok=wMfirnHX)
+:::
+::: {.column width="50%"}
+- Fission: Splitting atom nuclei releases energy
+- Heat from fission boils water to create steam
+- Steam drives turbines to generate electricity
+- Low carbon
+- Modern systems generally safe, but high upfront costs
+:::
+::::
+
 ## Hydro
+
+:::: {.columns}
+::: {.column width="50%"}
+- Uses flowing water to generate electricity
+- Water stored in dams or from rivers turns turbines
+- Provides reliable baseload power
+- Low carbon emissions
+- Can impact local ecosystems and communities
+:::
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Itaipu_geral.jpg/2880px-Itaipu_geral.jpg)
+:::
+::::
 
 ## Solar
 
+:::: {.columns}
+::: {.column width="50%"}
+![200MW solar farm in Wingate, TX](https://www.texasobserver.org/wp-content/uploads/2020/08/Holstein-6.jpg)
+:::
+::: {.column width="50%"}
+- Converts sunlight directly into electricity
+- Photovoltaic cells or concentrated solar power
+- Zero emissions during operation but requires land
+- Rapidly decreasing costs
+- Intermittent, requires energy storage solutions
+:::
+::::
+
 ## Wind
 
----
-
-<iframe src="https://ourworldindata.org/grapher/electricity-prod-source-stacked?country=~USA&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+:::: {.columns}
+::: {.column width="50%"}
+- Harnesses wind energy to generate electricity
+- Wind turbines convert kinetic energy to electrical
+- Clean, renewable energy source
+- Increasingly cost-competitive
+- Variable output, dependent on wind conditions
+:::
+::: {.column width="50%"}
+![Brazos Wind Ranch, TX](https://upload.wikimedia.org/wikipedia/commons/8/8b/GreenMountainWindFarm_Fluvanna_2004.jpg)
+:::
+::::
 
 # Electricity Systems Focus
 
@@ -156,17 +208,37 @@ Important to note that for oil, the idea of proven reserves is a bit misleading 
 - Highlight the importance of clean electricity generation for effective electrification
 :::
 
-## Energy Efficiency and Primary Energy
+## Triple renewable capacity
+
+![Global renewables power capacity in the Net Zero Emissions by 2050 Scenario, 2022 and 2030](./iea-renewable-capacity.png)
+
+
+## Where do these estimates come from? {.smaller}
+
+Example: IEA's [Net-Zero by 2050 Roadmap](https://www.iea.org/reports/net-zero-by-2050).
+
+
+1. **Scenario Development** : Multiple global policy and socioeconomic storylines
+2. **Energy System Modeling** : Detailed analysis of energy production, consumption, and technologies
+3. **Integrated Assessment Models (IAMs)** : Economic and emissions impacts of scenarios
+4. **Climate Models** : Temperature projections based on emissions scenarios
+5. **Technology Pathways** : Analysis of technology development and deployment
+
+::: {.callout-note}
+Note: Most models have limited feedback from climate to economics/policy
+:::
+
+## Some definitions
 
 ::: {.columns}
 ::: {.column width="50%"}
-- Primary energy: Total energy content of fuel before conversion
-- Final energy: Energy delivered to end-users
-- Efficiency in conversion and use is crucial
+- **Primary energy:** Total energy content of fuel before conversion
+- **Final energy:** Energy delivered to end-users
+- **Efficiency in conversion and use is crucial**
 :::
 ::: {.column width="50%"}
-- Renewables replace the *work* done by fossil fuels, not total primary energy
-- Higher efficiency of electric systems means less primary energy needed
+- Renewables replace the **work** done by fossil fuels, not total primary energy
+- Higher **efficiency** of electric systems means less primary energy needed
 - Example: Electric vehicles vs. internal combustion engines
 :::
 :::
@@ -254,27 +326,17 @@ exp_per_cap_plot
 :::
 ::::
 
-# Future Outlook and Project Introduction
+# Project 1: Energy Solutions
 
-## Potential for renewable growth
+## Critical thinking
 
-[Add content on renewable energy growth potential]
-
-## How is US coal demand changing?
-
-<iframe src="https://ourworldindata.org/grapher/coal-consumption-by-country-terawatt-hours-twh?tab=chart&country=~USA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
-
-## Project 1: Energy Solutions
-
-### Critical thinking
-
-### Group formation
+## Group formation
 
 1. Groups of 3-4 students
 2. Randomly assigned
 3. In the future, you will sometimes have option to select group members
 
-### Report and In-class presentation
+## Report and In-class presentation
 
 See [here](/projects/project-1.qmd) for details
 
