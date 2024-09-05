@@ -30,7 +30,7 @@ Plots.default(; margin=10Plots.mm, fontfamily="Arial")
 
 Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)")
 
-![](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)
+![Global CO2 emissions over time at Mauna Loa Observatory, Hawaii](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)
 
 ---
 
@@ -326,19 +326,12 @@ exp_per_cap_plot
 :::
 ::::
 
-# Project 1: Energy Solutions
+# Wrapup
 
-## Critical thinking
+## Questions
 
-## Group formation
+On Canvas ([here](https://canvas.rice.edu/courses/71565/discussion_topics/400621)), please share at least one thing you'd like to learn more about
 
-1. Groups of 3-4 students
-2. Randomly assigned
-3. In the future, you will sometimes have option to select group members
-
-## Report and In-class presentation
+## Project 1
 
 See [here](/projects/project-1.qmd) for details
-
-::: {#refs}
-:::

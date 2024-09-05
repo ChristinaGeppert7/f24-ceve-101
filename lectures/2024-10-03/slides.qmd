@@ -1,10 +1,10 @@
 ---
-title: "Urban Planning and Design"
+title: "Project 1 In-Class Presentations"
 date: 2024-10-03
 module: 2
 
 categories: 
-  - Planned Lecture
+  - In-Class Presentation
 
 # do not edit anything below this line
 format: revealjs

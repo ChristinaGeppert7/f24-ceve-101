@@ -1,6 +1,6 @@
 ---
 title: "Project 1: Accelerating the Energy Transition"
-date: 2024-09-03
+date: 2024-09-05
 module: 1
 
 categories: [Project]
@@ -12,7 +12,7 @@ A plethora of technological, policy, and business model innovations are being de
 A key challenge for observers and decision-makers is to separate the hype from the reality and to identify the most promising pathways to a sustainable energy future.
 
 In this project, you will sign research a specific proposed solution to the energy transition and evaluate its potential to contribute to a sustainable energy future.
-You will first find a promising solution to research -- good places to start are interviews with founders from podcasts such as [Volts](https://www.volts.wtf/) or [Catalyst](https://www.canarymedia.com/podcasts/catalyst-with-shayle-kann).
+You will first find a promising solution to research: -- good places to start are interviews with founders from podcasts such as [Volts](https://www.volts.wtf/), [Catalyst](https://www.canarymedia.com/podcasts/catalyst-with-shayle-kann), or [Cleaning Up](https://www.cleaningup.live/).
 You will then provide a critical assessment of the solution, relying on more balanced and nuanced sources.
 Critical questions to answer are the following:
 
@@ -21,8 +21,28 @@ Critical questions to answer are the following:
 - In a best-case scenario, how much impact could the solution have on global climate?
 - What are the main technical, economic, and policy impediments to the solution's success?
 
-You will work in small groups and submit a written report.
+You will work in small groups and submit a written report and develop an in-class presentation.
 
-::: {.callout-tip}
-Details and a rubric will be provided when the project is assigned.
-:::
+## Timeline
+
+- [ ] Sep 5: Project assigned
+- [ ] Sep 12: Choose a topic, listen to a podcast, and write a one-pager (individual)
+- [ ] Sep 17: Groups formed
+- [ ] Sep 24: Select a topic, everyone listen to the podcast, and collectively draft a one-pager (group)
+- [ ] Oct 1: Group report due
+- [ ] Oct 3: Presentations in class
+
+## One-pager
+
+The one-pager should be submitted on Canvas and should include your name, the name of your solution, your primary source, and short answers to the questions indivated above.
+
+## Report
+
+A detailed report should be 3-5 pages long, should reference at least 3 highly reputable sources beyond the podcast you listened to, and should address the questions above in a thoughtful manner.
+We will provide a template for the report, including instructions on how to format your report, including references and a rubric.
+
+## Presentation
+
+This is a large class.
+Each group will present a 5 minute presentation on their proposed solution.
+Each group member should present, and groups will be graded on the quality of the presentation rather than the quality of the content (which will be evaluated based on the report).
