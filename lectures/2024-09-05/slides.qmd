@@ -26,19 +26,22 @@ using Plots
 Plots.default(; margin=10Plots.mm, fontfamily="Arial")
 ```
 
----
+## Announcements
 
-Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)")
+1. If you're interested in attending the study abroad orientation on 9/11 at noon, please email Dr. Bedient as soon as possible.
+1. This is a big class. Please consider coming to office hours! (Freshmen: the sophomores have already figured this out)
+1. 
 
-![Global CO2 emissions over time at Mauna Loa Observatory, Hawaii](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)
+
+# Climate change
 
 ---
 
 <iframe src="https://ourworldindata.org/grapher/temperature-anomaly?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
-## CO2 emissions over time
+---
 
-<iframe src="https://ourworldindata.org/explorers/co2?facet=none&country=CHN~USA~OWID_WRL~OWID_EU27~CMR&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+![Global CO2 emissions over time at Mauna Loa Observatory, Hawaii](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)
 
 ## Rates and stocks
 
@@ -46,6 +49,20 @@ Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](htt
 - Emissions are the *rate* at which greenhouse gases are added to the atmosphere
 - Concentrations are the *stock* of greenhouse gases in the atmosphere
 - CO2 and other greenhouse gases are long-lived in the atmosphere
+
+## Climate sensitivity
+
+Climate sensitivity is the equilibrium change in global temperature for a doubling of $\text{CO}_2$ concentrations.
+
+- With no feedback effects at all, about $1^\circ$ C
+    - Both positive and negative feedbacks
+- Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)")
+    - But values between 1.5 and 4.5 C are plausible
+
+
+## CO2 emissions over time
+
+<iframe src="https://ourworldindata.org/explorers/co2?facet=none&country=CHN~USA~OWID_WRL~OWID_EU27~CMR&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
 ---
 
@@ -65,7 +82,14 @@ Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](htt
 
 <iframe src="https://ourworldindata.org/grapher/change-energy-consumption?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 
-# Energy Sources and Electrification
+# Energy Sources
+
+## Pre-industrial energy sources
+
+- Wood
+- Other biomass
+- Animal power
+- Small windmills
 
 ---
 
