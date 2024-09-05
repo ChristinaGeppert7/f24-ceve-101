@@ -25,21 +25,23 @@ You will work in small groups and submit a written report and develop an in-clas
 
 ## Timeline
 
-- [ ] Sep 5: Project assigned
-- [ ] Sep 12: Choose a topic, listen to a podcast, and write a one-pager (individual)
-- [ ] Sep 17: Groups formed
-- [ ] Sep 24: Select a topic, everyone listen to the podcast, and collectively draft a one-pager (group)
-- [ ] Oct 1: Group report due
-- [ ] Oct 3: Presentations in class
+- [ ] Thursday, Sep 5: Project assigned
+- [ ] Tuesday, Sep 10: Choose one topic / podcast episode that seems interesting, listen to or read the episode, and write a one-pager (individual)
+- [ ] Thursday, Sep 12: Groups formed. Each group member should listen to the podcast episode chosen by group members and read the one-pager written by group members.
+- [ ] Thursday, Sep 19: Select a topic and collectively draft a one-pager (group)
+- [ ] Thursday, Oct 1: Group written report due on Canvas
+- [ ] Thursday, Oct 3: Presentations in class
 
 ## One-pager
 
 The one-pager should be submitted on Canvas and should include your name, the name of your solution, your primary source, and short answers to the questions indivated above.
+Save as a PDF and submit on Canvas.
 
 ## Report
 
 A detailed report should be 3-5 pages long, should reference at least 3 highly reputable sources beyond the podcast you listened to, and should address the questions above in a thoughtful manner.
 We will provide a template for the report, including instructions on how to format your report, including references and a rubric.
+Save as a PDF and submit on Canvas.
 
 ## Presentation
 

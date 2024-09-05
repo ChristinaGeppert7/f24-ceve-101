@@ -332,6 +332,13 @@ exp_per_cap_plot
 
 On Canvas ([here](https://canvas.rice.edu/courses/71565/discussion_topics/400621)), please share at least one thing you'd like to learn more about
 
+- [ ] Thursday, Sep 5: Project assigned
+- [ ] Tuesday, Sep 10: Choose one topic / podcast episode that seems interesting, listen to or read the episode, and write a one-pager (individual)
+- [ ] Thursday, Sep 12: Groups formed. Each group member should listen to the podcast episode chosen by group members and read the one-pager written by group members.
+- [ ] Thursday, Sep 19: Select a topic and collectively draft a one-pager (group)
+- [ ] Thursday, Oct 1: Group written report due on Canvas
+- [ ] Thursday, Oct 3: Presentations in class
+
 ## Project 1
 
 See [here](/projects/project-1.qmd) for details
