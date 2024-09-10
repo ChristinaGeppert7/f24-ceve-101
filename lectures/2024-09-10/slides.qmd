@@ -24,4 +24,40 @@ template-partials:
 ## Today
 
 1. Continue [Overview of the Energy System](../2024-09-05/slides.qmd)
-1. Project 1 groups
+1. Project 1
+
+## Project 1 groups
+
+1. **Nuclear Energy**: Carmina, Christina, Abe, Ricardo, Mason
+2. **Aviation**: Nicolas, Cullen, Elise
+3. **Resilient Transmission and Distribution Systems**: Seth, Lizzy, Larry, Misha, AJ
+4. **Grid Management and Energy Storage**: Alex, Samuel, Helena, Jessica X., Samantha
+5. **Carbon Capture and Emissions Reduction**: Lucas, Ashley, Keiley, Jovanny, Luke
+6. **Energy Efficiency and Electrification**: Brett, Sydney, Anthony, Diego, Adina
+7. **Renewable Energy Optimization**: Bailee, Mia, Steven, Jessica L.
+8. **Shipping and Clean Fuels**: Maria Eduarda, Lilian, Sierra, Mason, Zion
+
+## Questions to consider
+
+- What is the specific problem for which the proposed solution is intended? How does it relate to broader (and harder to pin down) goals?
+- What external factors (e.g., abundant clean electricity?) are necessary for the solution to succeed?
+- In a best-case scenario, how much impact could the solution have on global climate?
+- What are the main technical, economic, and policy impediments to the solution's success?
+
+## Topics
+
+Listen to / read the articles your team members have chosen and read their one-pagers.
+Then, as a group, choose a topic.
+
+::: {.incremental}
+- Should be an innovative idea that changes something about the energy system
+- May be a business model, technology, product, policy, etc.
+:::
+
+## Problem statement
+
+::: {.incremental}
+- Does not have to be energy related -- environmental, health, social, etc.
+- Should be clearly defined.
+- Think critically; the problem statement often defines the solution
+:::
