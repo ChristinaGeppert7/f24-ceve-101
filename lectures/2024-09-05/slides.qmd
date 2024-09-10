@@ -28,12 +28,10 @@ Plots.default(; margin=10Plots.mm, fontfamily="Arial")
 
 ## Announcements
 
-1. If you're interested in attending the study abroad orientation on 9/11 at noon, please email Dr. Bedient as soon as possible.
+1. If you're interested in attending the study abroad orientation on 9/11 at noon, please email Dr. Bedient by the end of the week.
 1. This is a big class. Please consider coming to office hours! (Freshmen: the sophomores have already figured this out)
-1. 
 
-
-# Climate change
+# Climate Change and $\text{CO}_2$
 
 ---
 
@@ -43,12 +41,14 @@ Plots.default(; margin=10Plots.mm, fontfamily="Arial")
 
 ![Global CO2 emissions over time at Mauna Loa Observatory, Hawaii](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)
 
-## Rates and stocks
+## Emissions: rate of change
 
-- Temperature depends on atmospheric concentration
+::: {.incremental}
+- Temperature depends on atmospheric concentration ("climate sensitivity")
 - Emissions are the *rate* at which greenhouse gases are added to the atmosphere
-- Concentrations are the *stock* of greenhouse gases in the atmosphere
-- CO2 and other greenhouse gases are long-lived in the atmosphere
+- Greenhouse gases leave the atmosphere through biological (e.g., photosynthesis) and physical (e.g., equilibrium with the ocean) processes
+- Imbalance when emissions exceed sinks
+:::
 
 ## Climate sensitivity
 
@@ -59,7 +59,6 @@ Climate sensitivity is the equilibrium change in global temperature for a doubli
 - Doubling CO2 leads to $\approx 3^\circ$ C of warming ("[climate sensitivity](https://gml.noaa.gov/webdata/ccgg/trends/co2_data_mlo.png)")
     - But values between 1.5 and 4.5 C are plausible
 
-
 ## CO2 emissions over time
 
 <iframe src="https://ourworldindata.org/explorers/co2?facet=none&country=CHN~USA~OWID_WRL~OWID_EU27~CMR&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
@@ -67,6 +66,19 @@ Climate sensitivity is the equilibrium change in global temperature for a doubli
 ---
 
 <iframe src="https://ourworldindata.org/explorers/co2?tab=map&facet=none&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Production-based&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+capita&country=CHN~USA~IND~GBR~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+--- 
+
+<iframe src="https://ourworldindata.org/explorers/co2?tab=map&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Territorial&Fuel+or+Land+Use+Change=Fossil+%2B+land+use+change&Count=Per+country&country=CHN~USA~IND~GBR~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+---
+
+<iframe src="https://ourworldindata.org/explorers/co2?tab=map&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Territorial&Fuel+or+Land+Use+Change=All+fossil+emissions&Count=Per+country&country=CHN~USA~IND~GBR~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+---
+
+<iframe src="https://ourworldindata.org/explorers/co2?tab=map&hideControls=true&Gas+or+Warming=CO%E2%82%82&Accounting=Territorial&Fuel+or+Land+Use+Change=Fossil+%2B+land+use+change&Count=Cumulative&country=CHN~USA~IND~GBR~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
 
 # Emissions and Energy Use
 
@@ -147,6 +159,7 @@ Climate sensitivity is the equilibrium change in global temperature for a doubli
 
 ::: {.notes}
 Important to note that for oil, the idea of proven reserves is a bit misleading since technology improves access to and discovery of previously inaccessible reserves.
+Click chart to see this over time.
 :::
 
 ## Nuclear
@@ -209,7 +222,11 @@ Important to note that for oil, the idea of proven reserves is a bit misleading 
 :::
 ::::
 
-# Electricity Systems Focus
+## Overview of energy system
+
+![](https://flowcharts.llnl.gov/sites/flowcharts/files/2023-10/US%20Energy%202022.png)
+
+# Electricity Systems
 
 ## Electrification: Key to Mitigation
 

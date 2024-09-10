@@ -1,5 +1,5 @@
 ---
-title: "Solar and Wind Generation"
+title: "Energy Systems Cont'd"
 date: 2024-09-10
 module: 1
 
@@ -16,6 +16,12 @@ template-partials:
     - ../title-slide.html
 ---
 
+## Announcements
 
-::: {#refs}
-:::
+1. Please upload a photo to Canvas (Account ➡️ Settings)
+1. Last call for study abroad info session tomorrow 12:00 Ryon 201, email Dr. Bedient if you plan to attend
+
+## Today
+
+1. Continue [Overview of the Energy System](../2024-09-05/slides.qmd)
+1. Project 1 groups
