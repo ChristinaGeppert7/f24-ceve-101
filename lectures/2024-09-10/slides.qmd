@@ -28,14 +28,14 @@ template-partials:
 
 ## Project 1 groups
 
-1. **Nuclear Energy**: Carmina, Christina, Abe, Ricardo, Mason
-2. **Aviation**: Nicolas, Cullen, Elise
-3. **Resilient Transmission and Distribution Systems**: Seth, Lizzy, Larry, Misha, AJ
-4. **Grid Management and Energy Storage**: Alex, Samuel, Helena, Jessica X., Samantha
-5. **Carbon Capture and Emissions Reduction**: Lucas, Ashley, Keiley, Jovanny, Luke
+1. **Advanced Energy Technologies**: Carmina, Christina, Abe, Ricardo, Mason
+2. **Transportation and Fuel Innovations**: Nicolas, Cullen, Elise, Lilian
+3. **Resilient Energy Systems**: Seth, Lizzy, Larry, Misha, AJ
+4. **Grid Management and Renewable Integration**: Alex, Samuel, Helena, Jessica X., Samantha
+5. **Emissions Reduction and Capture**: Lucas, Ashley, Keiley, Jovanny, Luke
 6. **Energy Efficiency and Electrification**: Brett, Sydney, Anthony, Diego, Adina
 7. **Renewable Energy Optimization**: Bailee, Mia, Steven, Jessica L.
-8. **Shipping and Clean Fuels**: Maria Eduarda, Lilian, Sierra, Mason, Zion
+8. **Global Energy Transitions**: Maria Eduarda, Sierra, Zion, Mason
 
 ## Questions to consider
 
