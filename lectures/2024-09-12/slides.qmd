@@ -1,5 +1,5 @@
 ---
-title: "Energy Storage"
+title: "Toolkit: Mass / Energy Balance"
 date: 2024-09-12
 module: 1
 
@@ -16,6 +16,182 @@ template-partials:
     - ../title-slide.html
 ---
 
+## Motivation
+
+::: {.incremental}
+1. Energy systems create lots of $\text{CO}_2$ emissions
+1. Non-carbon energy sources are now the cheapest way to generate electricity in most places
+1. intermittency is a challenge
+:::
+
+
+## Expectations
+
+1. No exam on this content
+1. Will be useful for your projects
+1. Foundational idea in your other classes as well!
+
+# Unifying Theories
+
+## Conservation of Matter
+
+::: {.incremental}
+1. Without nuclear reaction matter can neither be created nor destroyed
+1. Form and properties of matter can, of course, change
+1. Example: glass of water left out
+1. Mathematical representation is **mass balance**
+:::
+
+## Conservation of energy
+
+::: {.incremental}
+1. Energy can neither be created nor destroyed
+1. Energy can be transformed from one form to another
+1. Example: chemical energy in gasoline is converted to kinetic energy in a car
+1. Mathematical representation is **energy balance**
+:::
+
+## Conservation of matter and energy
+
+In 1905, Einstein showed that mass and energy are equivalent.
+This is relevant for nuclear reactions, but generally not something we need to worry about for most civil and environmental systems on Earth.
+
+# Mass and Energy Balances
+
+## Accounting perspective
+
+$$
+\text{Accumulation} = \sum\text{Input}_i - \sum\text{Output}_i
+$$
+where accumulation, input, and output refer to the mass or energy accumulating in the system or flowing into or out of the system.
+
+## Control Volume
+
+::: {.incremental}
+1. We need to define "the system"
+1. Start with conceptual understanding, such as a sketch
+1. Draw boundaries around the system to define what is the **control volume**
+1. There is an art to clever choices of the control volume to make calculations simpler
+:::
+
+## Time-Varying Accumulations
+
+Often inputs and outputs are time-varying
+$$
+\text{Rate of Accumulation} = \text{Rate of Input} - \text{Rate of Output}
+$$
+where **rate** means per unit time.
+
+## Rates as Derivatives
+In calculus we write this as
+$$
+\frac{dM}{dt} = \frac{dM_\text{in}}{dt} - \frac{dM_\text{out}}{dt}
+$$
+where $M$ is the amount of material in the system, $M_\text{in}$ is the amount of material entering the system, and $M_\text{out}$ is the amount of material leaving the system.
+
+## Accounting for Reactions
+
+::: {.incremental}
+1. When no chemical or biological reaction takes place and no radioactive decay occurs, the substance is **conserved.**
+1. In many environmental systems, transformations occur within the system
+    1. Byproducts such as $\text{CO}_2$  are formed
+    1. Compounds are destroyed (e.)
+1. We account for this by adding a term for the reaction rate.
+$$
+\frac{dM}{dt} = \frac{dM_\text{in}}{dt} - \frac{dM_\text{out}}{dt} + r(\cdot)
+$$
+:::
+
+## First-order reaction {.smaller}
+
+In many problems, the rate of reaction is proportional to the amount of material in the system.
+$$
+r(\cdot) = -k M
+$$
+where $k$ is the reaction rate constant.
+
+::: {.fragment}
+Making some assumptions (complete mixing, etc) the total mass $M$ is $C$ (concentration) times $V$ (volume).
+$$
+\frac{dM}{dt} = d(CV)/dt = V dC/dt
+$$
+:::
+::: {.fragment}
+$$
+\frac{dM}{dt} = \frac{d M_\text{in}}{dt} - \frac{d M_\text{out}}{dt} - k CV
+$$
+:::
+
+## First-order reaction with no input or output
+
+If there are no inputs or outputs, and things are well-mixed, then
+$$
+r = -kC = \frac{dC}{dt}
+$$
+::: {.fragment}
+If we integrate this out, we can get an expression for the concentration as a function of time.
+$$
+C(t) = C_0 e^{-kt}
+$$
+:::
+
+## Units of energy
+
+::: {.incremental}
+1. Energy has many forms (thermal, mechanical, kinetic, potential, electrical, chemical, etc...)
+1. SI units are $\text{J}$ (Joules), but heat units are also used (e.g., calorie)
+1. Specific heat of a substance is the amount of heat required to increase a unit mass by one degree, expressed in units of $\text{energy} \times \text{mass}^{-1} \times \text{temperature}^{-1}$
+:::
+
+# Examples
+
+## Rainwater harvesting
+
+:::: {.columns}
+::: {.column width="60%"}
+![Ceará, Brazil, 2014](rwh.JPG)
+:::
+::: {.column .fragment width="40%"}
+Mass balance for water: 
+
+- In: rainwater
+- Out: consumption (leak? evaporation?)
+- Maximum volume is fixed
+
+Could also perform mass balance for substances in water (bacteria, dust, etc.)
+:::
+::::
+
+## Thermal energy storage
+
+
+![[MIT Technology Review]](https://wp.technologyreview.com/wp-content/uploads/2023/10/Antora-Thermal-Battery.jpg?fit=2160,1214)
+
+
+## Batch reactor
+
+
+![[AG Scientific](https://agscientific.com/blog/sequencing-batch-reactors.html) ](https://agscientific.com/system/user_files/wordpress/2020/09/Depositphotos_6490033_xl-2015-1024x683.jpg)
+
+
+## Weather prediction
+
+![[NOAA GFDL](https://www.gfdl.noaa.gov/shield/)](https://www.gfdl.noaa.gov/wp-content/uploads/2022/10/SHiELD_Family_Chart.gif)
+
+## Nutrient cycles
+
+![[Washington State Department of Ecology](https://ecology.wa.gov/blog/may-2023/headed-to-a-lake-or-river-today-look-out-for-bloom)](https://ecology.wa.gov/ecology/media/BlogMedia/WQ/05232023-Algae.JPG?ext=.jpg)
+
+See Khan Academy videos on [Phosphorus](https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/v/phosphorous-cycle) and [Nitrogen](https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/v/nitrogen-cycle) cycloes
+
+
+## Wrapup
+
+1. Tuesday: short class on energy storage technologies
+1. Thursday: 
+    1. Group one-pagers due
+    1. Instructions on project 1 write-up and presentation given
+    1. Reproducibility and transparency with computers
 
 ::: {#refs}
 :::

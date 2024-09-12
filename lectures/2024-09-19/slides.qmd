@@ -1,5 +1,5 @@
 ---
-title: "Toolkit: Reproducible Documents with Quarto"
+title: "Reproducibility and transparency with computers"
 date: 2024-09-19
 module: 1
 
