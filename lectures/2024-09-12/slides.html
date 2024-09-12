@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.5.43">
 
   <meta name="author" content="Dr.&nbsp;James Doss-Gollin!">
-  <title>CEVE 101 -- Spring 2024 – Energy Storage</title>
+  <title>CEVE 101 -- Spring 2024 – Toolkit: Mass / Energy Balance</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -348,7 +348,7 @@
       tex: { packages: { '[+]': ['physics'] } }
     };
   </script>
-<meta property="og:title" content="CEVE 101 – Spring 2024 - Energy Storage">
+<meta property="og:title" content="CEVE 101 – Spring 2024 - Toolkit: Mass / Energy Balance">
 <meta property="og:site_name" content="CEVE 101 -- Spring 2024">
 </head>
 <body class="quarto-light">
@@ -356,13 +356,243 @@
     <div class="slides">
 
 <section class="quarto-title-block center">
-  <h1 class="title">Energy Storage</h1>
+  <h1 class="title">Toolkit: Mass / Energy Balance</h1>
   <hr>
   <p class="author">Dr.&nbsp;James Doss-Gollin!</p>
   <p class="date">Thu., Sep.&nbsp;12</p>
 </section>
-<section class="slide level2 smaller scrollable" id="references">
+<section class="slide level2 scrollable">
+<h2>Motivation</h2>
+<div>
+<ol type="1">
+<li class="fragment">Energy systems create lots of <span class="math inline">\(\text{CO}_2\)</span> emissions</li>
+<li class="fragment">Non-carbon energy sources are now the cheapest way to generate electricity in most places</li>
+<li class="fragment">intermittency is a challenge</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Expectations</h2>
+<ol type="1">
+<li>No exam on this content</li>
+<li>Will be useful for your projects</li>
+<li>Foundational idea in your other classes as well!</li>
+</ol>
+</section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Unifying Theories</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-active">
+<p>Unifying Theories</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Mass and Energy Balances</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Examples</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Conservation of Matter</h2>
+<div>
+<ol type="1">
+<li class="fragment">Without nuclear reaction matter can neither be created nor destroyed</li>
+<li class="fragment">Form and properties of matter can, of course, change</li>
+<li class="fragment">Example: glass of water left out</li>
+<li class="fragment">Mathematical representation is <strong>mass balance</strong></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Conservation of energy</h2>
+<div>
+<ol type="1">
+<li class="fragment">Energy can neither be created nor destroyed</li>
+<li class="fragment">Energy can be transformed from one form to another</li>
+<li class="fragment">Example: chemical energy in gasoline is converted to kinetic energy in a car</li>
+<li class="fragment">Mathematical representation is <strong>energy balance</strong></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Conservation of matter and energy</h2>
+<p>In 1905, Einstein showed that mass and energy are equivalent. This is relevant for nuclear reactions, but generally not something we need to worry about for most civil and environmental systems on Earth.</p>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Mass and Energy Balances</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Unifying Theories</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Mass and Energy Balances</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Examples</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Accounting perspective</h2>
+<p><span class="math display">\[
+\text{Accumulation} = \sum\text{Input}_i - \sum\text{Output}_i
+\]</span> where accumulation, input, and output refer to the mass or energy accumulating in the system or flowing into or out of the system.</p>
+</section>
+<section class="slide level2 scrollable">
+<h2>Control Volume</h2>
+<div>
+<ol type="1">
+<li class="fragment">We need to define “the system”</li>
+<li class="fragment">Start with conceptual understanding, such as a sketch</li>
+<li class="fragment">Draw boundaries around the system to define what is the <strong>control volume</strong></li>
+<li class="fragment">There is an art to clever choices of the control volume to make calculations simpler</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Time-Varying Accumulations</h2>
+<p>Often inputs and outputs are time-varying <span class="math display">\[
+\text{Rate of Accumulation} = \text{Rate of Input} - \text{Rate of Output}
+\]</span> where <strong>rate</strong> means per unit time.</p>
+</section>
+<section class="slide level2">
+<h2>Rates as Derivatives</h2>
+<p>In calculus we write this as <span class="math display">\[
+\frac{dM}{dt} = \frac{dM_\text{in}}{dt} - \frac{dM_\text{out}}{dt}
+\]</span> where <span class="math inline">\(M\)</span> is the amount of material in the system, <span class="math inline">\(M_\text{in}\)</span> is the amount of material entering the system, and <span class="math inline">\(M_\text{out}\)</span> is the amount of material leaving the system.</p>
+</section>
+<section class="slide level2 scrollable">
+<h2>Accounting for Reactions</h2>
+<div>
+<ol type="1">
+<li class="fragment">When no chemical or biological reaction takes place and no radioactive decay occurs, the substance is <strong>conserved.</strong></li>
+<li class="fragment">In many environmental systems, transformations occur within the system
+<ol type="1">
+<li class="fragment">Byproducts such as <span class="math inline">\(\text{CO}_2\)</span> are formed</li>
+<li class="fragment">Compounds are destroyed (e.)</li>
+</ol></li>
+<li class="fragment">We account for this by adding a term for the reaction rate. <span class="math display">\[
+\frac{dM}{dt} = \frac{dM_\text{in}}{dt} - \frac{dM_\text{out}}{dt} + r(\cdot)
+\]</span></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 smaller">
+<h2>First-order reaction</h2>
+<p>In many problems, the rate of reaction is proportional to the amount of material in the system. <span class="math display">\[
+r(\cdot) = -k M
+\]</span> where <span class="math inline">\(k\)</span> is the reaction rate constant.</p>
+<div class="fragment">
+<p>Making some assumptions (complete mixing, etc) the total mass <span class="math inline">\(M\)</span> is <span class="math inline">\(C\)</span> (concentration) times <span class="math inline">\(V\)</span> (volume). <span class="math display">\[
+\frac{dM}{dt} = d(CV)/dt = V dC/dt
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+\frac{dM}{dt} = \frac{d M_\text{in}}{dt} - \frac{d M_\text{out}}{dt} - k CV
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>First-order reaction with no input or output</h2>
+<p>If there are no inputs or outputs, and things are well-mixed, then <span class="math display">\[
+r = -kC = \frac{dC}{dt}
+\]</span> ::: {.fragment} If we integrate this out, we can get an expression for the concentration as a function of time. <span class="math display">\[
+C(t) = C_0 e^{-kt}
+\]</span> :::</p>
+</section>
+<section class="slide level2 scrollable">
+<h2>Units of energy</h2>
+<div>
+<ol type="1">
+<li class="fragment">Energy has many forms (thermal, mechanical, kinetic, potential, electrical, chemical, etc…)</li>
+<li class="fragment">SI units are <span class="math inline">\(\text{J}\)</span> (Joules), but heat units are also used (e.g., calorie)</li>
+<li class="fragment">Specific heat of a substance is the amount of heat required to increase a unit mass by one degree, expressed in units of <span class="math inline">\(\text{energy} \times \text{mass}^{-1} \times \text{temperature}^{-1}\)</span></li>
+</ol>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Examples</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Unifying Theories</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Mass and Energy Balances</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Examples</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Rainwater harvesting</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="rwh.JPG"></p>
+<figcaption>Ceará, Brazil, 2014</figcaption>
+</figure>
+</div>
+</div><div class="column fragment" style="width:40%;">
+<p>Mass balance for water:</p>
+<ul>
+<li>In: rainwater</li>
+<li>Out: consumption (leak? evaporation?)</li>
+<li>Maximum volume is fixed</li>
+</ul>
+<p>Could also perform mass balance for substances in water (bacteria, dust, etc.)</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Thermal energy storage</h2>
 
+<img data-src="https://wp.technologyreview.com/wp-content/uploads/2023/10/Antora-Thermal-Battery.jpg?fit=2160,1214" class="r-stretch quarto-figure-center"><p class="caption">[MIT Technology Review]</p></section>
+<section class="slide level2">
+<h2>Batch reactor</h2>
+
+<img data-src="https://agscientific.com/system/user_files/wordpress/2020/09/Depositphotos_6490033_xl-2015-1024x683.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://agscientific.com/blog/sequencing-batch-reactors.html">AG Scientific</a></p></section>
+<section class="slide level2">
+<h2>Weather prediction</h2>
+
+<img data-src="https://www.gfdl.noaa.gov/wp-content/uploads/2022/10/SHiELD_Family_Chart.gif" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.gfdl.noaa.gov/shield/">NOAA GFDL</a></p></section>
+<section class="slide level2">
+<h2>Nutrient cycles</h2>
+
+<img data-src="https://ecology.wa.gov/ecology/media/BlogMedia/WQ/05232023-Algae.JPG?ext=.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://ecology.wa.gov/blog/may-2023/headed-to-a-lake-or-river-today-look-out-for-bloom">Washington State Department of Ecology</a></p><p>See Khan Academy videos on <a href="https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/v/phosphorous-cycle">Phosphorus</a> and <a href="https://www.khanacademy.org/science/biology/ecology/biogeochemical-cycles/v/nitrogen-cycle">Nitrogen</a> cycloes</p>
+</section>
+<section class="slide level2 smaller scrollable" id="references">
+<h2>Wrapup</h2>
+<ol type="1">
+<li>Tuesday: short class on energy storage technologies</li>
+<li>Thursday:
+<ol type="1">
+<li>Group one-pagers due</li>
+<li>Instructions on project 1 write-up and presentation given</li>
+<li>Reproducibility and transparency with computers</li>
+</ol></li>
+</ol>
 <div id="refs" role="list">
 
 </div>
@@ -372,7 +602,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
