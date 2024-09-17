@@ -17,5 +17,281 @@ template-partials:
 ---
 
 
+# Introduction
+
+::: {.notes}
+Target: Start 10:50, End 10:55
+:::
+
+## Recap of Prior Discussions
+
+::: {.incremental}
+1. High-level overview of the energy system and how energy is generated and used.
+1. Climate science: The role of energy systems in climate change and the importance of moving toward renewables.
+:::
+
+## Focus of Today's Lecture
+
+::: {.incremental}
+1. **Two Key Themes**:
+    - How solar + batteries help with **short-term** (day-to-day) variability.
+    - The big challenge: dealing with **long-duration** storage for rare events like extreme weather or seasonal demand peaks.
+1. Texas / ERCOT is a key case study: lots of solar, wind, and interesting energy management strategies in ERCOT.
+:::
+
+## Key Questions for Today
+
+::: {.incremental}
+1. How do we manage the day-to-day variability of renewable generation?
+1. What technologies are available to handle long-duration storage for rare events like extreme weather or seasonal peaks?
+:::
+
+# Problem Framing
+
+::: {.notes}
+Target: Start 10:55, End 11:02
+:::
+
+## Drivers of Demand Variability
+
+::: {.columns}
+:::: {.column width="65%"}
+::: {.incremental}
+1. **Temperature** is the most important factor driving changes in energy demand (e.g., more cooling during hot weather, more heating during cold).
+1. **Human behavior** (e.g., commuting patterns) also impacts energy demand, but temperature dominates.
+:::
+::::
+:::: {.column width="35%"}
+::: {layout-ncol=1}
+::: {.caption}
+Figs 2a and 3a from @lee_ercot:2022.
+:::
+
+![](./lee_dessler_fig2a.png)
+
+![](lee_dessler_fig3a.png)
+:::
+::::
+:::
+
+## Renewable Generation Intermittency
+
+::: {.incremental}
+1. **Intermittency**: Renewable generation (wind and solar) doesn't provide a constant power supply—output changes with weather conditions.
+    - *What weather patterns drive these fluctuations?*
+1. **"Capacity factor"**: the ratio of actual electricity generation vs. the maximum possible generation.
+    - Given as a long-term average
+    - *What do we miss with this long-term average?*
+:::
+
+## {data-menu-title="California Duck Curve"}
+
+![](https://elements.visualcapitalist.com/wp-content/uploads/2022/06/VCE-The-Duck-Curve-Mar-31.jpg)
+
+
+# Markets
+
+::: {.notes}
+Target: Start 11:02, End 11:10
+:::
+
+## Supply and Demand
+
+![](https://cdn.britannica.com/70/74270-050-317C4423/Illustration-price-relationship-demand.jpg)
+
+## Changes in Market Equilibrium
+
+![](https://www.economicsonline.co.uk/content/images/2023/06/Supply-and-Demand-12.webp)
+
+## Energy Markets: General Overview
+
+![**Clearing price** in an example market](http://open-electricity-economics.org/book/images/chapter4/chapter4_figure3.png)
+
+::: {.incremental}
+1. There are many different types of **energy markets**, and each works a bit differently.
+1. In general, generators submit offers to sell electricity, and the market determines which offers to accept.
+:::
+
+## Marginal Cost in Energy Markets
+
+::: {.incremental}
+1. **Marginal cost**: or variable cost: the cost to produce one additional unit of electricity. 
+    - For many renewable sources like wind and solar, this cost is very low—near zero—because there's no fuel cost.
+    - Conventional power sources (like gas plants) have higher marginal costs due to fuel prices.
+:::
+
+
+## ERCOT as a Specific Example
+
+::: {.incremental}
+1. Electricity Reliability Council of Texas (ERCOT)
+1. ERCOT operates with a **bidding system**, where generators bid to provide power, and the lowest bids that meet demand are accepted.
+    - Subject to transmission-related location constraints
+    - **Discussion question**: How might adding renewables affect prices in ERCOT?
+:::
+
+::: {.notes}
+Answer: Adding renewables typically leads to very low prices because the marginal cost of renewable generation is near zero. However, during periods of scarcity (e.g., low wind/solar or high demand), prices spike. Generators need to make back all their money during these spikes, which is why energy prices can be volatile.
+:::
+
+# Storage Technologies Overview
+
+::: {.notes}
+Target: Start 11:30, End 11:40
+:::
+
+## Lithium-Ion Batteries: Strengths and Limitations
+
+::: {.incremental}
+1. **Lithium-ion batteries** are great for handling **hour-to-hour variability** but struggle with long-duration storage.
+1. They're widely used for short-term balancing of supply and demand, especially for solar power during the day.
+1. **Environmental impact**: Mining materials for batteries raises concerns about sustainability.
+    - *What are the limitations of scaling lithium-ion for long-duration storage?*
+:::
+
+## {data-menu-title="Battery Cost vs Performance"}
+
+![[Renewable Revolution](https://renewablerevolution.substack.com/p/the-rise-of-batteries-in-six-charts)](https://rockymntstage.wpengine.com/wp-content/uploads/2024/01/slide-2-battery-charts-1024x576.png)
+
+## Hydrogen for Long-Duration Storage
+
+::: {.incremental}
+1. **Hydrogen** is a potential solution for long-duration storage (e.g., storing energy for days or weeks).
+1. **Electrolyzers** convert excess electricity into hydrogen, which can be stored and later converted back to electricity.
+1. Hydrogen is expensive and complex, but it can play a key role in grid resilience.
+:::
+
+## Pumped Hydro and Other Technologies
+
+::: {.incremental}
+1. **Pumped hydro** is an effective long-duration storage technology but is geographically limited (needs elevation changes).
+1. **Compressed Air Energy Storage (CAES)** and **thermal storage** offer additional options but come with their own challenges.
+    - *What are the benefits and limitations of these alternative technologies?*
+:::
+
+
+# Short-Duration Storage
+
+::: {.notes}
+Target: Start 11:10, End 11:20
+:::
+
+## ERCOT Summer 23: High Prices
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.incremental}
+1. **Last summer in ERCOT** saw high prices due to frequent demand spikes, despite renewable generation.
+1. During peak demand periods, when the supply from renewables couldn't keep up, prices surged.
+1. Example: Wind generation dropping in the evening just as demand for air conditioning peaks.
+:::
+:::
+::: {.column width="50%"}
+![From S&P Global Market Intelligence](https://www.bicmagazine.com/downloads/28542/download/main.svg?cb=360b47d14bb1b583654d4fde295ab785)
+:::
+:::
+
+## ERCOT Summer 24: Low**er** Prices
+
+::: {.incremental}
+1. **This summer** saw more stable prices in ERCOT, with a significant increase in solar power generation.
+1. More predictable solar generation during the day, coupled with short-duration storage, kept prices low.
+1. Storage technologies like lithium-ion batteries help manage the daily fluctuations in demand and supply.
+:::
+
+## Why Short-Duration Storage Works
+
+![](https://img.canarymedia.com/content/uploads/Grid-Status-ERCOT-August-20-gross-load-record.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&q=80&w=1168&s=5490324d12ba3b8786cd941d376740a1)
+
+::: {.notes}
+Then the sun started to go down and solar began to fade away — but because temperatures were still high, air-conditioner use didn't wane. At 7:50 p.m. last Tuesday, ERCOT hit another record: 70,900 MW of "net load," a measurement of the moment in the day when available generation capacity, minus solar and wind power, is furthest out of alignment with electricity demand, forcing the grid to dispatch the highest-cost "marginal" resources available.
+
+See [Canary Media](https://www.canarymedia.com/articles/clean-energy/solar-and-batteries-are-helping-texas-weather-heatwaves-heres-how)
+:::
+
+## Batteries in ERCOT
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Texas?src=hash&amp;ref_src=twsrc%5Etfw">#Texas</a> solar shattered its previous record. New record is 21,657 megawatts which met ~40% of demand today. This puts Texas&#39; solar record a full 2,000 megawatts above California&#39;s. Wholesale power was free for 2 hours today and &lt;2c per kWh all day. <a href="https://twitter.com/hashtag/txlege?src=hash&amp;ref_src=twsrc%5Etfw">#txlege</a> <a href="https://twitter.com/hashtag/energytwitter?src=hash&amp;ref_src=twsrc%5Etfw">#energytwitter</a> <a href="https://twitter.com/hashtag/txenergy?src=hash&amp;ref_src=twsrc%5Etfw">#txenergy</a> <a href="https://t.co/CAKvxfH21N">pic.twitter.com/CAKvxfH21N</a></p>&mdash; Doug Lewin (@douglewinenergy) <a href="https://twitter.com/douglewinenergy/status/1832879863528595628?ref_src=twsrc%5Etfw">September 8, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+## Prices with 📈 Renewables and Storage
+
+![](https://img.canarymedia.com/content/uploads/Grid-Status-ERCOT-August-20-net-load-record.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&q=80&w=1168&s=ed34e55854c85f178601941716da5936)
+
+## Expensive Batteries Can Lower Costs
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is a great illustration of the impact batteries are having on electricity markets.<br><br>1. Batteries are taking over ancillary services markets. (services that ensure reliability and maintain things like voltage and frequency)<br><br>2. Because batteries can provide these services at… <a href="https://t.co/U4snDI8EHa">https://t.co/U4snDI8EHa</a> <a href="https://t.co/s5hhuOLSk9">pic.twitter.com/s5hhuOLSk9</a></p>&mdash; Jesse Peltan (@JessePeltan) <a href="https://twitter.com/JessePeltan/status/1835395697581101420?ref_src=twsrc%5Etfw">September 15, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+# Long-Duration Storage
+
+::: {.notes}
+Target: Start 11:20, End 11:30
+:::
+
+## The Challenge of Temperature Extremes
+
+::: {.incremental}
+1. **Extreme peaks** (e.g., Texas winter storm 2021) show why short-duration storage isn't enough.
+1. Long-duration storage is needed to cover extended periods of low renewable generation (e.g., solar during winter or low wind).
+    - Example: During a "solar drought" or "dunkelflaute," there is no sun for days, and wind generation can also drop.
+:::
+
+## Cold Peaks are Especially Challenging
+
+![Figure 4 from @amonkar_heatingcooling:2023. "Inferred thermal demand" is calculated based on temperature and population only.](./amonkar-2022-fig-4.png)
+
+## Why Long-Duration Storage is Hard
+
+::: {.incremental}
+1. Technologies like **lithium-ion batteries** work well for short periods but are not viable for storing energy for days or weeks.
+1. **Economics**: Long-duration storage is expensive--both in terms of capacity and infrastructure (e.g., hydrogen storage, pumped hydro).
+    - Long-duration storage has low **capacity factors**, must recoup large investment over short periods.
+:::
+
+## Examples of Long-Duration Storage Needs
+
+:::: {.columns}
+::: {.column width="50%"}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">ERCOT expected 14GW of power plant outages in its &#39;extreme&#39; winter planning scenario. By late Monday morning, more than 30GW were offline. <a href="https://t.co/6HvkEaT1en">pic.twitter.com/6HvkEaT1en</a></p>&mdash; Brian Bartholomew (@BPBartholomew) <a href="https://twitter.com/BPBartholomew/status/1364446059028750337?ref_src=twsrc%5Etfw">February 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+:::
+::: {.column width="50%"}
+::: {.incremental}
+1. Seasonal changes (e.g., winter "solar drought" or peak summer demand) drive the need for long-duration storage.
+1. **Texas winter storm 2021**: Prolonged cold caused a major spike in demand with low renewable generation, leading to blackouts.
+:::
+:::
+::::
+
+
+# Wrapup
+
+## Take-Home Messages
+
+
+::: {.incremental}
+1. Short-term variability handled by technologies like solar + batteries.
+1. Long-duration storage for extreme peaks and seasonal variations remains a significant challenge.
+:::
+
+## Thursday
+
+We will discuss coding and reproducibility, as well as [Project 1](../../projects/project-1.qmd).
+
+To-do:
+
+1. Project 1: group ideas due
+1. Install Zotero (see [Fondren support](https://fondrenlearning.blogs.rice.edu/zotero/))
+  1. Create an account (linked to your Rice email) and confirm you can sync to the cloud
+  1. Install the Zotero plugin for your browser
+
+## Further reading
+
+- [Solar is bigger in Texas](https://www.axios.com/2024/09/06/solar-power-generation-texas)
+- [Slides](https://www.dropbox.com/scl/fo/2wkzp3t7atfsrvi618o1d/ACdlDUMbrMU0CQy0PbYR5cY?rlkey=7b44s9ygr4heq8vfa43o1iyy9&e=1&dl=0) for Princeton ENE 422 "Introduction to the Electricity Sector: Engineering, Economics, and Regulation"
+- [RMI: The Rise of Batteries](https://rmi.org/the-rise-of-batteries-in-six-charts-and-not-too-many-numbers/) 
+- [Battery VPP](https://www.renewableenergyworld.com/storage/der/in-texas-a-new-battery-vpp-takes-shape/) in Texas to use household batteries to solve grid problems
+- [California and Texas lead the way in US battery grid rollouts](https://www.power-technology.com/news/california-and-texas-lead-the-way-in-us-battery-grid-rollouts/)
+
+## References
+
 ::: {#refs}
 :::
