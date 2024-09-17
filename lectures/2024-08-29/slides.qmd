@@ -12,7 +12,7 @@ format:
     template-partials:
     - ../title-slide.html
 
-author: "{{< var instructor.name >}}!"
+author: "{{< var instructor.name >}}"
 course: "{{< var course.number >}}, {{< var course.title >}}"
 institution: "{{< var course.institution >}}}"
 ---
