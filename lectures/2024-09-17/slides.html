@@ -34,6 +34,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -361,10 +362,649 @@
   <p class="author">Dr.&nbsp;James Doss-Gollin</p>
   <p class="date">Tue., Sep.&nbsp;17</p>
 </section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Introduction</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Target: Start 10:50, End 10:55</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 scrollable">
+<h2>Recap of Prior Discussions</h2>
+<div>
+<ol type="1">
+<li class="fragment">High-level overview of the energy system and how energy is generated and used.</li>
+<li class="fragment">Climate science: The role of energy systems in climate change and the importance of moving toward renewables.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Focus of Today’s Lecture</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Two Key Themes</strong>:
+<ul>
+<li class="fragment">How solar + batteries help with <strong>short-term</strong> (day-to-day) variability.</li>
+<li class="fragment">The big challenge: dealing with <strong>long-duration</strong> storage for rare events like extreme weather or seasonal demand peaks.</li>
+</ul></li>
+<li class="fragment">Texas / ERCOT is a key case study: lots of solar, wind, and interesting energy management strategies in ERCOT.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Key Questions for Today</h2>
+<div>
+<ol type="1">
+<li class="fragment">How do we manage the day-to-day variability of renewable generation?</li>
+<li class="fragment">What technologies are available to handle long-duration storage for rare events like extreme weather or seasonal peaks?</li>
+</ol>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Problem Framing</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Target: Start 10:55, End 11:02</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 scrollable">
+<h2>Drivers of Demand Variability</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div>
+<ol type="1">
+<li class="fragment"><strong>Temperature</strong> is the most important factor driving changes in energy demand (e.g., more cooling during hot weather, more heating during cold).</li>
+<li class="fragment"><strong>Human behavior</strong> (e.g., commuting patterns) also impacts energy demand, but temperature dominates.</li>
+</ol>
+</div>
+</div><div class="column" style="width:35%;">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row">
+<div class="caption quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>Figs 2a and 3a from <span class="citation" data-cites="lee_ercot:2022">Lee &amp; Dessler (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>.</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img data-src="./lee_dessler_fig2a.png"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img data-src="lee_dessler_fig3a.png"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Renewable Generation Intermittency</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Intermittency</strong>: Renewable generation (wind and solar) doesn’t provide a constant power supply—output changes with weather conditions.
+<ul>
+<li class="fragment"><em>What weather patterns drive these fluctuations?</em></li>
+</ul></li>
+<li class="fragment"><strong>“Capacity factor”</strong>: the ratio of actual electricity generation vs.&nbsp;the maximum possible generation.
+<ul>
+<li class="fragment">Given as a long-term average</li>
+<li class="fragment"><em>What do we miss with this long-term average?</em></li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2" data-menu-title="California Duck Curve">
+<h2></h2>
+
+<img data-src="https://elements.visualcapitalist.com/wp-content/uploads/2022/06/VCE-The-Duck-Curve-Mar-31.jpg" class="r-stretch"></section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Markets</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Target: Start 11:02, End 11:10</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+<h2>Supply and Demand</h2>
+
+<img data-src="https://cdn.britannica.com/70/74270-050-317C4423/Illustration-price-relationship-demand.jpg" class="r-stretch"></section>
+<section class="slide level2">
+<h2>Changes in Market Equilibrium</h2>
+
+<img data-src="https://www.economicsonline.co.uk/content/images/2023/06/Supply-and-Demand-12.webp" class="r-stretch"></section>
+<section class="slide level2 scrollable">
+<h2>Energy Markets: General Overview</h2>
+
+<img data-src="http://open-electricity-economics.org/book/images/chapter4/chapter4_figure3.png" class="r-stretch quarto-figure-center"><p class="caption"><strong>Clearing price</strong> in an example market</p><div>
+<ol type="1">
+<li class="fragment">There are many different types of <strong>energy markets</strong>, and each works a bit differently.</li>
+<li class="fragment">In general, generators submit offers to sell electricity, and the market determines which offers to accept.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Marginal Cost in Energy Markets</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Marginal cost</strong>: or variable cost: the cost to produce one additional unit of electricity.
+<ul>
+<li class="fragment">For many renewable sources like wind and solar, this cost is very low—near zero—because there’s no fuel cost.</li>
+<li class="fragment">Conventional power sources (like gas plants) have higher marginal costs due to fuel prices.</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>ERCOT as a Specific Example</h2>
+<div>
+<ol type="1">
+<li class="fragment">Electricity Reliability Council of Texas (ERCOT)</li>
+<li class="fragment">ERCOT operates with a <strong>bidding system</strong>, where generators bid to provide power, and the lowest bids that meet demand are accepted.
+<ul>
+<li class="fragment">Subject to transmission-related location constraints</li>
+<li class="fragment"><strong>Discussion question</strong>: How might adding renewables affect prices in ERCOT?</li>
+</ul></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Answer: Adding renewables typically leads to very low prices because the marginal cost of renewable generation is near zero. However, during periods of scarcity (e.g., low wind/solar or high demand), prices spike. Generators need to make back all their money during these spikes, which is why energy prices can be volatile.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Storage Technologies Overview</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Target: Start 11:30, End 11:40</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 scrollable">
+<h2>Lithium-Ion Batteries: Strengths and Limitations</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Lithium-ion batteries</strong> are great for handling <strong>hour-to-hour variability</strong> but struggle with long-duration storage.</li>
+<li class="fragment">They’re widely used for short-term balancing of supply and demand, especially for solar power during the day.</li>
+<li class="fragment"><strong>Environmental impact</strong>: Mining materials for batteries raises concerns about sustainability.
+<ul>
+<li class="fragment"><em>What are the limitations of scaling lithium-ion for long-duration storage?</em></li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2" data-menu-title="Battery Cost vs Performance">
+<h2></h2>
+
+<img data-src="https://rockymntstage.wpengine.com/wp-content/uploads/2024/01/slide-2-battery-charts-1024x576.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://renewablerevolution.substack.com/p/the-rise-of-batteries-in-six-charts">Renewable Revolution</a></p></section>
+<section class="slide level2 scrollable">
+<h2>Hydrogen for Long-Duration Storage</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Hydrogen</strong> is a potential solution for long-duration storage (e.g., storing energy for days or weeks).</li>
+<li class="fragment"><strong>Electrolyzers</strong> convert excess electricity into hydrogen, which can be stored and later converted back to electricity.</li>
+<li class="fragment">Hydrogen is expensive and complex, but it can play a key role in grid resilience.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Pumped Hydro and Other Technologies</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Pumped hydro</strong> is an effective long-duration storage technology but is geographically limited (needs elevation changes).</li>
+<li class="fragment"><strong>Compressed Air Energy Storage (CAES)</strong> and <strong>thermal storage</strong> offer additional options but come with their own challenges.
+<ul>
+<li class="fragment"><em>What are the benefits and limitations of these alternative technologies?</em></li>
+</ul></li>
+</ol>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Short-Duration Storage</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Target: Start 11:10, End 11:20</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 scrollable">
+<h2>ERCOT Summer 23: High Prices</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div>
+<ol type="1">
+<li class="fragment"><strong>Last summer in ERCOT</strong> saw high prices due to frequent demand spikes, despite renewable generation.</li>
+<li class="fragment">During peak demand periods, when the supply from renewables couldn’t keep up, prices surged.</li>
+<li class="fragment">Example: Wind generation dropping in the evening just as demand for air conditioning peaks.</li>
+</ol>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://www.bicmagazine.com/downloads/28542/download/main.svg?cb=360b47d14bb1b583654d4fde295ab785"></p>
+<figcaption>From S&amp;P Global Market Intelligence</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>ERCOT Summer 24: Low<strong>er</strong> Prices</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>This summer</strong> saw more stable prices in ERCOT, with a significant increase in solar power generation.</li>
+<li class="fragment">More predictable solar generation during the day, coupled with short-duration storage, kept prices low.</li>
+<li class="fragment">Storage technologies like lithium-ion batteries help manage the daily fluctuations in demand and supply.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Why Short-Duration Storage Works</h2>
+
+<img data-src="https://img.canarymedia.com/content/uploads/Grid-Status-ERCOT-August-20-gross-load-record.jpg?auto=compress%2Cformat&amp;crop=focalpoint&amp;fit=crop&amp;fp-x=0.5&amp;fp-y=0.5&amp;q=80&amp;w=1168&amp;s=5490324d12ba3b8786cd941d376740a1" class="r-stretch"><aside class="notes">
+<p>Then the sun started to go down and solar began to fade away — but because temperatures were still high, air-conditioner use didn’t wane. At 7:50 p.m. last Tuesday, ERCOT hit another record: 70,900 MW of “net load,” a measurement of the moment in the day when available generation capacity, minus solar and wind power, is furthest out of alignment with electricity demand, forcing the grid to dispatch the highest-cost “marginal” resources available.</p>
+<p>See <a href="https://www.canarymedia.com/articles/clean-energy/solar-and-batteries-are-helping-texas-weather-heatwaves-heres-how">Canary Media</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+<h2>Batteries in ERCOT</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+<a href="https://twitter.com/hashtag/Texas?src=hash&amp;ref_src=twsrc%5Etfw">#Texas</a> solar shattered its previous record. New record is 21,657 megawatts which met ~40% of demand today. This puts Texas' solar record a full 2,000 megawatts above California's. Wholesale power was free for 2 hours today and &lt;2c per kWh all day. <a href="https://twitter.com/hashtag/txlege?src=hash&amp;ref_src=twsrc%5Etfw">#txlege</a> <a href="https://twitter.com/hashtag/energytwitter?src=hash&amp;ref_src=twsrc%5Etfw">#energytwitter</a> <a href="https://twitter.com/hashtag/txenergy?src=hash&amp;ref_src=twsrc%5Etfw">#txenergy</a> <a href="https://t.co/CAKvxfH21N">pic.twitter.com/CAKvxfH21N</a>
+</p>
+— Doug Lewin (<span class="citation" data-cites="douglewinenergy">(<a href="#/references" role="doc-biblioref" onclick=""><strong>douglewinenergy?</strong></a>)</span>) <a href="https://twitter.com/douglewinenergy/status/1832879863528595628?ref_src=twsrc%5Etfw">September 8, 2024</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<section class="slide level2">
+<h2>Prices with 📈 Renewables and Storage</h2>
+
+<img data-src="https://img.canarymedia.com/content/uploads/Grid-Status-ERCOT-August-20-net-load-record.jpg?auto=compress%2Cformat&amp;crop=focalpoint&amp;fit=crop&amp;fp-x=0.5&amp;fp-y=0.5&amp;q=80&amp;w=1168&amp;s=ed34e55854c85f178601941716da5936" class="r-stretch"></section>
+<section class="slide level2">
+<h2>Expensive Batteries Can Lower Costs</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+This is a great illustration of the impact batteries are having on electricity markets.<br><br>1. Batteries are taking over ancillary services markets. (services that ensure reliability and maintain things like voltage and frequency)<br><br>2. Because batteries can provide these services at… <a href="https://t.co/U4snDI8EHa">https://t.co/U4snDI8EHa</a> <a href="https://t.co/s5hhuOLSk9">pic.twitter.com/s5hhuOLSk9</a>
+</p>
+— Jesse Peltan (<span class="citation" data-cites="JessePeltan">(<a href="#/references" role="doc-biblioref" onclick=""><strong>JessePeltan?</strong></a>)</span>) <a href="https://twitter.com/JessePeltan/status/1835395697581101420?ref_src=twsrc%5Etfw">September 15, 2024</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Long-Duration Storage</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Target: Start 11:20, End 11:30</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 scrollable">
+<h2>The Challenge of Temperature Extremes</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Extreme peaks</strong> (e.g., Texas winter storm 2021) show why short-duration storage isn’t enough.</li>
+<li class="fragment">Long-duration storage is needed to cover extended periods of low renewable generation (e.g., solar during winter or low wind).
+<ul>
+<li class="fragment">Example: During a “solar drought” or “dunkelflaute,” there is no sun for days, and wind generation can also drop.</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Cold Peaks are Especially Challenging</h2>
+
+<img data-src="./amonkar-2022-fig-4.png" class="r-stretch quarto-figure-center"><p class="caption">Figure 4 from <span class="citation" data-cites="amonkar_heatingcooling:2023">Amonkar et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>. “Inferred thermal demand” is calculated based on temperature and population only.</p></section>
+<section class="slide level2 scrollable">
+<h2>Why Long-Duration Storage is Hard</h2>
+<div>
+<ol type="1">
+<li class="fragment">Technologies like <strong>lithium-ion batteries</strong> work well for short periods but are not viable for storing energy for days or weeks.</li>
+<li class="fragment"><strong>Economics</strong>: Long-duration storage is expensive–both in terms of capacity and infrastructure (e.g., hydrogen storage, pumped hydro).
+<ul>
+<li class="fragment">Long-duration storage has low <strong>capacity factors</strong>, must recoup large investment over short periods.</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Examples of Long-Duration Storage Needs</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+ERCOT expected 14GW of power plant outages in its 'extreme' winter planning scenario. By late Monday morning, more than 30GW were offline. <a href="https://t.co/6HvkEaT1en">pic.twitter.com/6HvkEaT1en</a>
+</p>
+— Brian Bartholomew (<span class="citation" data-cites="BPBartholomew">(<a href="#/references" role="doc-biblioref" onclick=""><strong>BPBartholomew?</strong></a>)</span>) <a href="https://twitter.com/BPBartholomew/status/1364446059028750337?ref_src=twsrc%5Etfw">February 24, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div><div class="column" style="width:50%;">
+<div>
+<ol type="1">
+<li class="fragment">Seasonal changes (e.g., winter “solar drought” or peak summer demand) drive the need for long-duration storage.</li>
+<li class="fragment"><strong>Texas winter storm 2021</strong>: Prolonged cold caused a major spike in demand with low renewable generation, leading to blackouts.</li>
+</ol>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Wrapup</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Introduction</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Problem Framing</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Markets</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Storage Technologies Overview</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Short-Duration Storage</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Long-Duration Storage</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Wrapup</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Take-Home Messages</h2>
+<div>
+<ol type="1">
+<li class="fragment">Short-term variability handled by technologies like solar + batteries.</li>
+<li class="fragment">Long-duration storage for extreme peaks and seasonal variations remains a significant challenge.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Thursday</h2>
+<p>We will discuss coding and reproducibility, as well as <a href="../../projects/project-1.html">Project 1</a>.</p>
+<p>To-do:</p>
+<ol type="1">
+<li>Project 1: group ideas due</li>
+<li>Install Zotero (see <a href="https://fondrenlearning.blogs.rice.edu/zotero/">Fondren support</a>)</li>
+<li>Create an account (linked to your Rice email) and confirm you can sync to the cloud</li>
+<li>Install the Zotero plugin for your browser</li>
+</ol>
+</section>
+<section class="slide level2">
+<h2>Further reading</h2>
+<ul>
+<li><a href="https://www.axios.com/2024/09/06/solar-power-generation-texas">Solar is bigger in Texas</a></li>
+<li><a href="https://www.dropbox.com/scl/fo/2wkzp3t7atfsrvi618o1d/ACdlDUMbrMU0CQy0PbYR5cY?rlkey=7b44s9ygr4heq8vfa43o1iyy9&amp;e=1&amp;dl=0">Slides</a> for Princeton ENE 422 “Introduction to the Electricity Sector: Engineering, Economics, and Regulation”</li>
+<li><a href="https://rmi.org/the-rise-of-batteries-in-six-charts-and-not-too-many-numbers/">RMI: The Rise of Batteries</a></li>
+<li><a href="https://www.renewableenergyworld.com/storage/der/in-texas-a-new-battery-vpp-takes-shape/">Battery VPP</a> in Texas to use household batteries to solve grid problems</li>
+<li><a href="https://www.power-technology.com/news/california-and-texas-lead-the-way-in-us-battery-grid-rollouts/">California and Texas lead the way in US battery grid rollouts</a></li>
+</ul>
+</section>
 <section class="slide level2 smaller scrollable" id="references">
-
-<div id="refs" role="list">
-
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-amonkar_heatingcooling:2023" class="csl-entry" role="listitem">
+Amonkar, Y., Doss-Gollin, J., Farnham, D. J., Modi, V., &amp; Lall, U. (2023). Differential effects of climate change on average and peak demand for heating and cooling across the contiguous <span>USA</span>. <em>Communications Earth &amp; Environment</em>, <em>4</em>(1, 1), 1–9. <a href="https://doi.org/10.1038/s43247-023-01048-1">https://doi.org/10.1038/s43247-023-01048-1</a>
+</div>
+<div id="ref-lee_ercot:2022" class="csl-entry" role="listitem">
+Lee, J., &amp; Dessler, A. E. (2022). The <span>Impact</span> of <span>Neglecting Climate Change</span> and <span>Variability</span> on <span>ERCOT</span>’s <span>Forecasts</span> of <span>Electricity Demand</span> in <span>Texas</span>. <em>Weather, Climate, and Society</em>, <em>14</em>(2), 499–505. <a href="https://doi.org/10.1175/WCAS-D-21-0140.1">https://doi.org/10.1175/WCAS-D-21-0140.1</a>
+</div>
 </div>
 
 <div class="quarto-auto-generated-content">
@@ -372,7 +1012,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
