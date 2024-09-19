@@ -1,5 +1,5 @@
 ---
-title: "Reproducibility and transparency with computers"
+title: "Reproducibility and Transparency in a Digital World"
 date: 2024-09-19
 module: 1
 
@@ -11,11 +11,200 @@ format: revealjs
 
 author: "{{< var instructor.name >}}"
 course: "{{< var course.number >}}, {{< var course.title >}}"
-institution: "{{< var course.institution >}}}"
+institution: "{{< var course.institution >}}"
+
 template-partials:
     - ../title-slide.html
 ---
 
+# Academic Integrity
 
-::: {#refs}
+## Rice Honor Code
+
+::: {.callout-important}
+## http://honor.rice.edu/
+
+> On my honor, I have neither given nor received any unauthorized aid on this (exam, quiz, paper).
 :::
+
+## {data-menu-title="Plagiarism"}
+
+![Plagiarism Spectrum 2.0 [Turnitin](https://www.turnitin.com/resources/plagiarism-spectrum-2-0). (2021).](https://libapps-au.s3-ap-southeast-2.amazonaws.com/accounts/204986/images/Plagiarism_Spectrum_2_Student_US_EN_0221.jpg)
+
+## Plagiarism in CEVE 101
+
+::: {.incremental}
+1. I expect that you are still learning proper citation practices, and I aim to support you in this learning
+1. Aim for honesty and integrity always
+    - Example: citing sources using a URL in a footnote
+:::
+
+## Integrity
+
+::: {.callout-important}
+## Credit
+
+Shoutout to my colleague [Vivek Srikrishnan](https://viveks.me/climate-risk-analysis/lecture-notes/01-overview/index.html) and [Tony Wong](https://tonyewong.github.io/) for these examples
+:::
+
+## Example: Academic Integrity
+
+Dan searches the internet for relevant code and copy-pastes it into his Jupyter notebook. He properly cites the source of the codes.
+
+::: {.fragment}
+#### Probably Not OK:
+
+- What portion of the work is Dan's?
+- How important were the copied codes?
+- Did Dan understand the code he copied?
+:::
+
+## Example: Academic Integrity
+
+Matthew and Rhonda work together to figure out how to implement the codes, but each works on their own computer and develops their own software.
+
+::: {.fragment}
+#### Definitely OK:
+
+- Matthew and Rhonda have collaborated to understand how to solve the problem(s), but has written up their own solution, demonstrating their understanding.
+:::
+
+## Example: Academic Integrity
+
+Felix and Rachel are working together on a problem involving a derivation. Rachel types it up in LaTeX and sends the code to Felix, who pastes it into his Jupyter notebook.
+
+::: {.fragment}
+#### Likely Not OK:
+
+- Did Felix contribute enough to the derivation?
+- *Definitely not OK if Felix doesn't give Rachel credit for her contribution.*
+:::
+
+## LLMs and AI
+
+From [Syllabus](../../syllabus.qmd#sec-llm):
+
+::: {.incremental}
+1. LLMs don't do your work for you
+1. LLMs don't do your thinking for you
+1. If you replace Rachel or "the internet" in the previous examples with "Claude" or "ChatGPT", the answer is still the same!
+:::
+
+## LLMs and AI
+
+There are many helpful and productive uses of AI!
+
+::: {.incremental}
+1. Structured feedback on your work
+1. Debugging code
+1. Translating ideas between computational representations
+:::
+
+## LLM example:
+
+LLMs (and other specialized tools) can help you convert text- or image-based representations of an equation into a more readily shareable format
+
+```latex
+\frac{\partial \mathbf{u}}{\partial t}
++ \underbrace{(\mathbf{u} \cdot \nabla)\mathbf{u}}_{\text{convection}}
+= -\frac{1}{\rho}\nabla p
++ \underbrace{\nu \nabla^2\mathbf{u}}_{\text{diffusion}}
++ \overbrace{\mathbf{g}}^{\text{body forces}}
+```
+
+$$
+\frac{\partial \mathbf{u}}{\partial t}
++ \underbrace{(\mathbf{u} \cdot \nabla)\mathbf{u}}_{\text{convection}}
+= -\frac{1}{\rho}\nabla p
++ \underbrace{\nu \nabla^2\mathbf{u}}_{\text{diffusion}}
++ \overbrace{\mathbf{g}}^{\text{body forces}}
+$$
+
+# Citation Management with Zotero
+
+## Reference Management
+
+::: {.incremental}
+1. Collect
+1. Organize
+1. Cite
+1. Write
+:::
+
+## Why Zotero?
+
+There are many tools (EndNote, Mendeley, Papers, PaperPile, etc.) but Zotero stands out
+
+::: {.incremental}
+- Free
+- Open source (no lock-in)
+- Cross platform
+- Cloud sync (free *for you*)
+- Many export formats
+:::
+
+## Quick demos
+
+::: {.incremental}
+1. Add a paper to library using web connector
+1. Add a paper to library using DOI
+1. Manually add a report
+1. Cite a source in Google Docs ([ref](https://www.zotero.org/support/google_docs))
+:::
+
+# Reproducibility and Transparency
+
+## Definitions
+
+::: {.incremental}
+1. **Reproducibility**: Ability to generate the same insights using the same data, code, and methods.
+2. **Repeatability**: The ability to run the same experiment or analysis in the same lab or environment and get the same results.
+3. **Replicability**: Achieving similar results using different methods, datasets, or variations on the original study.
+4. **Transparency**: Ensuring all data, code, and methodology are openly available and clearly documented.
+:::
+
+## Importance
+
+::: {.incremental}
+1. **Reproducibility** ensures that other researchers can verify the results of a study using the same data and approach.
+2. **Repeatability** confirms that the original experiment was performed accurately and consistently.
+3. **Replicability** strengthens findings by validating them under different conditions or with different data.
+4. **Transparency** builds trust in research by making it possible for others to scrutinize the processes and decisions behind the results.
+:::
+
+## Relevance
+
+These analyses are especially relevant for infrastructure planning and climate risk management
+
+::: {.incremental}
+1. Small changes in underlying assumptions (i.e., details) can have large impacts on outcomes
+    - Not possible to describe every single detail using text
+    - Different assumptions can look similar on past data but yield very different conclusions about the future
+1. Many assumptions are impossible to verify objectively
+:::
+
+::: {.fragment}
+*Are there examples of research where these issues are less important?*
+:::
+
+## How to Improve Openness
+
+Openness is less a strict, well-defined standard than a direction to work towards as we acquire new tools and skills (Always Be Improving).
+For example, instead of doing analysis in Excel and sharing your findings with a report, you could:
+
+::: {.incremental}
+1. Do calculations in Excel and share the spreadsheet with the report
+1. Do analysis with computational scripts that others can examine
+1. Share all input and output data as part of the analysis
+1. Use open-source tools with a well-documented environment so others can replicate your software stack
+1. Integrate pipeline tools so that others can run your analysis with a single command
+1. Combine your code and analysis into a single notebook
+1. Write clear, readable code with comments and documentation
+1. Integrate automated tests to increase confidence in your numerical implementation
+:::
+
+## Wrapup
+
+1. Feedback on project 1 one-pagers ASAP
+1. Project 1 templates posted on Canvas today
+1. [Arts + Engineering Undergrad Social](https://canvas.rice.edu/courses/71565/files?preview=5843437) tomorrow 9/20
