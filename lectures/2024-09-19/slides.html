@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.5.43">
 
   <meta name="author" content="Dr.&nbsp;James Doss-Gollin">
-  <title>CEVE 101 -- Spring 2024 – Reproducibility and transparency with computers</title>
+  <title>CEVE 101 -- Spring 2024 – Reproducibility and Transparency in a Digital World</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,26 +30,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
     }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -348,7 +394,7 @@
       tex: { packages: { '[+]': ['physics'] } }
     };
   </script>
-<meta property="og:title" content="CEVE 101 – Spring 2024 - Reproducibility and transparency with computers">
+<meta property="og:title" content="CEVE 101 – Spring 2024 - Reproducibility and Transparency in a Digital World">
 <meta property="og:site_name" content="CEVE 101 -- Spring 2024">
 </head>
 <body class="quarto-light">
@@ -356,23 +402,299 @@
     <div class="slides">
 
 <section class="quarto-title-block center">
-  <h1 class="title">Reproducibility and transparency with computers</h1>
+  <h1 class="title">Reproducibility and Transparency in a Digital World</h1>
   <hr>
   <p class="author">Dr.&nbsp;James Doss-Gollin</p>
   <p class="date">Thu., Sep.&nbsp;19</p>
 </section>
-<section class="slide level2 smaller scrollable" id="references">
-
-<div id="refs" role="list">
-
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Academic Integrity</h1>
+<div class="agenda-heading">
+<p>Today</p>
 </div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-active">
+<p>Academic Integrity</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Citation Management with Zotero</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Reproducibility and Transparency</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Rice Honor Code</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>http://honor.rice.edu/</strong></p>
+</div>
+<div class="callout-content">
+<blockquote>
+<p>On my honor, I have neither given nor received any unauthorized aid on this (exam, quiz, paper).</p>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2" data-menu-title="Plagiarism">
+<h2></h2>
+
+<img data-src="https://libapps-au.s3-ap-southeast-2.amazonaws.com/accounts/204986/images/Plagiarism_Spectrum_2_Student_US_EN_0221.jpg" class="r-stretch quarto-figure-center"><p class="caption">Plagiarism Spectrum 2.0 <a href="https://www.turnitin.com/resources/plagiarism-spectrum-2-0">Turnitin</a>. (2021).</p></section>
+<section class="slide level2 scrollable">
+<h2>Plagiarism in CEVE 101</h2>
+<div>
+<ol type="1">
+<li class="fragment">I expect that you are still learning proper citation practices, and I aim to support you in this learning</li>
+<li class="fragment">Aim for honesty and integrity always
+<ul>
+<li class="fragment">Example: citing sources using a URL in a footnote</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Integrity</h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Credit</strong></p>
+</div>
+<div class="callout-content">
+<p>Shoutout to my colleague <a href="https://viveks.me/climate-risk-analysis/lecture-notes/01-overview/index.html">Vivek Srikrishnan</a> and <a href="https://tonyewong.github.io/">Tony Wong</a> for these examples</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Example: Academic Integrity</h2>
+<p>Dan searches the internet for relevant code and copy-pastes it into his Jupyter notebook. He properly cites the source of the codes.</p>
+<div class="fragment">
+<!-- -->
+<h4>Probably Not OK:</h4>
+<ul>
+<li>What portion of the work is Dan’s?</li>
+<li>How important were the copied codes?</li>
+<li>Did Dan understand the code he copied?</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+<h2>Example: Academic Integrity</h2>
+<p>Matthew and Rhonda work together to figure out how to implement the codes, but each works on their own computer and develops their own software.</p>
+<div class="fragment">
+<!-- -->
+<h4>Definitely OK:</h4>
+<ul>
+<li>Matthew and Rhonda have collaborated to understand how to solve the problem(s), but has written up their own solution, demonstrating their understanding.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+<h2>Example: Academic Integrity</h2>
+<p>Felix and Rachel are working together on a problem involving a derivation. Rachel types it up in LaTeX and sends the code to Felix, who pastes it into his Jupyter notebook.</p>
+<div class="fragment">
+<!-- -->
+<h4>Likely Not OK:</h4>
+<ul>
+<li>Did Felix contribute enough to the derivation?</li>
+<li><em>Definitely not OK if Felix doesn’t give Rachel credit for her contribution.</em></li>
+</ul>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>LLMs and AI</h2>
+<p>From <a href="../../syllabus.html#sec-llm">Syllabus</a>:</p>
+<div>
+<ol type="1">
+<li class="fragment">LLMs don’t do your work for you</li>
+<li class="fragment">LLMs don’t do your thinking for you</li>
+<li class="fragment">If you replace Rachel or “the internet” in the previous examples with “Claude” or “ChatGPT”, the answer is still the same!</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>LLMs and AI</h2>
+<p>There are many helpful and productive uses of AI!</p>
+<div>
+<ol type="1">
+<li class="fragment">Structured feedback on your work</li>
+<li class="fragment">Debugging code</li>
+<li class="fragment">Translating ideas between computational representations</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>LLM example:</h2>
+<p>LLMs (and other specialized tools) can help you convert text- or image-based representations of an equation into a more readily shareable format</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a></a><span class="fu">\frac</span>{<span class="fu">\partial</span> <span class="fu">\mathbf</span>{u}}{<span class="fu">\partial</span> t}</span>
+<span id="cb1-2"><a></a>+ <span class="fu">\underbrace</span>{(<span class="fu">\mathbf</span>{u} <span class="fu">\cdot</span> <span class="fu">\nabla</span>)<span class="fu">\mathbf</span>{u}}_{<span class="fu">\text</span>{convection}}</span>
+<span id="cb1-3"><a></a>= -<span class="fu">\frac</span>{1}{<span class="fu">\rho</span>}<span class="fu">\nabla</span> p</span>
+<span id="cb1-4"><a></a>+ <span class="fu">\underbrace</span>{<span class="fu">\nu</span> <span class="fu">\nabla</span>^2<span class="fu">\mathbf</span>{u}}_{<span class="fu">\text</span>{diffusion}}</span>
+<span id="cb1-5"><a></a>+ <span class="fu">\overbrace</span>{<span class="fu">\mathbf</span>{g}}^{<span class="fu">\text</span>{body forces}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="math display">\[
+\frac{\partial \mathbf{u}}{\partial t}
++ \underbrace{(\mathbf{u} \cdot \nabla)\mathbf{u}}_{\text{convection}}
+= -\frac{1}{\rho}\nabla p
++ \underbrace{\nu \nabla^2\mathbf{u}}_{\text{diffusion}}
++ \overbrace{\mathbf{g}}^{\text{body forces}}
+\]</span></p>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Citation Management with Zotero</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Academic Integrity</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Citation Management with Zotero</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Reproducibility and Transparency</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Reference Management</h2>
+<div>
+<ol type="1">
+<li class="fragment">Collect</li>
+<li class="fragment">Organize</li>
+<li class="fragment">Cite</li>
+<li class="fragment">Write</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Why Zotero?</h2>
+<p>There are many tools (EndNote, Mendeley, Papers, PaperPile, etc.) but Zotero stands out</p>
+<div>
+<ul>
+<li class="fragment">Free</li>
+<li class="fragment">Open source (no lock-in)</li>
+<li class="fragment">Cross platform</li>
+<li class="fragment">Cloud sync (free <em>for you</em>)</li>
+<li class="fragment">Many export formats</li>
+</ul>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Quick demos</h2>
+<div>
+<ol type="1">
+<li class="fragment">Add a paper to library using web connector</li>
+<li class="fragment">Add a paper to library using DOI</li>
+<li class="fragment">Manually add a report</li>
+<li class="fragment">Cite a source in Google Docs (<a href="https://www.zotero.org/support/google_docs">ref</a>)</li>
+</ol>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Reproducibility and Transparency</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Academic Integrity</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Citation Management with Zotero</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Reproducibility and Transparency</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Definitions</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Reproducibility</strong>: Ability to generate the same insights using the same data, code, and methods.</li>
+<li class="fragment"><strong>Repeatability</strong>: The ability to run the same experiment or analysis in the same lab or environment and get the same results.</li>
+<li class="fragment"><strong>Replicability</strong>: Achieving similar results using different methods, datasets, or variations on the original study.</li>
+<li class="fragment"><strong>Transparency</strong>: Ensuring all data, code, and methodology are openly available and clearly documented.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Importance</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Reproducibility</strong> ensures that other researchers can verify the results of a study using the same data and approach.</li>
+<li class="fragment"><strong>Repeatability</strong> confirms that the original experiment was performed accurately and consistently.</li>
+<li class="fragment"><strong>Replicability</strong> strengthens findings by validating them under different conditions or with different data.</li>
+<li class="fragment"><strong>Transparency</strong> builds trust in research by making it possible for others to scrutinize the processes and decisions behind the results.</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Relevance</h2>
+<p>These analyses are especially relevant for infrastructure planning and climate risk management</p>
+<div>
+<ol type="1">
+<li class="fragment">Small changes in underlying assumptions (i.e., details) can have large impacts on outcomes
+<ul>
+<li class="fragment">Not possible to describe every single detail using text</li>
+<li class="fragment">Different assumptions can look similar on past data but yield very different conclusions about the future</li>
+</ul></li>
+<li class="fragment">Many assumptions are impossible to verify objectively</li>
+</ol>
+</div>
+<div class="fragment">
+<p><em>Are there examples of research where these issues are less important?</em></p>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>How to Improve Openness</h2>
+<p>Openness is less a strict, well-defined standard than a direction to work towards as we acquire new tools and skills (Always Be Improving). For example, instead of doing analysis in Excel and sharing your findings with a report, you could:</p>
+<div>
+<ol type="1">
+<li class="fragment">Do calculations in Excel and share the spreadsheet with the report</li>
+<li class="fragment">Do analysis with computational scripts that others can examine</li>
+<li class="fragment">Share all input and output data as part of the analysis</li>
+<li class="fragment">Use open-source tools with a well-documented environment so others can replicate your software stack</li>
+<li class="fragment">Integrate pipeline tools so that others can run your analysis with a single command</li>
+<li class="fragment">Combine your code and analysis into a single notebook</li>
+<li class="fragment">Write clear, readable code with comments and documentation</li>
+<li class="fragment">Integrate automated tests to increase confidence in your numerical implementation</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Wrapup</h2>
+<ol type="1">
+<li>Feedback on project 1 one-pagers today</li>
+<li><a href="https://docs.google.com/document/d/1RdRxvlxow1AxRH_XNmPIbhEYf3xwKpkoXcH7YpVcN4Q/edit?usp=sharing">Project 1 templates</a></li>
+<li><a href="https://canvas.rice.edu/courses/71565/files?preview=5843437">Arts + Engineering Undergrad Social</a> tomorrow 9/20</li>
+</ol>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
