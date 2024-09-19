@@ -205,6 +205,6 @@ For example, instead of doing analysis in Excel and sharing your findings with a
 
 ## Wrapup
 
-1. Feedback on project 1 one-pagers ASAP
-1. Project 1 templates posted on Canvas today
+1. Feedback on project 1 one-pagers today
+1. [Project 1 templates](https://docs.google.com/document/d/1RdRxvlxow1AxRH_XNmPIbhEYf3xwKpkoXcH7YpVcN4Q/edit?usp=sharing)
 1. [Arts + Engineering Undergrad Social](https://canvas.rice.edu/courses/71565/files?preview=5843437) tomorrow 9/20
