@@ -1,5 +1,5 @@
 ---
-title: "Transportation, Climate, and Energy"
+title: "Intro to Transportation Systems"
 date: 2024-09-24
 module: 2
 
@@ -16,6 +16,212 @@ template-partials:
     - ../title-slide.html
 ---
 
+# Current Transportation Systems
 
-::: {#refs}
+## 
+
+![[Peter Bregg, Nyanza province, Kenya](https://ourworld.unu.edu/en/water-for-life-an-african-photo-exhibit)](https://i.unu.edu/media/ourworld.unu.edu-en/article/3058/KENYA_Two588-940x529.jpg)
+
+::: {.notes}
+Today we're going to lay out problems with current transportation systems, but it's important to note that these problems are really by-products of solving other, very real, problems.
 :::
+
+## 
+![[Day by Day on Substack](https://danszczesny.substack.com/p/the-great-horse-manure-crisis-of)](./manure-crisis.jpg)
+
+
+## {data-background-image="Worldwide Commutes"}
+
+![[Rafael Prieto-Curiel](https://rafaelprietocuriel.com/articulo/the-abc-of-mobility/)](https://rafaelprietocuriel.com/wp-content/uploads/2024/03/ABC-1536x1262.jpg)
+
+::: {.notes}
+Spend some time discussing how to read this triangle chart!
+:::
+
+## {data-menu-title="Highways are expensive"}
+
+![](https://www.urban.org/sites/default/files/2024-04/fig1.PNG)
+
+## US VMT over Time
+
+<iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1uba9&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden; width:670px; height:525px;" allowTransparency="true" loading="lazy"></iframe>
+
+## VMT Varies by State
+
+![](https://enotrans.org/wp-content/uploads/2023/01/VMT-per-cap-LA-TX-WA-WV.png)
+
+## Not all transportation is for people
+
+<iframe src="https://ourworldindata.org/grapher/food-miles-by-transport?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## Transportation is Dangerous
+
+::: {.columns}
+::: {.column width="50%"}
+
+<iframe title="U.S. Pedestrian Fatalities, 2019-2022" aria-label="Interactive line chart" id="datawrapper-chart-6CbuU" src="https://datawrapper.dwcdn.net/6CbuU/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="487" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+:::
+::: {.column width="50%"}
+
+<iframe title="U.S. Pedestrian Fatalities Per 100,000 Population in 2022" aria-label="Map" id="datawrapper-chart-bZOY9" src="https://datawrapper.dwcdn.net/bZOY9/11/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="504" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+
+:::
+:::
+
+# Transportation, Energy, and Climate
+
+## {data-menu-title="Emissions by sector, US"}
+
+<iframe src="https://ourworldindata.org/grapher/co-emissions-by-sector?country=~USA&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+::: {.notes}
+Play around a bit with region
+:::
+
+## Sustainable Development Scenario
+
+![](https://ourworldindata.org/images/published/IEA-Transport-to-2070_1732.png)
+
+::: {.notes}
+This is _a_ scenario
+:::
+
+## Emissions per Mile
+
+<iframe src="https://ourworldindata.org/grapher/carbon-footprint-travel-mode?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+# Transportation, Land Use, and Liveability
+
+## Discussion Question
+
+::: {.callout-tip}
+## Two Minutes
+
+What is the town or city you've most enjoyed spending time in? Why?
+:::
+
+## {data-menu-title="Wakanda" data-background-image="https://images.squarespace-cdn.com/content/v1/5dfd8beb22732d3b23495b1f/1577996335892-D0HCP8KB5VJDMFKVKSZ8/wos-black-panther-marvel.jpg?format=2500w"}
+
+## {data-menu-title="Disney" data-background-image="https://lede-admin.usa.streetsblog.org/wp-content/uploads/sites/46/2014/06/Walt_Ellenshaw.jpg"}
+
+## {data-menu-title="Meme: the Outside they Built"}
+
+![](./meme-outside-they-built.png)
+
+## {data-menu-title="SimCity" data-background-image="./sim-city.jpg"}
+
+::: {.columns}
+::: {.column width="50%"}
+[Geoff Manaugh and Nicola Twilley for The Atlantic](https://www.theatlantic.com/technology/archive/2013/05/the-philosophy-of-simcity-an-interview-with-the-games-lead-designer/275724/){.hl-brick-red}
+:::
+::: {.column width="50%"}
+::: {.fragment}
+![](./sim-city-quote-1.png)
+:::
+::: {.fragment}
+![](./sim-city-quote-2.png)
+:::
+:::
+:::
+
+## {data-menu-title="Space"}
+
+![Origin unclear, via [Twitter](https://x.com/Stadtteilauto/status/1307788173502754817)](space-modes.jpg)
+
+## {data-menu-title="Cost of commute"}
+
+![](./cost-commute.jpg)
+
+::: {.notes}
+Question: how do you think this might be calculated?
+:::
+
+# Transportation and Congestion
+
+## {data-menu-title="Congestion"}
+
+![Source: [INRIX](https://inrix.com/scorecard/)](./traffic-delay-times.png)
+
+## {data-menu-title="Time Spent in Travel"}
+
+<iframe src="https://ourworldindata.org/grapher/participation-time-in-travel?tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+## {data-menu-title="Bangkok Congestion"}
+
+![[Bangkok Post](https://www.bangkokpost.com/opinion/opinion/1762349/understanding-bangkoks-traffic-woes)](https://static.bangkokpost.com/media/content/dcx/2019/10/01/3350174_790.jpg)
+
+# Solutions
+
+## Discussion Question
+
+::: {.callout-tip}
+## Two Minutes
+
+What are some mobility solutions you've heard about? What problems do they solve? What problems do they leave?
+:::
+
+## Electric Vehicles
+
+::: {.columns}
+::: {.column width="50%"}
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We&#39;re going to need lots of electric vehicles. I mean, lots. But here&#39;s one challenge with relying only on electrifying cars for our climate policy: cars last a long time. We need EVs for clunkers. But also need to move more while driving less. Paper here: <a href="https://t.co/HyAnKemQL8">https://t.co/HyAnKemQL8</a> <a href="https://t.co/eL5kBAfwHW">pic.twitter.com/eL5kBAfwHW</a></p>&mdash; Costa Samaras (@CostaSamaras) <a href="https://twitter.com/CostaSamaras/status/1348825021263867912?ref_src=twsrc%5Etfw">January 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+:::
+::: {.column width="50%"}
+
+::: {.incremental}
+- Zero emissions at the tailpipe
+- Reduced emissions over the vehicle's lifetime
+- Gets cleaner as the grid gets cleaner
+- Batteries can be recycled
+- Still cars!
+
+:::
+:::
+:::
+
+## Public Transit
+
+![[Reddit](https://www.reddit.com/r/toronto/comments/1fimtkj/toronto_subway_vs_chengdu_metro_2010_2024/)](https://preview.redd.it/toronto-subway-vs-chengdu-metro-2010-2024-v0-2uyurl9s0apd1.png?auto=webp&s=cda4c08b0e9968f95ce5a4a385d2c84757864c1a)
+
+## Autonomous Vehicles
+
+::: {.columns}
+::: {.column width="50%"}
+
+#### Solving the last-mile problem
+
+![Zoox AEV, via [EV Magazine](https://evmagazine.com/self-drive/how-do-autonomous-vehicles-fit-into-the-us-ev-action-plan)](https://assets.bizclikmedia.net/1336/6191f4d1e7e1065780ef75481a875ee5:685f6fa420c035f97c75955ae0374476/zoox-autonomous-vehicle-single-side-coit-tower-sf.webp)
+
+:::
+::: {.column width="50%"}
+
+#### Improving comfort and safety
+
+![[Mercedes-Benz Concept](https://www.mbofmassapequa.com/mercedes-benz-leading-race-self-driving-car/)](https://di-uploads-pod7.dealerinspire.com/mercedesbenzofmassapequa/uploads/2016/08/concept-blog-interior.jpg)
+
+:::
+:::
+
+## Local Safety Improvements
+
+Zero pedestrian fatalities for four years in [Hoboken, NJ](https://www.npr.org/2022/08/25/1119110757/traffic-deaths-car-accident-hoboken-new-jersey-vision-zero)
+
+![[NACTO](https://nacto.org/)](safety.jpg)
+
+## Congestion Pricing
+
+![Guilherme Larangeira for [Streetsblog Opinion](https://nyc.streetsblog.org/2022/01/27/opinion-the-congestion-pricing-toll-really-should-be-80)](https://lede-admin.nyc.streetsblog.org/wp-content/uploads/sites/48/2022/01/Picture1.jpg?w=1420&quality=75)
+
+# Wrapup
+
+## Thursday
+
+- Dr. [Jamie Padgett](https://profiles.rice.edu/faculty/jamie-padgett) will discuss [Resilient Mobility](../2024-09-26/slides.qmd)
+
+## Next Week
+
+- Tuesday 10/1: I am traveling, Dr. [Xinwu Qian](https://profiles.rice.edu/faculty/xinwu-qian) will discuss [Mobility of the Future](../2024-10-01/slides.qmd)
+- Thursday 10/3: In-class presentations for project 1
