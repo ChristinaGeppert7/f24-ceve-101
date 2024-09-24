@@ -16,9 +16,27 @@ template-partials:
     - ../title-slide.html
 ---
 
+---
+
+![History of Transport on [Wikipedia](https://en.wikipedia.org/wiki/History_of_transport)](https://upload.wikimedia.org/wikipedia/commons/c/ce/Bronocice_drawn.png)
+
+::: {.notes}
+The history of transport is largely one of technological innovation.
+Here, first known depiction of a wheeled vehicle, estimated 5000 BCE roughly.
+:::
+
+---
+
+![Via Appia on [Wikipedia](https://en.wikipedia.org/wiki/Appian_Way)](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Paesaggio_dell%27Appia_antica.jpg/2880px-Paesaggio_dell%27Appia_antica.jpg)
+
+---
+
+![[Day by Day on Substack](https://danszczesny.substack.com/p/the-great-horse-manure-crisis-of)](./manure-crisis.jpg)
+
+
 # Current Transportation Systems
 
-## 
+---
 
 ![[Peter Bregg, Nyanza province, Kenya](https://ourworld.unu.edu/en/water-for-life-an-african-photo-exhibit)](https://i.unu.edu/media/ourworld.unu.edu-en/article/3058/KENYA_Two588-940x529.jpg)
 
@@ -26,11 +44,7 @@ template-partials:
 Today we're going to lay out problems with current transportation systems, but it's important to note that these problems are really by-products of solving other, very real, problems.
 :::
 
-## 
-![[Day by Day on Substack](https://danszczesny.substack.com/p/the-great-horse-manure-crisis-of)](./manure-crisis.jpg)
-
-
-## {data-background-image="Worldwide Commutes"}
+---
 
 ![[Rafael Prieto-Curiel](https://rafaelprietocuriel.com/articulo/the-abc-of-mobility/)](https://rafaelprietocuriel.com/wp-content/uploads/2024/03/ABC-1536x1262.jpg)
 
@@ -220,6 +234,7 @@ Zero pedestrian fatalities for four years in [Hoboken, NJ](https://www.npr.org/2
 ## Thursday
 
 - Dr. [Jamie Padgett](https://profiles.rice.edu/faculty/jamie-padgett) will discuss [Resilient Mobility](../2024-09-26/slides.qmd)
+- A short reading assignment will be posted on Canvas by this evening
 
 ## Next Week
 
