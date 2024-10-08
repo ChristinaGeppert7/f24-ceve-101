@@ -1,15 +1,77 @@
 ---
-title: "Project 2: Design a Bike Lane"
-date: 2024-09-24
+title: "Design Project: Houston Urban Improvement"
+date: 2024-10-08
 module: 2
 
 categories: [Project]
-format: html
+format:
+    html: default
+    pdf: default
 ---
 
-In this project, your group will visit existing and programmed bike lanes in Houston, leverage spatial data, and design an innovative bike lane.
+# Project Overview
 
-::: {.callout-tip}
-Further details will be provided.
-You will record and submit a video presentation.
-:::
+Houston is often known for its sprawling, car-centric layout, yet it's also home to many thriving communities.
+Your task is to identify an urban problem and propose an improvement that addresses key issues such as safety, sustainability, accessibility, emergency evacuation, or other relevant metrics.
+
+# Assignment Outline
+
+## Task 1: Problem Statement
+
+Identify and clearly state a problem in a specific area of Houston.
+This could be related to urban safety, climate change impacts, accessibility, emergency evacuation routes, cost efficiency, or other relevant metrics.
+Justify why this issue is significant.
+
+## Task 2: Research
+
+1. Use digital tools like Google Maps or relevant city planning documents to explore the selected area.
+2. Consider:
+   - What is located nearby? How might people use this space?
+   - Who might benefit from the proposed improvement? What are their likely needs?
+   - What does the existing infrastructure enable or restrict?
+   - What changes would address the identified problem?
+3. Using Google Maps or another tool, measure the width of the street along the proposed lane you have visited. This is an approximate width – if you can find better measurements elsewhere you are welcome to use those.
+
+## Task 3: On-Site Observations
+
+1. If possible, visit the selected site to observe the space in person. Take photos and videos to capture important details. **BE SAFE**
+2. Consider: How does the space feel in person? Who uses it? How do these observations compare with your digital research?
+
+## Task 4: Design Alternatives
+
+1. Use tools like Streetmix or other design software to create visual representations of your proposed improvement.
+2. Propose **three alternatives** for addressing the problem, including the **status quo** (current state). Consider how each alternative impacts key metrics like safety, cost, or accessibility.
+3. Explain which design you advocate for and why.
+
+## Task 5: Communicate Your Proposal
+
+1. Create a 4-7 minute video outlining your proposed improvement. The video should include:
+   - The current state of the area (using your photos or videos),
+   - Justification of the problem and how your solution addresses it,
+   - Explanation of the alternatives you considered and why you selected your preferred design.
+2. Submit the video with your other materials.
+
+# Grading and Submission
+
+## What to Submit
+
+1. A single **PDF** document with your team’s answers to each task, including photos, designs, and analysis (one submission per team).
+2. A **4-7 minute video** uploaded to YouTube or a similar platform, or a video file (max 500MB) submitted through Canvas.
+
+## Grading Rubric
+
+### Research (30 points)
+- **Completeness and Relevance (10 points):** All required questions are answered fully, with relevant information about the chosen area.
+- **Synthesis and Analysis (10 points):** Responses reflect a thorough synthesis of digital and on-site observations, highlighting key insights related to the problem statement.
+- **Connection to Problem Statement (10 points):** Demonstrates a clear understanding of how research findings support the identified problem and proposed improvement.
+
+### Design (40 points)
+- **Clarity and Feasibility (10 points):** Proposed designs are well-detailed and realistically address the problem, considering the context and constraints.
+- **Impact on Key Metrics (10 points):** Each design alternative clearly demonstrates how it impacts relevant metrics (e.g., safety, accessibility, cost).
+- **Diversity of Options (10 points):** Provides a range of design alternatives, including the status quo, each with distinct benefits or trade-offs.
+- **Justification of Preferred Design (10 points):** Explanation of the chosen design is well-argued, showing why it is the best solution given the problem and needs.
+
+### Presentation (30 points)
+- **Organization and Clarity (10 points):** The video is well-structured, easy to follow, and includes all key components (current state, problem justification, alternatives, final choice).
+- **Visual and Verbal Communication (10 points):** Effectively uses visuals and narration to enhance understanding, clearly showing the progression from problem to solution.
+- **Engagement and Persuasiveness (10 points):** The presentation makes a compelling case for the proposed solution and is engaging for the viewer.
