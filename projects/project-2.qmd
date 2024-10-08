@@ -53,6 +53,8 @@ Justify why this issue is significant.
 
 # Grading and Submission
 
+Project 2 presentations will take place in class on Thursday, October 24.
+
 ## What to Submit
 
 1. A single **PDF** document with your team’s answers to each task, including photos, designs, and analysis (one submission per team).
