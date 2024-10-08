@@ -18,13 +18,14 @@ institution: "{{< var course.institution >}}}"
 # Activity Overview
 
 In this activity, students will work in small groups to analyze an existing street design in a familiar location and visualize it using digital tools.
-This hands-on exercise will build skills for the urban improvement project by practicing measurement, observation, and digital modeling.
+This hands-on exercise will build skills for [Project 2](../../projects/project-2.qmd) by practicing measurement, observation, and digital modeling.
 
 ## Activity Outline
 
 ### Step 1: Form Groups
 
 - Form groups of **3 students** each. Ensure each group has access to a laptop or tablet with internet access.
+- You should not work with anyone who was part of your group for Project 1.
 
 ### Step 2: Select a Location
 
@@ -40,10 +41,11 @@ This hands-on exercise will build skills for the urban improvement project by pr
 ### Step 4: Map the Status Quo in Streetmix
 
 1. Go to [Streetmix](https://streetmix.net/) and create a new project.
-2. Based on your measurements, **recreate the street’s current layout** as accurately as possible in Streetmix.
+2. Create an account using your Rice email address. Only one group member needs to do this.
+3. Based on your measurements, **recreate the street’s current layout** as accurately as possible in Streetmix.
    - Add elements like **lanes, sidewalks, parking**, and any other features.
    - Adjust widths and spacing to match your measurements.
-3. Save your design and be prepared to **share with the class**.
+4. Save your design and be prepared to **share with the class**.
 
 ## Wrap-Up and Discussion
 
@@ -52,6 +54,8 @@ Each group will briefly present:
 - The location they chose and why.
 - Their street’s layout and notable features.
 - Any initial ideas for potential improvements.
+
+Please prepare a short (~2 slides) presentation to share with the class.
 
 ### Reflection Questions:
 
