@@ -1,5 +1,5 @@
 ---
-title: "Design Project: Houston Urban Improvement"
+title: "Project 2: Houston Urban Improvement"
 date: 2024-10-08
 module: 2
 

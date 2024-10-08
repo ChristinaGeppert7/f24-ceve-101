@@ -4,7 +4,7 @@ date: 2024-09-19
 module: 1
 
 categories: 
-  - Planned Lecture
+  - Lecture
 
 # do not edit anything below this line
 format: revealjs
