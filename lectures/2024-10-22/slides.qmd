@@ -1,10 +1,10 @@
 ---
-title: "Water Treatment Overview"
+title: "Guest Lecture:Water Treatment"
 date: 2024-10-22
 module: 3
 
 categories: 
-  - Planned Lecture
+  - Guest Lecture
 
 # do not edit anything below this line
 format: revealjs

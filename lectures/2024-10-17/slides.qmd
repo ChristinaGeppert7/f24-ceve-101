@@ -1,5 +1,5 @@
 ---
-title: "The Hydrologic Cycle"
+title: "Introduction to Programming with Julia"
 date: 2024-10-17
 module: 3
 

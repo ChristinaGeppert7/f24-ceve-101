@@ -1,10 +1,10 @@
 ---
-title: "Project 2 In-Class Presentations"
+title: "Computational Notebooks"
 date: 2024-10-24
 module: 3
 
 categories: 
-  - In-Class Presentation
+  - Planned Lecture
 
 # do not edit anything below this line
 format: revealjs
