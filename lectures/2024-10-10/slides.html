@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.5.43">
 
   <meta name="author" content="Dr.&nbsp;James Doss-Gollin">
-  <title>CEVE 101 -- Spring 2024 – Introduction to Water Systems</title>
+  <title>CEVE 101 -- Spring 2024 – Decision Analysis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -34,6 +34,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -348,7 +349,7 @@
       tex: { packages: { '[+]': ['physics'] } }
     };
   </script>
-<meta property="og:title" content="CEVE 101 – Spring 2024 - Introduction to Water Systems">
+<meta property="og:title" content="CEVE 101 – Spring 2024 - Decision Analysis">
 <meta property="og:site_name" content="CEVE 101 -- Spring 2024">
 </head>
 <body class="quarto-light">
@@ -356,15 +357,326 @@
     <div class="slides">
 
 <section class="quarto-title-block center">
-  <h1 class="title">Introduction to Water Systems</h1>
+  <h1 class="title">Decision Analysis</h1>
   <hr>
   <p class="author">Dr.&nbsp;James Doss-Gollin</p>
   <p class="date">Thu., Oct.&nbsp;10</p>
 </section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Decision Theory</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-active">
+<p>Decision Theory</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Cost-Benefit Analysis</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Multi-Criteria Decision Analysis</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Goals</h2>
+<p>We want to compare alternatives <span class="math inline">\(a\)</span> in some set of possible alternatives <span class="math inline">\(\mathcal{A}\)</span></p>
+<div>
+<ul>
+<li class="fragment">Pick the best one</li>
+<li class="fragment">Inform others about trade-offs</li>
+<li class="fragment">Learn about the true nature of the problem</li>
+</ul>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Rationality</h2>
+<div>
+<ol type="1">
+<li class="fragment">Utility is the value of a choice, in abstract units. More utility is better.</li>
+<li class="fragment">Axioms of rationality:
+<ul>
+<li class="fragment">Completeness: For any pair of alternatives <span class="math inline">\(a_i\)</span> and <span class="math inline">\(a_j \in \mathcal{A}\)</span>, either <span class="math inline">\(a_i \geq a_j\)</span> or <span class="math inline">\(a_j \geq a_i\)</span> or both.</li>
+<li class="fragment">Transitivity: If <span class="math inline">\(a_i \geq a_j\)</span> and <span class="math inline">\(a_j \geq a_k\)</span>, then <span class="math inline">\(a_i \geq a_k\)</span>.</li>
+<li class="fragment">Independence: If <span class="math inline">\(a_i \geq a_j\)</span>, then for any <span class="math inline">\(a_k\)</span>, <span class="math inline">\(a_i + a_k \geq a_j + a_k\)</span>.</li>
+</ul></li>
+</ol>
+</div>
+<aside class="notes">
+<p>Illustrating example: do I prefer tea to coffee?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2 scrollable">
+<h2>The World is Uncertain</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Breakout</strong></p>
+</div>
+<div class="callout-content">
+<p>If we are evaluating whether a proposed bridge is a good investment, what are some factors that might impact the utility of each alternative?</p>
+</div>
+</div>
+</div>
+<div>
+<ol type="1">
+<li class="fragment">We consider many <em>states of the world</em> <span class="math inline">\(s \in \mathcal{S}\)</span></li>
+<li class="fragment">We use probabilities to quantify our uncertainty: <span class="math inline">\(p(s)\)</span></li>
+<li class="fragment">Utility depends on the state of the world: <span class="math inline">\(u(a, s)\)</span></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Expected Utility</h2>
+<div>
+<ol type="1">
+<li class="fragment">We can calculate the <em>expected utility</em> of an alternative <span class="math inline">\(a\)</span> as: <span class="math display">\[
+u(a) = \mathbb{E}[u(a, s)] = \int_{s \in \mathcal{S}} u(a, s) p(s)
+\]</span></li>
+<li class="fragment">Idealized rational decision-makers behave as though they are maximizing utility <span class="citation" data-cites="savage_foundations:1954">(@ <a href="#/references" role="doc-biblioref" onclick="">Savage, 1954</a>)</span>, though this is not a good description of actual human behavior <span class="citation" data-cites="ellsberg_ambiguity:1961">(<a href="#/references" role="doc-biblioref" onclick="">Ellsberg, 1961</a>)</span></li>
+</ol>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Cost-Benefit Analysis</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Decision Theory</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Cost-Benefit Analysis</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Multi-Criteria Decision Analysis</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Objectives</h2>
+<div>
+<ol type="1">
+<li class="fragment">Compare multiple alternatives on an “apples-to-apples” basis
+<ul>
+<li class="fragment">Often, using money as the common denominator</li>
+</ul></li>
+<li class="fragment">Make underlying assumptions explicit</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Many Engineering Decisions Involve Time</h2>
+<div>
+<ol type="1">
+<li class="fragment">When building infrastructure, costs and benefits often occur at different times
+<ul>
+<li class="fragment">Costs now, benefits later</li>
+</ul></li>
+<li class="fragment">Money now is more valuable than money later
+<ul>
+<li class="fragment">Opportunity cost of capital</li>
+<li class="fragment">People in the future will be richer</li>
+<li class="fragment">Uncertainty, which many people dislike, grows with time</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Net Present Value</h2>
+<p>Put all costs and benefits into a common unit (typically present dollars)</p>
+<div class="fragment">
+<p><span class="math display">\[
+\text{NPV}(a) = \sum_{t=0}^T (1 - \gamma)^t u(a)
+\]</span> where <span class="math inline">\(\gamma\)</span> is the <em>discount rate</em></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+\text{NPV}(a) = \mathbb{E} \left[ \sum_{t=0}^T (1 - \gamma)^t u(a, s_t) \right]
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Optimization</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>We can define the <em>best</em> alternative as <span class="math display">\[
+a^* = \arg \max_a \text{NPV}(a)
+\]</span></p>
+<p>There are many algorithms and solution techniques, depending on the problem.</p>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div id="71da6bb9" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="25">
+<div>
+<figure>
+<p><img data-src="slides_files/figure-revealjs/cell-3-output-1.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Multi-Criteria Decision Analysis</h1>
+<div class="agenda-heading">
+<p>Today</p>
+</div>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Decision Theory</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Cost-Benefit Analysis</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Multi-Criteria Decision Analysis</p>
+</div></li>
+</ol>
+</div>
+</section>
+<section class="slide level2 scrollable">
+<h2>Many Costs and Benefits are Difficult to Monetize</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Breakout</strong></p>
+</div>
+<div class="callout-content">
+<p>What are some costs and benefits that are difficult to monetize?</p>
+</div>
+</div>
+</div>
+<div>
+<ol type="1">
+<li class="fragment">Value of ecosystems</li>
+<li class="fragment">Health and safety</li>
+<li class="fragment">Aesthetics</li>
+<li class="fragment">Social and cultural values</li>
+</ol>
+</div>
+</section>
+<section class="slide level2 smaller">
+<h2>Rubrics</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>0 points</th>
+<th>1 point</th>
+<th>2 points</th>
+<th>3 points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Environmental Impact</td>
+<td>Severe negative impact</td>
+<td>Moderate negative impact</td>
+<td>Minimal impact</td>
+<td>Positive impact</td>
+</tr>
+<tr class="even">
+<td>Cost Efficiency</td>
+<td>Greatly exceeds budget</td>
+<td>Slightly over budget</td>
+<td>Within budget</td>
+<td>Under budget</td>
+</tr>
+<tr class="odd">
+<td>Community Benefit</td>
+<td>No benefit</td>
+<td>Minor benefit</td>
+<td>Moderate benefit</td>
+<td>Significant benefit</td>
+</tr>
+<tr class="even">
+<td>Technical Feasibility</td>
+<td>Not feasible</td>
+<td>Challenging but possible</td>
+<td>Feasible with effort</td>
+<td>Easily implementable</td>
+</tr>
+<tr class="odd">
+<td>Long-term Sustainability</td>
+<td>Not sustainable</td>
+<td>Sustainable for &lt;5 years</td>
+<td>Sustainable for 5-10 years</td>
+<td>Sustainable for &gt;10 years</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2 scrollable">
+<h2>Pitfalls</h2>
+<div>
+<ol type="1">
+<li class="fragment">Rubrics can be highly subjective <em>in unclear ways</em>
+<ul>
+<li class="fragment">Objectivity is a good aim, but not attainable – be transparent</li>
+</ul></li>
+<li class="fragment">Arbitrary weights and criteria</li>
+</ol>
+</div>
+</section>
+<section class="slide level2">
+<h2>Multiobjective Optimization</h2>
+<p>Rather than find a single best alternative, map trade-offs between multiple <em>objective functions</em></p>
+
+<img data-src="https://www.researchgate.net/publication/319080996/figure/fig1/AS:545750822391808@1507128543877/Schema-of-the-Pareto-front-the-ideal-point-and-the-final-optimal-solution-for-the.png" class="r-stretch"></section>
+<section class="slide level2">
+<h2>Project 2</h2>
+<p>Use a multi-criteria rubric to evaluate your proposed transportation improvements</p>
+<ul>
+<li>Justify your criteria and weights</li>
+<li>Use the rubric to evaluate alternatives</li>
+<li>Justify your scoring</li>
+</ul>
+</section>
 <section class="slide level2 smaller scrollable" id="references">
-
-<div id="refs" role="list">
-
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-ellsberg_ambiguity:1961" class="csl-entry" role="listitem">
+Ellsberg, D. (1961). Risk, ambiguity, and the <span>Savage</span> axioms. <em>The Quarterly Journal of Economics</em>, <em>75</em>(4), 643–669. <a href="https://doi.org/10.2307/1884324">https://doi.org/10.2307/1884324</a>
+</div>
+<div id="ref-savage_foundations:1954" class="csl-entry" role="listitem">
+Savage, L. J. (1954). <em>Foundations of statistics.</em> New York: Wiley.
+</div>
 </div>
 
 <div class="quarto-auto-generated-content">
@@ -372,7 +684,7 @@
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
