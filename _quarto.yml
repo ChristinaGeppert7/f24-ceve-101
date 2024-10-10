@@ -108,7 +108,7 @@ bibliography: "references.bib"
 csl: _assets/references/american-geophysical-union.csl
 
 # code to use
-jupyter: julia-1.10
+jupyter: julia-1.11
 
 # execution options
 execute:

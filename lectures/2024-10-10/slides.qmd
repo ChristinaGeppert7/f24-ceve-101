@@ -1,10 +1,10 @@
 ---
-title: "Introduction to Water Systems"
+title: "Decision Analysis"
 date: 2024-10-10
 module: 2
 
 categories: 
-  - Guest Lecture
+  - Lecture
 
 # do not edit anything below this line
 format: revealjs
@@ -16,6 +16,188 @@ template-partials:
     - ../title-slide.html
 ---
 
+```{julia}
+#| echo: false
+#| output: false
+
+using CairoMakie
+using LaTeXStrings
+```
+
+# Decision Theory
+
+## Goals
+
+We want to compare alternatives $a$ in some set of possible alternatives $\mathcal{A}$
+
+::: {.incremental}
+- Pick the best one
+- Inform others about trade-offs
+- Learn about the true nature of the problem
+:::
+
+## Rationality
+
+::: {.incremental}
+1. Utility is the value of a choice, in abstract units. More utility is better.
+1. Axioms of rationality:
+    - Completeness: For any pair of alternatives $a_i$ and $a_j \in \mathcal{A}$, either $a_i \geq a_j$ or $a_j \geq a_i$ or both.
+    - Transitivity: If $a_i \geq a_j$ and $a_j \geq a_k$, then $a_i \geq a_k$.
+    - Independence: If $a_i \geq a_j$, then for any $a_k$, $a_i + a_k \geq a_j + a_k$.
+:::
+
+::: {.notes}
+Illustrating example: do I prefer tea to coffee?
+:::
+
+## The World is Uncertain
+
+::: {.callout-tip}
+## Breakout
+
+If we are evaluating whether a proposed bridge is a good investment, what are some factors that might impact the utility of each alternative?
+:::
+
+::: {.incremental}
+1. We consider many *states of the world* $s \in \mathcal{S}$
+1. We use probabilities to quantify our uncertainty: $p(s)$
+1. Utility depends on the state of the world: $u(a, s)$
+:::
+
+## Expected Utility
+
+::: {.incremental}
+1. We can calculate the *expected utility* of an alternative $a$ as:
+$$
+u(a) = \mathbb{E}[u(a, s)] = \int_{s \in \mathcal{S}} u(a, s) p(s)
+$$
+1. Idealized rational decision-makers behave as though they are maximizing utility [@@savage_foundations:1954], though this is not a good description of actual human behavior [@ellsberg_ambiguity:1961]
+:::
+
+# Cost-Benefit Analysis
+
+## Objectives
+
+::: {.incremental}
+1. Compare multiple alternatives on an "apples-to-apples" basis
+    - Often, using money as the common denominator
+1. Make underlying assumptions explicit
+:::
+
+## Many Engineering Decisions Involve Time
+
+::: {.incremental}
+1. When building infrastructure, costs and benefits often occur at different times
+    - Costs now, benefits later
+1. Money now is more valuable than money later
+    - Opportunity cost of capital
+    - People in the future will be richer
+    - Uncertainty, which many people dislike, grows with time
+:::
+
+## Net Present Value
+
+Put all costs and benefits into a common unit (typically present dollars)
+
+::: {.fragment}
+$$
+\text{NPV}(a) = \sum_{t=0}^T (1 - \gamma)^t u(a)
+$$
+where $\gamma$ is the *discount rate*
+:::
+::: {.fragment}
+$$
+\text{NPV}(a) = \mathbb{E} \left[ \sum_{t=0}^T (1 - \gamma)^t u(a, s_t) \right]
+$$
+:::
+
+## Optimization
+
+:::: {.columns}
+::: {.column width="50%"}
+We can define the *best* alternative as
+$$
+a^* = \arg \max_a \text{NPV}(a)
+$$
+
+There are many algorithms and solution techniques, depending on the problem.
+:::
+
+
+::: {.column width="50%"}
+::: {.fragment}
+
+```{julia}
+#| echo: false
+
+x = (-2π):0.005:(2π)
+f(x) = sin(x) + x + 0.1x^2 + cos(x)
+y = f.(x)
+
+fig, ax = plot(x, y; label=L"$a \in \mathcal{A}$")
+min_y = minimum(y)
+min_x = x[argmin(y)]
+scatter!(ax, [min_x], [min_y]; color=:red, markersize=20, label=L"a^*")
+ax.xlabel = L"$a$"
+ax.ylabel = L"$\mathbb{E}[u(a)]$"
+axislegend(ax; position=:lt)
+fig
+```
+
+:::
+:::
+::::
+
+# Multi-Criteria Decision Analysis
+
+## Many Costs and Benefits are Difficult to Monetize
+
+::: {.callout-tip}
+## Breakout
+
+What are some costs and benefits that are difficult to monetize?
+:::
+
+::: {.incremental}
+1. Value of ecosystems
+1. Health and safety
+1. Aesthetics
+1. Social and cultural values
+:::
+
+## Rubrics {.smaller}
+
+| Category | 0 points | 1 point | 2 points | 3 points |
+|----------|----------|---------|----------|----------|
+| Environmental Impact | Severe negative impact | Moderate negative impact | Minimal impact | Positive impact |
+| Cost Efficiency | Greatly exceeds budget | Slightly over budget | Within budget | Under budget |
+| Community Benefit | No benefit | Minor benefit | Moderate benefit | Significant benefit |
+| Technical Feasibility | Not feasible | Challenging but possible | Feasible with effort | Easily implementable |
+| Long-term Sustainability | Not sustainable | Sustainable for <5 years | Sustainable for 5-10 years | Sustainable for >10 years |
+
+## Pitfalls
+
+::: {.incremental}
+1. Rubrics can be highly subjective *in unclear ways*
+    - Objectivity is a good aim, but not attainable -- be transparent
+1. Arbitrary weights and criteria
+:::
+
+## Multiobjective Optimization
+
+Rather than find a single best alternative, map trade-offs between multiple *objective functions*
+
+![](https://www.researchgate.net/publication/319080996/figure/fig1/AS:545750822391808@1507128543877/Schema-of-the-Pareto-front-the-ideal-point-and-the-final-optimal-solution-for-the.png)
+
+## Project 2
+
+Use a multi-criteria rubric to evaluate your proposed transportation improvements
+
+- Justify your criteria and weights
+- Use the rubric to evaluate alternatives
+- Justify your scoring
+
+## References
 
 ::: {#refs}
 :::
