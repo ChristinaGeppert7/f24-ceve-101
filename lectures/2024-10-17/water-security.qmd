@@ -1,0 +1,136 @@
+---
+title: "Water Security and the Hydrologic Cycle"
+date: 2024-10-17
+module: 3
+
+categories: 
+  - Planned Lecture
+
+# do not edit anything below this line
+format: revealjs
+
+author: "{{< var instructor.name >}}"
+course: "{{< var course.number >}}, {{< var course.title >}}"
+institution: "{{< var course.institution >}}}"
+template-partials:
+    - ../title-slide.html
+---
+
+## Your turn
+
+<!--
+TODO: ask students: "How many of you have experienced or heard about water scarcity issues in your community or nearby areas?" This can help gauge their initial awareness and connect the topic to their personal experiences.
+-->
+
+# Water in the 21st Century will be (is) a story of scarcity, change, and insecurity
+
+---
+
+"Fierce competition for fresh water may well become a source of conflict & wars in the future." Kofi Annan, March 2001
+
+![Foreign Policy – September/October 2001](basins-at-risk.jpg)
+
+---
+
+Innovations in agriculture that have fed a growing global population have used water resources at unsustainable rates.
+
+![@connor_water:2015](./groundwater-agriculture.png)
+
+<!--
+TODO: Small group brainstorming
+Give students 2-3 minutes to discuss in small groups: "What are some potential solutions to reduce water usage in agriculture while maintaining food production?" Have groups share their top ideas with the class.
+-->
+
+---
+
+Many people rely on wells for their water. As groundwater depletion drops water tables, many people spend long hours accessing water.
+
+![Pate Island, Kenya. Time Magazine.](./pate-island.png)
+
+--- 
+
+Residents of a slum in a Delhi, India scramble for the water that is delivered to them daily. The camp is home to approximately 4,000 migrant workers, but lacks a clean water supply, so the workers are dependent on public and private trucks to bring it to them.
+
+![Time Magazine.](./delhi-water-truck.png)
+
+---
+
+Lead in Flint’s drinking water supply caused measurable health consequences for a disproportionately vulnerable community
+
+::: {layout-ncol="2"}
+![The Economist](./economist-flint.png)
+
+![Bill Pugliano / Getty images](https://media.npr.org/assets/img/2016/02/25/gettyimages-511283154-0b123236f78d226a55115d18c149caaac40f872a.jpg?s=1100&c=85&f=webp)
+:::
+
+<!--
+TODO: Ask students to think individually for a minute about: "What factors contributed to the Flint water crisis, and what could have been done differently?" Then have them pair up to discuss their thoughts before sharing with the larger group.
+-->
+
+---
+
+In the developed world, water infrastructure is aging and vulnerable, and there are no serious plans to address funding gaps.
+
+![@ho_dams:2017](./ho-dams.png)
+
+---
+
+Water costs are going up even as calls for utilities to address affordability concerns grow stronger
+
+::: {layout-ncol="1"}
+![](./el-paso-affordability.png)
+
+![](./colonias-affordability.png)
+:::
+
+---
+
+In rural communities, water supplies often depend upon highly variable sources
+
+![Milhã, CE, Brasil](./milha-bomba.jpg)
+
+# Technological innovation will unlock solutions to pressing water crises, and philanthropy will fill in the gaps
+
+## {.smaller}
+
+Two Sudanese boys drink with specially fitted plastic tubes provided by the Carter Center to guard against the water-borne larvae which are responsible for guinea worm disease. The program has distributed millions of tubes and has reduced the spread of this debilitating disease by 70 percent.
+
+![[Michael Freeman](http://www.michaelfreemanphoto.com/media/ff3138a0-2dfa-11e0-ad9b-af827b62d38b-guinea-worm)](./guinea-worm.png)
+
+---
+
+New treatment technologies for sustainable industry.
+
+![“Zero discharge in Kimchi Industry”, Prof. Jaehong Kim.](./kimchi.png)
+
+---
+
+Data monitoring and the digital revolution can enable real-time monitoring and adaptive control of water systems.
+
+![Aquamatix](./ai-water.png)
+
+---
+
+Camels at a water hole in Dertu, Kenya where Millenium Villages facilitated construction and maintenance of water holes.
+
+![Columbia [Earth Institute](https://blogs.ei.columbia.edu/dertu-kenya/)](./camels.jpg)
+
+---
+
+### Water security means adequate, reliable, affordable water for a healthy life -- Wendy Jepson
+
+<!--
+TODO: Use a digital platform (like Mentimeter or Padlet) to have students submit questions or ideas about the future of water security. Display responses in real-time and address a few key points before concluding the lecture.
+-->
+
+# Wrapup
+
+## Read More
+
+![](https://www.hachettebookgroup.com/wp-content/uploads/2022/10/9781541702271-2.jpg){style="width: 30%;"}
+
+
+## References
+
+::: {#refs}
+:::
