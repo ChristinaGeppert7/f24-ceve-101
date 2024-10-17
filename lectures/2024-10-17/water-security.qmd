@@ -18,9 +18,7 @@ template-partials:
 
 ## Your turn
 
-<!--
-TODO: ask students: "How many of you have experienced or heard about water scarcity issues in your community or nearby areas?" This can help gauge their initial awareness and connect the topic to their personal experiences.
--->
+How many of you have experienced or heard about water scarcity issues in your community or nearby areas?
 
 # Water in the 21st Century will be (is) a story of scarcity, change, and insecurity
 
@@ -36,10 +34,14 @@ Innovations in agriculture that have fed a growing global population have used w
 
 ![@connor_water:2015](./groundwater-agriculture.png)
 
-<!--
-TODO: Small group brainstorming
-Give students 2-3 minutes to discuss in small groups: "What are some potential solutions to reduce water usage in agriculture while maintaining food production?" Have groups share their top ideas with the class.
--->
+
+## Your turn
+
+Discuss in small groups for 2-3 minutes:
+
+> What are some potential solutions to reduce water usage in agriculture while maintaining food production?
+
+Be prepared to share your top ideas with the class.
 
 ---
 
@@ -63,9 +65,16 @@ Lead in Flint’s drinking water supply caused measurable health consequences fo
 ![Bill Pugliano / Getty images](https://media.npr.org/assets/img/2016/02/25/gettyimages-511283154-0b123236f78d226a55115d18c149caaac40f872a.jpg?s=1100&c=85&f=webp)
 :::
 
-<!--
-TODO: Ask students to think individually for a minute about: "What factors contributed to the Flint water crisis, and what could have been done differently?" Then have them pair up to discuss their thoughts before sharing with the larger group.
--->
+---
+
+## Your turn
+
+Think individually for a minute:
+
+> What factors contributed to the Flint water crisis, and what could have been done differently?
+
+Discuss with your neighbor for 2 minutes.
+Be prepared to share your top ideas with the class.
 
 ---
 
@@ -119,15 +128,38 @@ Camels at a water hole in Dertu, Kenya where Millenium Villages facilitated cons
 
 ### Water security means adequate, reliable, affordable water for a healthy life -- Wendy Jepson
 
-<!--
-TODO: Use a digital platform (like Mentimeter or Padlet) to have students submit questions or ideas about the future of water security. Display responses in real-time and address a few key points before concluding the lecture.
--->
+## Your turn
+
+What questions do you have about the future of water security?
+
+Please fill out the form at https://forms.gle/BPykwt2aoAvvsR6i8:
+
+![](./35mjkbvw-400.png)
 
 # Wrapup
 
-## Read More
+## Tuesday
 
-![](https://www.hachettebookgroup.com/wp-content/uploads/2022/10/9781541702271-2.jpg){style="width: 30%;"}
+Dr. Bezawit Getachew will speak about the future of water treatment.
+
+Please read **one chapter** from one of the following books:
+
+1. Sedlak, David L. Water for All : Global Solutions for a Changing Climate / David Sedlak. 1st ed. New Haven: Yale University Press, 2023.
+1. Sedlak, David L. Water 4.0 : The Past, Present, and Future of the World’s Most Vital Resource / David Sedlak. New Haven, Connecticut: Yale University Press, 2014.
+
+Electronic versions of both books are available for free from Fondren. 
+
+## Other good books
+
+::: {layout-ncol="4"}
+![](https://www.hachettebookgroup.com/wp-content/uploads/2022/10/9781541702271-2.jpg)
+
+![](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388189076i/56140.jpg)
+
+![](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348823076i/7241680.jpg)
+
+![](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348603463i/1405904.jpg)
+:::
 
 
 ## References
