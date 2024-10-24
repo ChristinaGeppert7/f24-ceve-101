@@ -20,7 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -90,8 +144,36 @@ window.MathJax = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#toolkit-overview" id="toc-toolkit-overview" class="nav-link active" data-scroll-target="#toolkit-overview">Toolkit: Overview</a>
+  <ul class="collapse">
+  <li><a href="#julia" id="toc-julia" class="nav-link" data-scroll-target="#julia">Julia</a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#vs-code" id="toc-vs-code" class="nav-link" data-scroll-target="#vs-code">VS Code</a></li>
+  </ul></li>
+  <li><a href="#toolkit-installation" id="toc-toolkit-installation" class="nav-link" data-scroll-target="#toolkit-installation">Toolkit: Installation</a>
+  <ul class="collapse">
+  <li><a href="#install-julia" id="toc-install-julia" class="nav-link" data-scroll-target="#install-julia">Install Julia</a></li>
+  <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link" data-scroll-target="#install-vs-code">Install VS Code</a></li>
+  <li><a href="#github-1" id="toc-github-1" class="nav-link" data-scroll-target="#github-1">GitHub</a></li>
+  <li><a href="#github-copilot-optional" id="toc-github-copilot-optional" class="nav-link" data-scroll-target="#github-copilot-optional">GitHub Copilot (Optional)</a></li>
+  <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
+  </ul></li>
+  <li><a href="#instructions-for-project-3" id="toc-instructions-for-project-3" class="nav-link" data-scroll-target="#instructions-for-project-3">Instructions for Project 3</a>
+  <ul class="collapse">
+  <li><a href="#step-1-run-the-template" id="toc-step-1-run-the-template" class="nav-link" data-scroll-target="#step-1-run-the-template">Step 1: Run the Template</a></li>
+  <li><a href="#step-2-reading-in-the-data" id="toc-step-2-reading-in-the-data" class="nav-link" data-scroll-target="#step-2-reading-in-the-data">Step 2: Reading in the Data</a></li>
+  <li><a href="#step-3-theoretical-model" id="toc-step-3-theoretical-model" class="nav-link" data-scroll-target="#step-3-theoretical-model">Step 3: Theoretical Model</a></li>
+  <li><a href="#step-4-model-implementation-and-testing" id="toc-step-4-model-implementation-and-testing" class="nav-link" data-scroll-target="#step-4-model-implementation-and-testing">Step 4: Model Implementation and Testing</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/edit/main/projects/project-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -126,21 +208,251 @@ window.MathJax = {
 
 <p>Rural commmunities around the world struggle to access clean water, especially in arid and semi-arid regions where water is scarce. In Northeastern Brazil, many communities rely on a combination of deep wells (which are expensive to access and often yield saline water) and shallow surface reservoirs (which often dry up during dry years). In response, the federal government of Brazil launched a program (Projeto 1 Milhão de Cisternas – One Million Cisterns Project) to promote rainwater to capture water during the rainy season and store it for use during the dry season. The project also aimed to build local economies through use of local materials and construction techniques.</p>
 <p>While the project has been successful in many ways, it has also faced challenges. A particular challenge is that during droughts the cisterns may not be fully rechared, leading to inadequate water supply during the dry season.</p>
-<p>In this project, your group will use climate data, mass-balance techniques, and computer programming to size a rainwater harvesting system for a single house in Northeastern Brazil.</p>
-<div class="callout callout-style-simple callout-tip">
+<p>In this project, you will use climate data, mass-balance techniques, and computer programming to size a rainwater harvesting system for a single house in Northeastern Brazil. For further discussion of the model and parameters, see <span class="citation" data-cites="doss-gollin_rwh:2015">Doss-Gollin et al. (<a href="#ref-doss-gollin_rwh:2015" role="doc-biblioref">2015</a>)</span> (<em>note: language is occasionally clunky – lots of terms that I learned in Portuguese before I learned them in English, and translated poorly. Learning is a continuous process!</em>).</p>
+<section id="toolkit-overview" class="level2">
+<h2 class="anchored" data-anchor-id="toolkit-overview">Toolkit: Overview</h2>
+<p>As discussed in class, we will use a range of computational tools to complete this project.</p>
+<section id="julia" class="level3">
+<h3 class="anchored" data-anchor-id="julia">Julia</h3>
+<p>We’re using the Julia programming language in this course. Julia is a fast, modern, open-source programming language designed for numerical and scientific computing.</p>
+<p>We’re using it for a few key reasons. First, the syntax is human-readable and closely parallels math notation, which reduces the cognitive burden of translating between conceptual and computational models. Second, it’s fast, which means that Julia solves the “two language problem”: you don’t need to learn C or Fortran to dig under the hood and write fast code. Other great features include that it’s open-source, which makes it reproducible and shareable, and it has a fantastic package manager.</p>
+<p>There are some great resources out there about why Julia is great. See posts by <a href="https://juliadatascience.io/why_julia">Julia Data Science</a> or the <a href="https://julialang.org/blog/2012/02/why-we-created-julia/">Julia Creators</a> (with <a href="https://www.julialang.org/blog/2022/02/10years/">followup</a>).</p>
+</section>
+<section id="github" class="level3">
+<h3 class="anchored" data-anchor-id="github">GitHub</h3>
+<p><code>git</code> is a software tool for version control that keeps track of changes to files over time. GitHub is a website that hosts git repositories and provides a web interface for interacting with them.</p>
+<p>To use GitHub, you’ll need a GitHub account. Code on GitHub is stored in <em>repositories</em>. A simple workflow is to <code>clone</code> a repository to your computer, make changes, <code>commit</code> them, then <code>push</code> your changes to GitHub.</p>
+<p>We will also use GitHub classroom, which allows instructors to share templates and view your code.</p>
+</section>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<p>Quarto is a tool that allows you to combine text and code and create many types of output. For example, this website is made with Quarto! You will use Quarto to create reports for labs. This lets you keep everything in one place – no more running code, saving a figure to <code>Downloads</code>, copying into Word, then trying to remember where to paste the figure when you update the code.</p>
+</section>
+<section id="vs-code" class="level3">
+<h3 class="anchored" data-anchor-id="vs-code">VS Code</h3>
+<p>VS Code is a text editor. If you are an advanced user of another text editor, you can use that instead. However, VS Code is very nearly an officially supported IDE for Julia.</p>
+</section>
+</section>
+<section id="toolkit-installation" class="level2">
+<h2 class="anchored" data-anchor-id="toolkit-installation">Toolkit: Installation</h2>
+<p>This section will walk you through the installation of the tools we will use in this project, step by step. It is recommended that you complete these steps in the order provided.</p>
+<section id="install-julia" class="level3">
+<h3 class="anchored" data-anchor-id="install-julia">Install Julia</h3>
+<p>The best way to install Julia is through the <code>juliaup</code> tool, which will let you easily manage versions in the future and works seamlessly with VS Code. The instructions can be found at the <a href="https://github.com/JuliaLang/juliaup">JuliaUp GitHub repository</a>, but we will summarize them here.</p>
+<p>If your computer uses Windows, you can install Juliaup <a href="https://www.microsoft.com/store/apps/9NJNWW8PVKMN">from the Windows Store</a>.</p>
+<p>If you have a Mac, you need the <a href="https://mac.install.guide/commandlinetools/4">XCode developer tools</a> installed. Once you have done that, or if you are using Linux, open a terminal (such as the Terminal app) and enter:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>curl -fsSL https://install.julialang.org | sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Once you install Juliaup, install Julia version 1.11 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>juliaup add 1.11</span>
+<span id="cb2-2"><a href="#cb2-2"></a>juliaup default 1.11</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will install Julia 1.11 and make it the default version. Going forward, if you want to add new versions or change the default, you can <a href="https://github.com/JuliaLang/juliaup#using-juliaup">follow the Juliaup instructions</a>.</p>
+</section>
+<section id="install-vs-code" class="level3">
+<h3 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h3>
+<p>VS Code is as close to an officially supported editor for Julia as you can get. We will follow <a href="https://www.julia-vscode.org/docs/dev/gettingstarted/">this guide for setting up VS Code with Julia</a>.</p>
+<div class="callout-info">
+<p>You can skip this section if you are an experienced programmer and already have a preferred IDE. Your IDE will likely have instructions for Julia and Quarto setup.</p>
+</div>
+<p>You can download VS Code <a href="https://code.visualstudio.com/download">here</a>; open the downloaded file to install. Make sure to select the correct version for your operating system. If you have a newish Apple mac (with M1, M2, or M3 chip), make sure to check whether you have an Intel or Apple chip before choosing which version to download. You can also use homebrew or your preferred package manager to install VS Code.</p>
+<section id="vs-code-julia-extension" class="level4">
+<h4 class="anchored" data-anchor-id="vs-code-julia-extension">VS Code Julia Extension</h4>
+<p>Like many IDEs, VS Code is a modular system that can be extended with plugins. We will install the Julia extension, which will allow us to run Julia code and interact with the Julia REPL from within VS Code (we’ll add the Quarto extension later).</p>
+<ol type="1">
+<li>Open VS Code.</li>
+<li>Select View and click Extensions to open the Extension View.</li>
+<li>Search for <code>julia</code> in the search box. Click the green install button.</li>
+<li>Restart VS Code once the installation is complete. It should automatically find your Julia installation; reach out if not.</li>
+</ol>
+<p>The Julia VS Code extension offers you some nice features. You can start a REPL (an interactive Julia coding environment) by opening the “Command Palette” (View -&gt; Command Palette, or CTRL/CMD+SHIFT+P) and typing “REPL” to bring up “Julia: Start REPL”. You can also create <code>.jl</code> and <code>.qmd</code> files to write Julia code and execute line by line.</p>
+</section>
+</section>
+<section id="github-1" class="level3">
+<h3 class="anchored" data-anchor-id="github-1">GitHub</h3>
+<p>See <a href="https://docs.github.com/en/get-started">GitHub official tutorials</a> for more helpful resources and tutorials.</p>
+<section id="create-github-account" class="level4">
+<h4 class="anchored" data-anchor-id="create-github-account">Create GitHub Account</h4>
+<p>If you already have a GitHub account, you can use that for this course and do not need to create a new account. Otherwise, <a href="https://github.com/join">create an account</a>. It doesn’t have to be linked to your Rice email or your NetID.</p>
+<p>For labs and projects, you should use the GitHub Classroom link posted on Canvas to “accept” the assignment, which will give you your own GitHub repository for that assignment. The first time you click one of these links, you will need to link your place on the course roster with your GitHub account.</p>
+</section>
+<section id="github-desktop-optional" class="level4">
+<h4 class="anchored" data-anchor-id="github-desktop-optional">GitHub Desktop (Optional)</h4>
+<p>You can do everything that you will need to do for this course with GitHub directly through VS Code. The GitHub <a href="https://desktop.github.com/">desktop app</a> is also great, or alternatively you may work directly through the terminal if you have prior experience.</p>
+</section>
+</section>
+<section id="github-copilot-optional" class="level3">
+<h3 class="anchored" data-anchor-id="github-copilot-optional">GitHub Copilot (Optional)</h3>
+<p>GitHub Copilot is an AI-powered tool that helps you write code. You can install it following instructions <a href="https://github.com/features/copilot">here</a> As described in the <a href="https://docs.github.com/en/copilot/quickstart">quickstart guide</a>, Copilot is free for students. Be sure to review the policy on AI language models in the <a href="../syllabus.html">syllabus</a>!</p>
+</section>
+<section id="install-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="install-quarto">Install Quarto</h3>
+<p>Quarto combines the best of Jupyter notebooks and R Markdown to create a document format that is ideal for conducting and communicating data science. We will use Quarto to create and share our work in this course; this website is also built using Quarto.||</p>
+<p>Follow the <a href="https://quarto.org/docs/get-started/">documentation</a> to install Quarto. Be sure to ensure that you have the right version for your operating system.</p>
+<section id="install-the-quarto-extension-for-vs-code" class="level4">
+<h4 class="anchored" data-anchor-id="install-the-quarto-extension-for-vs-code">Install the Quarto Extension for VS Code</h4>
+<p>Under “Step 2”, click on the VS Code icon.</p>
+</section>
+<section id="install-jupyter" class="level4">
+<h4 class="anchored" data-anchor-id="install-jupyter">Install Jupyter</h4>
+<p>Under the hood, Quarto uses a tool called Jupyter to run code. You don’t need to know how Jupyter works or worry about it, because it runs under the hood, but we will need to install it. Jupyter is a Python package.</p>
+<p>If you don’t have Python installed (if you’re not sure, you should install Miniconda below), you’ll need to install it. The best way, by far, is to install Miniconda (see <a href="https://docs.conda.io/en/latest/miniconda.html">Conda</a> documentation).</p>
+<p>Once you have Python installed, you can open your <a href="https://code.visualstudio.com/docs/terminal/basics">Terminal</a> (open VS Code then open the terminal), then run</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>python3 -m pip install jupyter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Further details will be provided. You will produce a Quarto document that includes your analysis and recommendations.</p>
+<p>Based on past experience, getting Jupyter installed and Quarto to find your Jupyter installation is the most common source of problems, especially on Windows machines. Please start this early and <em>use Canvas discussions</em> if you have any trouble.</p>
 </div>
 </div>
 </div>
+</section>
+</section>
+</section>
+<section id="instructions-for-project-3" class="level2">
+<h2 class="anchored" data-anchor-id="instructions-for-project-3">Instructions for Project 3</h2>
+<p>Once you have everything set up (getting these tools installed is half the battle!), you’re ready to complete the project.</p>
+<section id="step-1-run-the-template" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-run-the-template">Step 1: Run the Template</h3>
+<p>First, we want to get the project repository set up on your computer and verify that everything is working smoothly.</p>
+<ol type="1">
+<li>The Project 3 repository is located at <a href="https://github.com/jdossgollin/ceve-101-f24-project03">https://github.com/jdossgollin/ceve-101-f24-project03</a>. Navigate to the link in your web browser.</li>
+<li><code>fork</code> the repository to your GitHub account by clicking the <code>Fork</code> button in the upper right. This will create a copy of the repository in your GitHub account.</li>
+<li><code>clone</code> the repository to your computer using the blue <code>Code</code> button. GitHub desktop is optional, but will make your life easy.</li>
+<li>Open the directory containing the repository in VS Code doing one of the following things:
+<ol type="1">
+<li>From GitHub desktop: <code>Repository &gt; Open in Visual Studio Code</code></li>
+<li>In VS Code: <code>File &gt; Open Folder...</code></li>
+</ol></li>
+<li>Open the <code>template.qmd</code> file in VS Code and put your name and netID in the metadata block.</li>
+<li>Commit and push your changes to GitHub:
+<ol type="1">
+<li>Open the <em>command palette</em> (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)</li>
+<li>Type <code>Git: Commit</code></li>
+<li>Add a commit message like “Initial commit”</li>
+<li>Type <code>Git: Push</code></li>
+<li>You can alternatively use GitHub Desktop or the command line</li>
+<li>Verify that your changes have been pushed by checking the repository (<code>github.com/&lt;your-username&gt;/ceve-101-f24-project03</code>) in your web browser and ensuring that your changes are visible there.</li>
+</ol></li>
+<li>Open the Julia REPL:
+<ol type="1">
+<li>Open the <em>command palette</em> (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)</li>
+<li>Start typing “Julia: Start REPL”. It will auto-complete; select the command as it appears.</li>
+</ol></li>
+<li>Set up your project environment.
+<ol type="1">
+<li>In the Julia REPL, type <code>]</code> to enter the package manager. It should now show something like <code>(lab-01) pkg&gt;</code>.</li>
+<li>Type <code>instantiate</code> and run it (<code>Enter</code>). This will install all the packages needed for this lab.</li>
+<li>Without leaving the package manager, type <code>build IJulia</code> and run it (<code>Enter</code>). This will install the IJulia kernel for VS Code.</li>
+<li>Type the backspace key to exit the package manager.</li>
+</ol></li>
+<li>Preview the document
+<ol type="1">
+<li>Open the <code>index.qmd</code> file</li>
+<li>Open the <em>command palette</em> and run “Quarto: Preview”. After some activity, a preview of the rendered document should open in VS Code. If you see something like <code>Browse at http://localhost:4200/index.html</code> you can open that link in your web browser to see the rendered document.</li>
+</ol></li>
+<li>If you’re still having trouble:
+<ol type="1">
+<li>Try running <code>build IJulia</code> in the Julia REPL’s Pkg mode (type <code>]</code>)</li>
+<li>Come to office hours</li>
+<li>Post on the Canvas discussion for Lab 1</li>
+</ol></li>
+<li><code>commit</code> and <code>push</code> your changes to GitHub</li>
+<li>Submit your rendered <code>.docx</code> or <code>.pdf</code> file to Canvas</li>
+</ol>
+</section>
+<section id="step-2-reading-in-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-reading-in-the-data">Step 2: Reading in the Data</h3>
+<section id="choose-a-station-and-load-data" class="level4">
+<h4 class="anchored" data-anchor-id="choose-a-station-and-load-data">Choose a Station and Load Data</h4>
+<ol type="1">
+<li>Select a different station (not <code>1.txt</code>) from the <code>data</code> folder.</li>
+<li>Update the <code>filepath</code> variable to point to your chosen station.</li>
+<li>Repeat the steps provided to load and plot the data for your station.</li>
+</ol>
+</section>
+<section id="analyze-available-data" class="level4">
+<h4 class="anchored" data-anchor-id="analyze-available-data">Analyze Available Data</h4>
+<ol type="1">
+<li>Identify which years are kept after data cleaning.</li>
+<li>Discuss whether the available data is sufficient for meaningful risk assessments.</li>
+</ol>
+</section>
+<section id="investigate-historical-droughts" class="level4">
+<h4 class="anchored" data-anchor-id="investigate-historical-droughts">Investigate Historical Droughts</h4>
+<ol type="1">
+<li>Research the years of major droughts in Ceará, Brazil.</li>
+<li>Determine if your data includes these years.</li>
+<li>Discuss the implications of missing data during drought years on your analysis. Use the provided Discussion section.</li>
+</ol>
+</section>
+</section>
+<section id="step-3-theoretical-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-theoretical-model">Step 3: Theoretical Model</h3>
+<ol type="1">
+<li>Delete the text and equations in this section, since you can assume that the reader is already familiar with the basic concepts.</li>
+<li>Where this section was previously, discuss limiting assumptions and approximations in the model.</li>
+<li>Discuss how you might modify the model to relax these assumptions. Provide mathematical equations, but you don’t need to implement them in code.</li>
+</ol>
+</section>
+<section id="step-4-model-implementation-and-testing" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-model-implementation-and-testing">Step 4: Model Implementation and Testing</h3>
+<section id="modify-model-parameters" class="level4">
+<h4 class="anchored" data-anchor-id="modify-model-parameters">Modify Model Parameters</h4>
+<ol type="1">
+<li>Adjust parameters like roof_area_m2 or tank_capacity_L in the param object.</li>
+<li>Rerun the simulation with your new parameters.</li>
+<li>Plot the results to visualize the impact.</li>
+</ol>
+</section>
+<section id="justify-your-modifications" class="level4">
+<h4 class="anchored" data-anchor-id="justify-your-modifications">Justify Your Modifications</h4>
+<ol type="1">
+<li>Explain why you chose to modify these parameters.</li>
+<li>Discuss how the changes affect the simulation outcomes.</li>
+</ol>
+</section>
+<section id="perform-reliability-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="perform-reliability-analysis">Perform Reliability Analysis</h4>
+<ol type="1">
+<li>Run the simulation for all available years.</li>
+<li>Calculate the number of years where the system failed to meet the demand.</li>
+<li>Determine the system’s reliability percentage.</li>
+<li>Discuss and interpret your findings.</li>
+</ol>
+</section>
+<section id="identify-a-gap-in-the-methods" class="level4">
+<h4 class="anchored" data-anchor-id="identify-a-gap-in-the-methods">Identify a Gap in the Methods</h4>
+<ol type="1">
+<li>Find one limitation in the current model (e.g., data quality, assumptions). Explain why it’s a limitation.</li>
+<li>Suggest how to address the identified gap.</li>
+<li>Discuss how this would enhance the analysis. (Note: You don’t need to implement the change—just propose it.)</li>
+</ol>
+</section>
+</section>
+<section id="submission" class="level3">
+<h3 class="anchored" data-anchor-id="submission">Submission</h3>
+<ol type="1">
+<li>Go through the document and make sure that you have removed all extraneous text and added your own text where appropriate.</li>
+<li>Render the document to <code>.docx</code> and check for any errors or issues:
+<ol type="1">
+<li>Open the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux) and then type “Quarto: Render”</li>
+<li>OR, in the command line, run <code>quarto render --to docx</code> and press enter.</li>
+</ol></li>
+<li>When everything is working correctly, submit your <code>.qmd</code> file and the <code>.docx</code> file generated from it to Canvas. DO NOT modify the <code>.docx</code> file in any way – it should be the exact output of your <code>.qmd</code> file. Additionally, submit a link to your GitHub repository as a comment on the Canvas assignment.</li>
+</ol>
 
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-doss-gollin_rwh:2015" class="csl-entry" role="listitem">
+Doss-Gollin, J., de Souza Filho, F. de A., &amp; da Silva, F. O. E. (2015). Analytic modeling of rainwater harvesting in the <span>Brazilian Semiarid Northeast</span>. <em>Journal of the American Water Resources Association</em>, <em>52</em>(1), 129–137. <a href="https://doi.org/10.1111/1752-1688.12376">https://doi.org/10.1111/1752-1688.12376</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -608,7 +920,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p><strong>Page under construction.</strong></p>
-<div class="toc-actions"><ul><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/edit/main/projects/project-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/edit/main/projects/project-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/jdossgollin/f24-ceve-101/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Made with <a href="https://julialang.org">Julia</a> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://www.github.com/jdossgollin/f24-ceve-101">View the source on <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>
