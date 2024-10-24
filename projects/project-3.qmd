@@ -4,8 +4,8 @@ date: 2024-10-15
 module: 3
 
 categories: [Project]
-format: html
 ---
+
 
 Rural commmunities around the world struggle to access clean water, especially in arid and semi-arid regions where water is scarce.
 In Northeastern Brazil, many communities rely on a combination of deep wells (which are expensive to access and often yield saline water) and shallow surface reservoirs (which often dry up during dry years).
@@ -15,9 +15,263 @@ The project also aimed to build local economies through use of local materials a
 While the project has been successful in many ways, it has also faced challenges.
 A particular challenge is that during droughts the cisterns may not be fully rechared, leading to inadequate water supply during the dry season.
 
-In this project, your group will use climate data, mass-balance techniques, and computer programming to size a rainwater harvesting system for a single house in Northeastern Brazil.
+In this project, you will use climate data, mass-balance techniques, and computer programming to size a rainwater harvesting system for a single house in Northeastern Brazil.
+For further discussion of the model and parameters, see @doss-gollin_rwh:2015 (*note: language is occasionally clunky -- lots of terms that I learned in Portuguese before I learned them in English, and translated poorly. Learning is a continuous process!*).
 
-::: {.callout-tip}
-Further details will be provided.
-You will produce a Quarto document that includes your analysis and recommendations.
+## Toolkit: Overview
+
+As discussed in class, we will use a range of computational tools to complete this project.
+
+### Julia
+
+We're using the Julia programming language in this course.
+Julia is a fast, modern, open-source programming language designed for numerical and scientific computing.
+
+We're using it for a few key reasons.
+First, the syntax is human-readable and closely parallels math notation, which reduces the cognitive burden of translating between conceptual and computational models.
+Second, it's fast, which means that Julia solves the "two language problem": you don't need to learn C or Fortran to dig under the hood and write fast code.
+Other great features include that it's open-source, which makes it reproducible and shareable, and it has a fantastic package manager.
+
+There are some great resources out there about why Julia is great.
+See posts by [Julia Data Science](https://juliadatascience.io/why_julia) or the [Julia Creators](https://julialang.org/blog/2012/02/why-we-created-julia/) (with [followup](https://www.julialang.org/blog/2022/02/10years/)).
+
+
+### GitHub
+
+`git` is a software tool for version control that keeps track of changes to files over time.
+GitHub is a website that hosts git repositories and provides a web interface for interacting with them.
+
+To use GitHub, you'll need a GitHub account.
+Code on GitHub is stored in *repositories*.
+A simple workflow is to `clone` a repository to your computer, make changes, `commit` them, then `push` your changes to GitHub.
+
+We will also use GitHub classroom, which allows instructors to share templates and view your code.
+
+### Quarto
+
+Quarto is a tool that allows you to combine text and code and create many types of output.
+For example, this website is made with Quarto!
+You will use Quarto to create reports for labs.
+This lets you keep everything in one place -- no more running code, saving a figure to `Downloads`, copying into Word, then trying to remember where to paste the figure when you update the code.
+
+### VS Code
+
+VS Code is a text editor.
+If you are an advanced user of another text editor, you can use that instead.
+However, VS Code is very nearly an officially supported IDE for Julia.
+
+## Toolkit: Installation
+
+This section will walk you through the installation of the tools we will use in this project, step by step.
+It is recommended that you complete these steps in the order provided.
+
+### Install Julia
+
+The best way to install Julia is through the `juliaup` tool, which will let you easily manage versions in the future and works seamlessly with VS Code.
+The instructions can be found at the [JuliaUp GitHub repository](https://github.com/JuliaLang/juliaup), but we will summarize them here.
+
+If your computer uses Windows, you can install Juliaup [from the Windows Store](https://www.microsoft.com/store/apps/9NJNWW8PVKMN).
+
+If you have a Mac, you need the [XCode developer tools](https://mac.install.guide/commandlinetools/4) installed.
+Once you have done that, or if you are using Linux, open a terminal (such as the Terminal app) and enter:
+
+```shell
+curl -fsSL https://install.julialang.org | sh
+```
+
+Once you install Juliaup, install Julia version 1.11 by opening a terminal (in MacOS or Linux) or the command line (in Windows) and entering:
+
+```shell
+juliaup add 1.11
+juliaup default 1.11
+```
+
+This will install Julia 1.11 and make it the default version.
+Going forward, if you want to add new versions or change the default, you can [follow the Juliaup instructions](https://github.com/JuliaLang/juliaup#using-juliaup).
+
+### Install VS Code
+
+VS Code is as close to an officially supported editor for Julia as you can get.
+We will follow [this guide for setting up VS Code with Julia](https://www.julia-vscode.org/docs/dev/gettingstarted/).
+
+::: {.callout-info}
+You can skip this section if you are an experienced programmer and already have a preferred IDE.
+Your IDE will likely have instructions for Julia and Quarto setup.
+::: 
+
+You can download VS Code [here](https://code.visualstudio.com/download); open the downloaded file to install.
+Make sure to select the correct version for your operating system.
+If you have a newish Apple mac (with M1, M2, or M3 chip), make sure to check whether you have an Intel or Apple chip before choosing which version to download.
+You can also use homebrew or your preferred package manager to install VS Code.
+
+#### VS Code Julia Extension
+
+Like many IDEs, VS Code is a modular system that can be extended with plugins.
+We will install the Julia extension, which will allow us to run Julia code and interact with the Julia REPL from within VS Code (we'll add the Quarto extension later).
+
+1. Open VS Code.
+2. Select View and click Extensions to open the Extension View.
+3. Search for `julia` in the search box. Click the green install button.
+4. Restart VS Code once the installation is complete. It should automatically find your Julia installation; reach out if not.
+
+The Julia VS Code extension offers you some nice features.
+You can start a REPL (an interactive Julia coding environment) by opening the "Command Palette" (View -> Command Palette, or CTRL/CMD+SHIFT+P) and typing "REPL" to bring up "Julia: Start REPL". 
+You can also create `.jl` and `.qmd` files to write Julia code and execute line by line.
+
+### GitHub
+
+See [GitHub official tutorials](https://docs.github.com/en/get-started) for more helpful resources and tutorials.
+
+#### Create GitHub Account
+
+If you already have a GitHub account, you can use that for this course and do not need to create a new account.
+Otherwise, [create an account](https://github.com/join). It doesn't have to be linked to your Rice email or your NetID.
+
+For labs and projects, you should use the GitHub Classroom link posted on Canvas to "accept" the assignment, which will give you your own GitHub repository for that assignment.
+The first time you click one of these links, you will need to link your place on the course roster with your GitHub account.
+
+#### GitHub Desktop (Optional)
+
+You can do everything that you will need to do for this course with GitHub directly through VS Code.
+The GitHub [desktop app](https://desktop.github.com/) is also great, or alternatively you may work directly through the terminal if you have prior experience.
+
+### GitHub Copilot (Optional)
+
+GitHub Copilot is an AI-powered tool that helps you write code.
+You can install it following instructions [here](https://github.com/features/copilot) 
+As described in the [quickstart guide](https://docs.github.com/en/copilot/quickstart), Copilot is free for students.
+Be sure to review the policy on AI language models in the [syllabus](/syllabus.qmd)!
+
+### Install Quarto
+
+Quarto combines the best of Jupyter notebooks and R Markdown to create a document format that is ideal for conducting and communicating data science.
+We will use Quarto to create and share our work in this course; this website is also built using Quarto.||
+
+Follow the [documentation](https://quarto.org/docs/get-started/) to install Quarto.
+Be sure to ensure that you have the right version for your operating system.
+
+#### Install the Quarto Extension for VS Code
+
+Under "Step 2", click on the VS Code icon.
+
+#### Install Jupyter
+
+Under the hood, Quarto uses a tool called Jupyter to run code.
+You don't need to know how Jupyter works or worry about it, because it runs under the hood, but we will need to install it.
+Jupyter is a Python package.
+
+If you don't have Python installed (if you're not sure, you should install Miniconda below), you'll need to install it.
+The best way, by far, is to install Miniconda (see [Conda](https://docs.conda.io/en/latest/miniconda.html) documentation).
+
+Once you have Python installed, you can open your [Terminal](https://code.visualstudio.com/docs/terminal/basics) (open VS Code then open the terminal), then run
+
+```shell
+python3 -m pip install jupyter
+```
+
+::: {.callout-important}
+Based on past experience, getting Jupyter installed and Quarto to find your Jupyter installation is the most common source of problems, especially on Windows machines.
+Please start this early and *use Canvas discussions* if you have any trouble.
 :::
+
+## Instructions for Project 3
+
+Once you have everything set up (getting these tools installed is half the battle!), you're ready to complete the project.
+
+### Step 1: Run the Template
+
+First, we want to get the project repository set up on your computer and verify that everything is working smoothly.
+
+1. The Project 3 repository is located at [https://github.com/jdossgollin/ceve-101-f24-project03](https://github.com/jdossgollin/ceve-101-f24-project03). Navigate to the link in your web browser.
+1. `fork` the repository to your GitHub account by clicking the `Fork` button in the upper right. This will create a copy of the repository in your GitHub account.
+1. `clone` the repository to your computer using the blue `Code` button. GitHub desktop is optional, but will make your life easy.
+1. Open the directory containing the repository in VS Code doing one of the following things:
+    1. From GitHub desktop: `Repository > Open in Visual Studio Code`
+    1. In VS Code: `File > Open Folder...`
+1. Open the `template.qmd` file in VS Code and put your name and netID in the metadata block.
+1. Commit and push your changes to GitHub:
+    1. Open the *command palette* (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)
+    1. Type `Git: Commit`
+    1. Add a commit message like "Initial commit"
+    1. Type `Git: Push`
+    1. You can alternatively use GitHub Desktop or the command line
+    1. Verify that your changes have been pushed by checking the repository (`github.com/<your-username>/ceve-101-f24-project03`) in your web browser and ensuring that your changes are visible there.
+1. Open the Julia REPL:
+    1. Open the *command palette* (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on Mac)
+    1. Start typing "Julia: Start REPL". It will auto-complete; select the command as it appears.
+1. Set up your project environment.
+    1. In the Julia REPL, type `]` to enter the package manager. It should now show something like `(lab-01) pkg>`.
+    1. Type `instantiate` and run it (`Enter`). This will install all the packages needed for this lab.
+    1. Without leaving the package manager, type `build IJulia` and run it (`Enter`). This will install the IJulia kernel for VS Code.
+    1. Type the backspace key to exit the package manager.
+1. Preview the document
+    1. Open the `index.qmd` file
+    1. Open the *command palette* and run "Quarto: Preview". After some activity, a preview of the rendered document should open in VS Code. If you see something like `Browse at http://localhost:4200/index.html` you can open that link in your web browser to see the rendered document.
+1. If you're still having trouble:
+    1. Try running `build IJulia` in the Julia REPL's Pkg mode (type `]`)
+    1. Come to office hours
+    1. Post on the Canvas discussion for Lab 1
+1. `commit` and `push` your changes to GitHub
+1. Submit your rendered `.docx` or `.pdf` file to Canvas
+
+### Step 2: Reading in the Data
+
+#### Choose a Station and Load Data
+
+1. Select a different station (not `1.txt`) from the `data` folder.
+2. Update the `filepath` variable to point to your chosen station.
+3. Repeat the steps provided to load and plot the data for your station.
+
+#### Analyze Available Data
+
+1. Identify which years are kept after data cleaning.
+2. Discuss whether the available data is sufficient for meaningful risk assessments.
+
+#### Investigate Historical Droughts
+
+1. Research the years of major droughts in Ceará, Brazil.
+2. Determine if your data includes these years.
+3. Discuss the implications of missing data during drought years on your analysis. Use the provided Discussion section.
+
+
+### Step 3: Theoretical Model
+
+1. Delete the text and equations in this section, since you can assume that the reader is already familiar with the basic concepts.
+2. Where this section was previously, discuss limiting assumptions and approximations in the model.
+3. Discuss how you might modify the model to relax these assumptions. Provide mathematical equations, but you don't need to implement them in code.
+
+### Step 4: Model Implementation and Testing
+
+#### Modify Model Parameters
+
+1. Adjust parameters like roof_area_m2 or tank_capacity_L in the param object.
+2. Rerun the simulation with your new parameters.
+3. Plot the results to visualize the impact.
+
+#### Justify Your Modifications
+
+1. Explain why you chose to modify these parameters.
+2. Discuss how the changes affect the simulation outcomes.
+
+#### Perform Reliability Analysis
+
+1. Run the simulation for all available years.
+2. Calculate the number of years where the system failed to meet the demand.
+3. Determine the system's reliability percentage.
+4. Discuss and interpret your findings.
+
+
+#### Identify a Gap in the Methods
+
+1. Find one limitation in the current model (e.g., data quality, assumptions). Explain why it's a limitation.
+2. Suggest how to address the identified gap.
+3. Discuss how this would enhance the analysis. (Note: You don't need to implement the change—just propose it.)
+
+### Submission 
+
+1. Go through the document and make sure that you have removed all extraneous text and added your own text where appropriate.
+1. Render the document to `.docx` and check for any errors or issues:
+    1. Open the command palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Windows/Linux) and then type "Quarto: Render"
+    1. OR, in the command line, run `quarto render --to docx` and press enter.
+
+1. When everything is working correctly, submit your `.qmd` file and the `.docx` file generated from it to Canvas. DO NOT modify the `.docx` file in any way -- it should be the exact output of your `.qmd` file.  Additionally, submit a link to your GitHub repository as a comment on the Canvas assignment.

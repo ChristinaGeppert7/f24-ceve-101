@@ -1,10 +1,10 @@
 ---
-title: "Water Security and the Hydrologic Cycle"
+title: "Introduction to Water Security"
 date: 2024-10-17
 module: 3
 
 categories: 
-  - Planned Lecture
+  - Lecture
 
 # do not edit anything below this line
 format: revealjs
@@ -148,6 +148,12 @@ Please read **one chapter** from one of the following books:
 1. Sedlak, David L. Water 4.0 : The Past, Present, and Future of the World’s Most Vital Resource / David Sedlak. New Haven, Connecticut: Yale University Press, 2014.
 
 Electronic versions of both books are available for free from Fondren. 
+
+## Project 3
+
+You're still working on [Project 2](../../projects/project-2.qmd), but in project 3 you will use computer programming to assess water security for communities reliant on rainwater harvesting in Northeast Brazil.
+
+- Next Thursday: overview of programming projects
 
 ## Other good books
 
