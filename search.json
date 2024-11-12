@@ -42,6 +42,27 @@
     "text": "Our thoughts are with Andrea’s friends, family, and community. Please take care of yourselves and each other."
   },
   {
+    "objectID": "lectures/2024-11-12/slides.html",
+    "href": "lectures/2024-11-12/slides.html",
+    "title": "Building Codes",
+    "section": "",
+    "text": "Today we will have an in-class discussion of building codes. In class, we will read Frank (2022) and discuss."
+  },
+  {
+    "objectID": "lectures/2024-11-12/slides.html#logistical-notes",
+    "href": "lectures/2024-11-12/slides.html#logistical-notes",
+    "title": "Building Codes",
+    "section": "Logistical Notes",
+    "text": "Logistical Notes\nProject 4 is now posted.\n\n\nFrank, T. (2022, August 22). Bold New Jersey Shore Flood Rules Could Be Blueprint for Entire U.S. Coast. Scientific American. Retrieved from https://www.scientificamerican.com/article/bold-new-jersey-shore-flood-rules-could-be-blueprint-for-entire-u-s-coast/"
+  },
+  {
+    "objectID": "lectures/2024-09-26/slides.html",
+    "href": "lectures/2024-09-26/slides.html",
+    "title": "Guest Lecture: Resilient Mobility",
+    "section": "",
+    "text": "Thanks to Prof. Padgett for her guest lecture."
+  },
+  {
     "objectID": "lectures/2024-10-17/water-security.html#references",
     "href": "lectures/2024-10-17/water-security.html#references",
     "title": "Introduction to Water Security",
@@ -103,7 +124,7 @@
     "href": "syllabus.html#preliminary-schedule",
     "title": "Syllabus",
     "section": "Preliminary Schedule",
-    "text": "Preliminary Schedule\nThe following schedule outlines our planned topics for the semester.\n\n\n\n\n\n\nThis preliminary schedule is subject to change during the semester and will change before the start of the semester.\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nModule\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\n0\n\n\nNO CLASS\n\n\nTue., Aug. 27\n\n\n\n\n0\n\n\nWelcome to CEVE 101\n\n\nThu., Aug. 29\n\n\n\n\n1\n\n\nGuest Lecture: Climate Science and Climate Change\n\n\nTue., Sep. 3\n\n\n\n\n1\n\n\nOverview of the Energy System\n\n\nThu., Sep. 5\n\n\n\n\n1\n\n\nEnergy Systems Cont’d\n\n\nTue., Sep. 10\n\n\n\n\n1\n\n\nToolkit: Mass / Energy Balance\n\n\nThu., Sep. 12\n\n\n\n\n1\n\n\nEnergy Storage\n\n\nTue., Sep. 17\n\n\n\n\n1\n\n\nReproducibility and Transparency in a Digital World\n\n\nThu., Sep. 19\n\n\n\n\n2\n\n\nIntro to Transportation Systems\n\n\nTue., Sep. 24\n\n\n\n\n2\n\n\nGuest Lecture: Resilient Mobility\n\n\nThu., Sep. 26\n\n\n\n\n2\n\n\nGuest Lecture: Mobility of the Future\n\n\nTue., Oct. 1\n\n\n\n\n2\n\n\nProject 1 In-Class Presentations\n\n\nThu., Oct. 3\n\n\n\n\n2\n\n\nClass Activity: Street Design Exercise\n\n\nTue., Oct. 8\n\n\n\n\n2\n\n\nDecision Analysis\n\n\nThu., Oct. 10\n\n\n\n\n3\n\n\nNO CLASS – MIDTERM RECESS\n\n\nTue., Oct. 15\n\n\n\n\n3\n\n\nIntroduction to Water Security\n\n\nThu., Oct. 17\n\n\n\n\n3\n\n\nGuest Lecture:Water Treatment\n\n\nTue., Oct. 22\n\n\n\n\n3\n\n\nIntroduction to Programming with Julia and Computational Notebooks\n\n\nThu., Oct. 24\n\n\n\n\n3\n\n\nUnconventional Water Sources\n\n\nTue., Oct. 29\n\n\n\n\n3\n\n\nField Trip\n\n\nThu., Oct. 31\n\n\n\n\n3\n\n\nNO CLASS – ELECTION DAY\n\n\nTue., Nov. 5\n\n\n\n\n4\n\n\nCoastal Hazards\n\n\nThu., Nov. 7\n\n\n\n\n4\n\n\nBuilding Codes\n\n\nTue., Nov. 12\n\n\n\n\n4\n\n\nGuest Lecture: The Galveston Bay Park Plan\n\n\nThu., Nov. 14\n\n\n\n\n4\n\n\nGuest Lecture: Engineering Communication\n\n\nTue., Nov. 19\n\n\n\n\n4\n\n\nGuest Lecture: Origami Engineering\n\n\nThu., Nov. 21\n\n\n\n\n4\n\n\nProject 3 In-Class Presentations\n\n\nTue., Nov. 26\n\n\n\n\n4\n\n\nNO CLASS – THANKSGIVING RECESS\n\n\nThu., Nov. 28\n\n\n\n\n5\n\n\nGuest Panel: CEVE Careers\n\n\nTue., Dec. 3\n\n\n\n\n5\n\n\nGuest Lecture: About the Major\n\n\nThu., Dec. 5\n\n\n\n\n\nNo matching items",
+    "text": "Preliminary Schedule\nThe following schedule outlines our planned topics for the semester.\n\n\n\n\n\n\nThis preliminary schedule is subject to change during the semester and will change before the start of the semester.\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nModule\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\n0\n\n\nNO CLASS\n\n\nTue., Aug. 27\n\n\n\n\n0\n\n\nWelcome to CEVE 101\n\n\nThu., Aug. 29\n\n\n\n\n1\n\n\nGuest Lecture: Climate Science and Climate Change\n\n\nTue., Sep. 3\n\n\n\n\n1\n\n\nOverview of the Energy System\n\n\nThu., Sep. 5\n\n\n\n\n1\n\n\nEnergy Systems Cont’d\n\n\nTue., Sep. 10\n\n\n\n\n1\n\n\nToolkit: Mass / Energy Balance\n\n\nThu., Sep. 12\n\n\n\n\n1\n\n\nEnergy Storage\n\n\nTue., Sep. 17\n\n\n\n\n1\n\n\nReproducibility and Transparency in a Digital World\n\n\nThu., Sep. 19\n\n\n\n\n2\n\n\nIntro to Transportation Systems\n\n\nTue., Sep. 24\n\n\n\n\n2\n\n\nGuest Lecture: Resilient Mobility\n\n\nThu., Sep. 26\n\n\n\n\n2\n\n\nGuest Lecture: Mobility of the Future\n\n\nTue., Oct. 1\n\n\n\n\n2\n\n\nProject 1 In-Class Presentations\n\n\nThu., Oct. 3\n\n\n\n\n2\n\n\nClass Activity: Street Design Exercise\n\n\nTue., Oct. 8\n\n\n\n\n2\n\n\nDecision Analysis\n\n\nThu., Oct. 10\n\n\n\n\n3\n\n\nNO CLASS – MIDTERM RECESS\n\n\nTue., Oct. 15\n\n\n\n\n3\n\n\nIntroduction to Water Security\n\n\nThu., Oct. 17\n\n\n\n\n3\n\n\nGuest Lecture: Water Treatment\n\n\nTue., Oct. 22\n\n\n\n\n3\n\n\nIntroduction to Programming with Julia and Computational Notebooks\n\n\nThu., Oct. 24\n\n\n\n\n3\n\n\nProject 3 Work Time\n\n\nTue., Oct. 29\n\n\n\n\n3\n\n\nField Trip\n\n\nThu., Oct. 31\n\n\n\n\n3\n\n\nNO CLASS – ELECTION DAY\n\n\nTue., Nov. 5\n\n\n\n\n4\n\n\nCoastal Hazards\n\n\nThu., Nov. 7\n\n\n\n\n4\n\n\nBuilding Codes\n\n\nTue., Nov. 12\n\n\n\n\n4\n\n\nGuest Lecture: The Galveston Bay Park Plan\n\n\nThu., Nov. 14\n\n\n\n\n4\n\n\nGuest Lecture: Engineering Communication\n\n\nTue., Nov. 19\n\n\n\n\n4\n\n\nGuest Lecture: Origami Engineering\n\n\nThu., Nov. 21\n\n\n\n\n4\n\n\nProject 3 In-Class Presentations\n\n\nTue., Nov. 26\n\n\n\n\n4\n\n\nNO CLASS – THANKSGIVING RECESS\n\n\nThu., Nov. 28\n\n\n\n\n5\n\n\nGuest Panel: CEVE Careers\n\n\nTue., Dec. 3\n\n\n\n\n5\n\n\nGuest Lecture: About the Major\n\n\nThu., Dec. 5\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Syllabus"
     ]
@@ -123,7 +144,7 @@
     "href": "projects.html",
     "title": "CEVE 101 Projects",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nModule\n\n\nTopic\n\n\nDate\n\n\nCategory\n\n\n\n\n\n\n1\n\n\nProject 1: Accelerating the Energy Transition\n\n\nThu., Sep. 5\n\n\nProject\n\n\n\n\n2\n\n\nProject 2: Houston Urban Improvement\n\n\nTue., Oct. 8\n\n\nProject\n\n\n\n\n3\n\n\nProject 3: Rainwater Harvesting in Semi-Arid Brazil\n\n\nTue., Oct. 15\n\n\nProject\n\n\n\n\n4\n\n\nProject 4: Building Codes to Protect Against Tropical Storms\n\n\nTue., Nov. 12\n\n\nProject\n\n\n\n\n\nNo matching items",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nModule\n\n\nTopic\n\n\nDate\n\n\nCategory\n\n\n\n\n\n\n1\n\n\nProject 1: Accelerating the Energy Transition\n\n\nThu., Sep. 5\n\n\nProject\n\n\n\n\n2\n\n\nProject 2: Houston Urban Improvement\n\n\nTue., Oct. 8\n\n\nProject\n\n\n\n\n3\n\n\nProject 3: Rainwater Harvesting in Semi-Arid Brazil\n\n\nTue., Oct. 15\n\n\nProject\n\n\n\n\n4\n\n\nProject 4: Enhancing Coastal Resilience through Building Codes\n\n\nTue., Nov. 12\n\n\nProject\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Projects"
     ]
@@ -187,9 +208,79 @@
   {
     "objectID": "projects/project-4.html",
     "href": "projects/project-4.html",
-    "title": "Project 4: Building Codes to Protect Against Tropical Storms",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
     "section": "",
-    "text": "Building codes are essential for ensuring that the built environment is safe during natural disasters such as tropical storms. In this project, you will choose a building type, identify a relevant guideline, and assess whether these codes should be updated, and if so, how. You will consider impact on safety, cost, relevant infrastructure, and reliability.\n\n\n\n\n\n\nFurther details will be provided. You will create and submit a written report."
+    "text": "Coastal regions like Houston-Galveston face increasing risks from tropical storms, hurricanes, sea-level rise, and other coastal hazards. Building codes and standards are crucial tools for engineers and policymakers to enhance the resilience of infrastructure in these vulnerable areas.\nIn this project, you will work in groups to:\n\nSelect a specific type of infrastructure (e.g., energy facilities, water treatment plants, transportation networks) within the Houston-Galveston region.\nIdentify relevant building codes, standards, or guidelines that apply to your chosen infrastructure.\nPropose updates or changes to these codes to improve coastal resilience.\n\nYour proposal should provide:\n\nClear and actionable guidance on the recommended changes.\nJustification for why the changes are necessary, backed by research and analysis.\nAn analysis of objectives that stakeholders should consider, such as safety, cost, environmental impact, and reliability.\nAn assessment of how your proposed changes affect these objectives, including potential trade-offs.\nStrategies to mitigate any negative impacts, like increased costs or implementation challenges."
+  },
+  {
+    "objectID": "projects/project-4.html#task-1-infrastructure-selection-and-vulnerability-assessment",
+    "href": "projects/project-4.html#task-1-infrastructure-selection-and-vulnerability-assessment",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Task 1: Infrastructure Selection and Vulnerability Assessment",
+    "text": "Task 1: Infrastructure Selection and Vulnerability Assessment\n\nChoose a Type of Infrastructure: Select an infrastructure type within the energy, water, or transportation sectors that is pertinent to the Houston-Galveston area.\nIdentify Vulnerabilities: Research how this infrastructure is currently vulnerable to coastal hazards such as flooding, storm surges, or high winds.\nDocument Evidence: Use data, case studies, or past events to illustrate these vulnerabilities."
+  },
+  {
+    "objectID": "projects/project-4.html#task-2-review-of-existing-codes-and-standards",
+    "href": "projects/project-4.html#task-2-review-of-existing-codes-and-standards",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Task 2: Review of Existing Codes and Standards",
+    "text": "Task 2: Review of Existing Codes and Standards\n\nFind Relevant Codes: Identify existing building codes, standards, or guidelines that govern your selected infrastructure. Examples include ASCE standards, local building codes, or industry-specific guidelines.\nSummarize Key Provisions: Outline the main aspects of these codes related to coastal resilience.\nEvaluate Effectiveness: Assess how well the current codes address the identified vulnerabilities."
+  },
+  {
+    "objectID": "projects/project-4.html#task-3-proposal-for-code-updates",
+    "href": "projects/project-4.html#task-3-proposal-for-code-updates",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Task 3: Proposal for Code Updates",
+    "text": "Task 3: Proposal for Code Updates\n\nDevelop Recommendations: Propose specific, actionable changes or additions to the existing codes to enhance resilience.\nJustify the Changes: Provide evidence and reasoning for why these updates are necessary, referencing research and best practices.\nIllustrate Improvements: Explain how your proposed changes will mitigate vulnerabilities and improve overall resilience."
+  },
+  {
+    "objectID": "projects/project-4.html#task-4-objectives-analysis",
+    "href": "projects/project-4.html#task-4-objectives-analysis",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Task 4: Objectives Analysis",
+    "text": "Task 4: Objectives Analysis\n\nIdentify Stakeholder Objectives: Determine what objectives are important for stakeholders, such as:\n\nSafety: Protection of life and property.\nCost: Financial implications for construction and maintenance.\nInfrastructure Requirements: Material availability, construction techniques.\nReliability: Consistent performance under stress.\nEnvironmental Impact: Effects on the local ecosystem.\n\nAnalyze Impacts: Discuss how your proposed code changes affect each objective, highlighting benefits and potential drawbacks."
+  },
+  {
+    "objectID": "projects/project-4.html#task-5-mitigation-of-negative-impacts",
+    "href": "projects/project-4.html#task-5-mitigation-of-negative-impacts",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Task 5: Mitigation of Negative Impacts",
+    "text": "Task 5: Mitigation of Negative Impacts\n\nIdentify Challenges: Recognize any negative consequences of your proposed changes, such as increased costs or technical difficulties.\nPropose Mitigation Strategies: Suggest ways to overcome these challenges, which may include:\n\nCost-Benefit Analysis: Demonstrating long-term savings.\nPhased Implementation: Gradually introducing changes.\nIncentives: Financial or regulatory incentives to encourage adoption.\nAlternative Solutions: Using innovative materials or methods to reduce costs."
+  },
+  {
+    "objectID": "projects/project-4.html#task-6-report-preparation",
+    "href": "projects/project-4.html#task-6-report-preparation",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Task 6: Report Preparation",
+    "text": "Task 6: Report Preparation\n\nStructure Your Report: Organize your findings into a coherent report with clear headings and sections.\nFormatting Guidelines:\n\nLength: Approximately 5 pages (excluding references).\nSpacing: 1.5 line spacing.\nFont: 11-point Times New Roman or Arial.\nMargins: 1-inch on all sides.\n\nReferencing:\n\nUse an author-year citation style (e.g., APA, Harvard).\nManage references using Zotero.\nInclude a reference list at the end of your report."
+  },
+  {
+    "objectID": "projects/project-4.html#content-quality-50-points",
+    "href": "projects/project-4.html#content-quality-50-points",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Content Quality (50 points)",
+    "text": "Content Quality (50 points)\n\nVulnerability Assessment (15 points):\n\nClear identification of infrastructure vulnerabilities.\nUse of evidence and data to support claims.\n\nCode Review and Proposed Updates (25 points):\n\nCode Review (10 points):\n\nComprehensive summary of existing codes.\nCritical evaluation of code effectiveness.\n\nProposed Updates (15 points):\n\nSpecific and actionable recommendations.\nStrong justification for each proposed change.\nIllustration of how proposed changes enhance resilience.\n\n\nObjectives Analysis and Mitigation Strategies (10 points):\n\nObjectives Analysis (5 points):\n\nIdentification of relevant stakeholder objectives.\nInsightful analysis of impacts on each objective.\n\nMitigation Strategies (5 points):\n\nRecognition of potential negative impacts.\nPractical and innovative mitigation proposals."
+  },
+  {
+    "objectID": "projects/project-4.html#technical-accuracy-and-depth-20-points",
+    "href": "projects/project-4.html#technical-accuracy-and-depth-20-points",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Technical Accuracy and Depth (20 points)",
+    "text": "Technical Accuracy and Depth (20 points)\n\nUnderstanding of Concepts (10 points):\n\nDemonstrated grasp of coastal resilience principles.\nAppropriate application of engineering concepts.\n\nAttention to Detail (10 points):\n\nAccuracy in data, calculations, and technical explanations.\nConsideration of practical implementation issues."
+  },
+  {
+    "objectID": "projects/project-4.html#communication-20-points",
+    "href": "projects/project-4.html#communication-20-points",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Communication (20 points)",
+    "text": "Communication (20 points)\n\nOrganization (10 points):\n\nLogical flow and structure.\nEffective use of headings and subheadings.\n\nClarity and Professionalism (10 points):\n\nClear and concise writing.\nProfessional tone appropriate for an engineering audience."
+  },
+  {
+    "objectID": "projects/project-4.html#referencing-10-points",
+    "href": "projects/project-4.html#referencing-10-points",
+    "title": "Project 4: Enhancing Coastal Resilience through Building Codes",
+    "section": "Referencing (10 points)",
+    "text": "Referencing (10 points)\n\nReferences (10 points):\n\nCorrect and consistent citation style.\nProper use of Zotero for reference management.\nAll sources properly cited."
   },
   {
     "objectID": "projects/project-3.html",
@@ -289,7 +380,7 @@
     "href": "lectures.html",
     "title": "CEVE 101 Lectures",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nModule\n\n\nTopic\n\n\nDate\n\n\nCategory\n\n\n\n\n\n\n0\n\n\nNO CLASS\n\n\nTue., Aug. 27\n\n\nNo Class\n\n\n\n\n0\n\n\nWelcome to CEVE 101\n\n\nThu., Aug. 29\n\n\nLecture\n\n\n\n\n1\n\n\nGuest Lecture: Climate Science and Climate Change\n\n\nTue., Sep. 3\n\n\nGuest Lecture\n\n\n\n\n1\n\n\nOverview of the Energy System\n\n\nThu., Sep. 5\n\n\nLecture\n\n\n\n\n1\n\n\nEnergy Systems Cont’d\n\n\nTue., Sep. 10\n\n\nLecture\n\n\n\n\n1\n\n\nToolkit: Mass / Energy Balance\n\n\nThu., Sep. 12\n\n\nLecture\n\n\n\n\n1\n\n\nEnergy Storage\n\n\nTue., Sep. 17\n\n\nLecture\n\n\n\n\n1\n\n\nReproducibility and Transparency in a Digital World\n\n\nThu., Sep. 19\n\n\nLecture\n\n\n\n\n2\n\n\nIntro to Transportation Systems\n\n\nTue., Sep. 24\n\n\nLecture\n\n\n\n\n2\n\n\nGuest Lecture: Resilient Mobility\n\n\nThu., Sep. 26\n\n\nGuest Lecture\n\n\n\n\n2\n\n\nGuest Lecture: Mobility of the Future\n\n\nTue., Oct. 1\n\n\nGuest Lecture\n\n\n\n\n2\n\n\nProject 1 In-Class Presentations\n\n\nThu., Oct. 3\n\n\nIn-Class Presentation\n\n\n\n\n2\n\n\nClass Activity: Street Design Exercise\n\n\nTue., Oct. 8\n\n\nLecture\n\n\n\n\n2\n\n\nDecision Analysis\n\n\nThu., Oct. 10\n\n\nLecture\n\n\n\n\n3\n\n\nNO CLASS – MIDTERM RECESS\n\n\nTue., Oct. 15\n\n\nNo Class\n\n\n\n\n3\n\n\nIntroduction to Water Security\n\n\nThu., Oct. 17\n\n\nLecture\n\n\n\n\n3\n\n\nGuest Lecture:Water Treatment\n\n\nTue., Oct. 22\n\n\nGuest Lecture\n\n\n\n\n3\n\n\nIntroduction to Programming with Julia and Computational Notebooks\n\n\nThu., Oct. 24\n\n\nPlanned Lecture\n\n\n\n\n3\n\n\nUnconventional Water Sources\n\n\nTue., Oct. 29\n\n\nPlanned Lecture\n\n\n\n\n3\n\n\nField Trip\n\n\nThu., Oct. 31\n\n\nField Trip\n\n\n\n\n3\n\n\nNO CLASS – ELECTION DAY\n\n\nTue., Nov. 5\n\n\nNo Class\n\n\n\n\n4\n\n\nCoastal Hazards\n\n\nThu., Nov. 7\n\n\nPlanned Lecture\n\n\n\n\n4\n\n\nBuilding Codes\n\n\nTue., Nov. 12\n\n\nPlanned Lecture\n\n\n\n\n4\n\n\nGuest Lecture: The Galveston Bay Park Plan\n\n\nThu., Nov. 14\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nGuest Lecture: Engineering Communication\n\n\nTue., Nov. 19\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nGuest Lecture: Origami Engineering\n\n\nThu., Nov. 21\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nProject 3 In-Class Presentations\n\n\nTue., Nov. 26\n\n\nIn-Class Presentation\n\n\n\n\n4\n\n\nNO CLASS – THANKSGIVING RECESS\n\n\nThu., Nov. 28\n\n\nNo Class\n\n\n\n\n5\n\n\nGuest Panel: CEVE Careers\n\n\nTue., Dec. 3\n\n\nGuest Lecture\n\n\n\n\n5\n\n\nGuest Lecture: About the Major\n\n\nThu., Dec. 5\n\n\nGuest Lecture\n\n\n\n\n\nNo matching items",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Topic\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nModule\n\n\nTopic\n\n\nDate\n\n\nCategory\n\n\n\n\n\n\n0\n\n\nNO CLASS\n\n\nTue., Aug. 27\n\n\nNo Class\n\n\n\n\n0\n\n\nWelcome to CEVE 101\n\n\nThu., Aug. 29\n\n\nLecture\n\n\n\n\n1\n\n\nGuest Lecture: Climate Science and Climate Change\n\n\nTue., Sep. 3\n\n\nGuest Lecture\n\n\n\n\n1\n\n\nOverview of the Energy System\n\n\nThu., Sep. 5\n\n\nLecture\n\n\n\n\n1\n\n\nEnergy Systems Cont’d\n\n\nTue., Sep. 10\n\n\nLecture\n\n\n\n\n1\n\n\nToolkit: Mass / Energy Balance\n\n\nThu., Sep. 12\n\n\nLecture\n\n\n\n\n1\n\n\nEnergy Storage\n\n\nTue., Sep. 17\n\n\nLecture\n\n\n\n\n1\n\n\nReproducibility and Transparency in a Digital World\n\n\nThu., Sep. 19\n\n\nLecture\n\n\n\n\n2\n\n\nIntro to Transportation Systems\n\n\nTue., Sep. 24\n\n\nLecture\n\n\n\n\n2\n\n\nGuest Lecture: Resilient Mobility\n\n\nThu., Sep. 26\n\n\nGuest Lecture\n\n\n\n\n2\n\n\nGuest Lecture: Mobility of the Future\n\n\nTue., Oct. 1\n\n\nGuest Lecture\n\n\n\n\n2\n\n\nProject 1 In-Class Presentations\n\n\nThu., Oct. 3\n\n\nIn-Class Presentation\n\n\n\n\n2\n\n\nClass Activity: Street Design Exercise\n\n\nTue., Oct. 8\n\n\nLecture\n\n\n\n\n2\n\n\nDecision Analysis\n\n\nThu., Oct. 10\n\n\nLecture\n\n\n\n\n3\n\n\nNO CLASS – MIDTERM RECESS\n\n\nTue., Oct. 15\n\n\nNo Class\n\n\n\n\n3\n\n\nIntroduction to Water Security\n\n\nThu., Oct. 17\n\n\nLecture\n\n\n\n\n3\n\n\nGuest Lecture: Water Treatment\n\n\nTue., Oct. 22\n\n\nGuest Lecture\n\n\n\n\n3\n\n\nIntroduction to Programming with Julia and Computational Notebooks\n\n\nThu., Oct. 24\n\n\nPlanned Lecture\n\n\n\n\n3\n\n\nProject 3 Work Time\n\n\nTue., Oct. 29\n\n\nIn-class work time\n\n\n\n\n3\n\n\nField Trip\n\n\nThu., Oct. 31\n\n\nField Trip\n\n\n\n\n3\n\n\nNO CLASS – ELECTION DAY\n\n\nTue., Nov. 5\n\n\nNo Class\n\n\n\n\n4\n\n\nCoastal Hazards\n\n\nThu., Nov. 7\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nBuilding Codes\n\n\nTue., Nov. 12\n\n\nLecture\n\n\n\n\n4\n\n\nGuest Lecture: The Galveston Bay Park Plan\n\n\nThu., Nov. 14\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nGuest Lecture: Engineering Communication\n\n\nTue., Nov. 19\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nGuest Lecture: Origami Engineering\n\n\nThu., Nov. 21\n\n\nGuest Lecture\n\n\n\n\n4\n\n\nProject 3 In-Class Presentations\n\n\nTue., Nov. 26\n\n\nIn-Class Presentation\n\n\n\n\n4\n\n\nNO CLASS – THANKSGIVING RECESS\n\n\nThu., Nov. 28\n\n\nNo Class\n\n\n\n\n5\n\n\nGuest Panel: CEVE Careers\n\n\nTue., Dec. 3\n\n\nGuest Lecture\n\n\n\n\n5\n\n\nGuest Lecture: About the Major\n\n\nThu., Dec. 5\n\n\nGuest Lecture\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Lectures"
     ]
@@ -309,10 +400,38 @@
     "text": "References\n\n\nEllsberg, D. (1961). Risk, ambiguity, and the Savage axioms. The Quarterly Journal of Economics, 75(4), 643–669. https://doi.org/10.2307/1884324\n\n\nSavage, L. J. (1954). Foundations of statistics. New York: Wiley."
   },
   {
+    "objectID": "lectures/2024-10-29/slides.html",
+    "href": "lectures/2024-10-29/slides.html",
+    "title": "Project 3 Work Time",
+    "section": "",
+    "text": "We used this time to work on Project 3."
+  },
+  {
     "objectID": "lectures/2024-09-17/slides.html#references",
     "href": "lectures/2024-09-17/slides.html#references",
     "title": "Energy Storage",
     "section": "References",
     "text": "References\n\n\nAmonkar, Y., Doss-Gollin, J., Farnham, D. J., Modi, V., & Lall, U. (2023). Differential effects of climate change on average and peak demand for heating and cooling across the contiguous USA. Communications Earth & Environment, 4(1, 1), 1–9. https://doi.org/10.1038/s43247-023-01048-1\n\n\nLee, J., & Dessler, A. E. (2022). The Impact of Neglecting Climate Change and Variability on ERCOT’s Forecasts of Electricity Demand in Texas. Weather, Climate, and Society, 14(2), 499–505. https://doi.org/10.1175/WCAS-D-21-0140.1"
+  },
+  {
+    "objectID": "lectures/2024-10-22/slides.html",
+    "href": "lectures/2024-10-22/slides.html",
+    "title": "Guest Lecture: Water Treatment",
+    "section": "",
+    "text": "Thanks to Prof. Getachew for her guest lecture."
+  },
+  {
+    "objectID": "lectures/2024-10-01/slides.html",
+    "href": "lectures/2024-10-01/slides.html",
+    "title": "Guest Lecture: Mobility of the Future",
+    "section": "",
+    "text": "Thanks to Prof. Qian for his guest lecture."
+  },
+  {
+    "objectID": "lectures/2024-11-07/slides.html",
+    "href": "lectures/2024-11-07/slides.html",
+    "title": "Coastal Hazards",
+    "section": "",
+    "text": "Thanks to Prof. Gori for her guest lecture."
   }
 ]
